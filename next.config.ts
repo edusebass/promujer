@@ -1,7 +1,34 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.lanacion.com.ar",
+      },
+      {
+        protocol: "https",
+        hostname: "static.vecteezy.com",
+      },
+      {
+        protocol: "https",
+        hostname: "st4.depositphotos.com",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn-icons-png.flaticon.com",
+      },
+      {
+        protocol: "https",
+        hostname: "tecdn.b-cdn.net",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

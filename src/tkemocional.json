@@ -1,0 +1,58 @@
+{
+  "depresioncronica": [
+    {
+      "question": "¿Qué es la depresión crónica?",
+      "answer": "La depresión crónica, también conocida como trastorno depresivo persistente, es una forma de depresión que dura por lo menos dos años. Puede incluir síntomas como tristeza, baja energía y cambios en el apetito y el sueño."
+    },
+    {
+      "question": "¿Cuáles son los síntomas de la depresión crónica?",
+      "answer": "Los síntomas incluyen tristeza persistente, baja autoestima, fatiga, cambios en el apetito y el sueño, y dificultades para concentrarse. Estos síntomas pueden afectar significativamente la vida diaria."
+    },
+    {
+      "question": "¿Te preocupa la posibilidad de tener depresión crónica?",
+      "answer": "Si experimentas síntomas de depresión crónica, consulta a nuestros especialistas para obtener un diagnóstico preciso y un tratamiento adecuado. ¡Programa tu cita hoy mismo!"
+    }
+  ],
+  "enfermedadesautoinmunes": [
+    {
+      "question": "¿Qué son las enfermedades autoinmunes?",
+      "answer": "Las enfermedades autoinmunes son trastornos en los que el sistema inmunológico ataca por error a las células y tejidos saludables del cuerpo. Ejemplos incluyen la artritis reumatoide, lupus y esclerosis múltiple."
+    },
+    {
+      "question": "¿Cuáles son los síntomas de las enfermedades autoinmunes?",
+      "answer": "Los síntomas varían según la enfermedad, pero pueden incluir fatiga, dolor en las articulaciones, erupciones cutáneas, fiebre y problemas digestivos. Estos síntomas pueden ser crónicos y afectar la calidad de vida."
+    },
+    {
+      "question": "¿Te preocupa la posibilidad de tener una enfermedad autoinmune?",
+      "answer": "Si experimentas síntomas de una enfermedad autoinmune, consulta a nuestros especialistas para obtener un diagnóstico preciso y un tratamiento adecuado. ¡Programa tu cita hoy mismo!"
+    }
+  ],
+  "insomnio": [
+    {
+      "question": "¿Qué es el insomnio?",
+      "answer": "El insomnio es un trastorno del sueño que dificulta conciliar el sueño, mantenerlo o provoca despertar temprano y no poder volver a dormir. Puede afectar la salud física y mental."
+    },
+    {
+      "question": "¿Cuáles son los síntomas del insomnio?",
+      "answer": "Los síntomas incluyen dificultad para conciliar el sueño, despertares frecuentes durante la noche, despertar temprano y cansancio diurno. El insomnio puede afectar el rendimiento diario y la calidad de vida."
+    },
+    {
+      "question": "¿Te preocupa la posibilidad de tener insomnio?",
+      "answer": "Si experimentas problemas para dormir, consulta a nuestros especialistas para obtener un diagnóstico preciso y un tratamiento adecuado. ¡Programa tu cita hoy mismo!"
+    }
+  ],
+  "migraña": [
+    {
+      "question": "¿Qué es la migraña?",
+      "answer": "La migraña es un tipo de dolor de cabeza intenso y debilitante, a menudo acompañado de náuseas, vómitos y sensibilidad a la luz y al sonido. Puede durar desde horas hasta días."
+    },
+    {
+      "question": "¿Cuáles son los síntomas de la migraña?",
+      "answer": "Los síntomas incluyen dolor de cabeza severo, generalmente en un lado de la cabeza, náuseas, vómitos y sensibilidad a la luz y al sonido. Algunas personas experimentan auras visuales antes del inicio del dolor."
+    },
+    {
+      "question": "¿Te preocupa la posibilidad de tener migraña?",
+      "answer": "Si experimentas dolores de cabeza intensos y debilitantes, consulta a nuestros especialistas para obtener un diagnóstico preciso y un tratamiento adecuado. ¡Programa tu cita hoy mismo!"
+    }
+  ]
+}

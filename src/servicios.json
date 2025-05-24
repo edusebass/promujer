@@ -1,0 +1,186 @@
+{
+  "conditions": {
+    "Hernia de disco cervical": [
+      {
+        "question": "¿Qué es una hernia de disco cervical?",
+        "answer": "Una hernia de disco cervical ocurre cuando uno de los discos intervertebrales en el cuello (región cervical) se desplaza o se rompe, presionando los nervios circundantes. Esto puede causar dolor, debilidad o entumecimiento en el cuello, los hombros y los brazos."
+      },
+      {
+        "question": "¿Cuáles son los síntomas de una hernia de disco cervical?",
+        "answer": "Los síntomas comunes incluyen dolor en el cuello y los hombros, entumecimiento o debilidad en los brazos y las manos, y en algunos casos, dolor de cabeza. El dolor puede empeorar con ciertos movimientos del cuello."
+      },
+      {
+        "question": "¿Te preocupa la posibilidad de tener una hernia de disco cervical?",
+        "answer": "Si sospechas que podrías tener una hernia de disco cervical, no esperes más. Nuestros especialistas en quiropraxia pueden proporcionarte un diagnóstico preciso y un plan de tratamiento efectivo. ¡Programa tu cita ahora para obtener el cuidado que necesitas!"
+      }
+    ],
+    "Lumbalgia": [
+      {
+        "question": "¿Qué es una lumbalgia?",
+        "answer": "La lumbalgia es el dolor en la parte baja de la espalda, que puede ser causado por una variedad de razones, incluyendo lesiones musculares, problemas de discos intervertebrales, o problemas en las articulaciones."
+      },
+      {
+        "question": "¿Cuáles son los síntomas de una lumbalgia?",
+        "answer": "Los síntomas incluyen dolor en la parte baja de la espalda, rigidez, y en algunos casos, dolor que se irradia hacia las piernas. El dolor puede variar desde un dolor leve hasta un dolor intenso que dificulta el movimiento."
+      },
+      {
+        "question": "¿Te preocupa la posibilidad de tener una lumbalgia?",
+        "answer": "Si experimentas dolor en la parte baja de la espalda, consulta a nuestros especialistas para obtener un diagnóstico preciso y un tratamiento adecuado. ¡Programa tu cita hoy mismo!"
+      }
+    ],
+    "Cervicalgia": [
+      {
+        "question": "¿Qué es la cervicalgia?",
+        "answer": "La cervicalgia es el dolor localizado en la región cervical de la columna vertebral, que puede ser causado por tensión muscular, malas posturas o problemas en los discos intervertebrales."
+      },
+      {
+        "question": "¿Cuáles son los síntomas de la cervicalgia?",
+        "answer": "Los síntomas incluyen dolor en el cuello, rigidez, y a veces dolor que se irradia hacia los hombros y los brazos. El dolor puede empeorar con ciertos movimientos del cuello."
+      },
+      {
+        "question": "¿Te preocupa la posibilidad de tener cervicalgia?",
+        "answer": "Si experimentas dolor en el cuello, consulta a nuestros especialistas para obtener un diagnóstico preciso y un tratamiento adecuado. ¡Programa tu cita hoy mismo!"
+      }
+    ],
+    "Tendinitis": [
+      {
+        "question": "¿Qué es la tendinitis?",
+        "answer": "La tendinitis es la inflamación de un tendón, que puede ser causada por sobreuso, lesiones o envejecimiento. Afecta comúnmente los hombros, codos, muñecas y rodillas."
+      },
+      {
+        "question": "¿Cuáles son los síntomas de la tendinitis?",
+        "answer": "Los síntomas incluyen dolor en el tendón afectado, sensibilidad, hinchazón y dificultad para mover la articulación. El dolor puede empeorar con la actividad."
+      },
+      {
+        "question": "¿Te preocupa la posibilidad de tener tendinitis?",
+        "answer": "Si experimentas dolor en los tendones, consulta a nuestros especialistas para obtener un diagnóstico preciso y un tratamiento adecuado. ¡Programa tu cita hoy mismo!"
+      }
+    ],
+    "Hombro congelado": [
+      {
+        "question": "¿Qué es el hombro congelado?",
+        "answer": "El hombro congelado, también conocido como capsulitis adhesiva, es una condición caracterizada por dolor y rigidez en el hombro. Con el tiempo, el movimiento del hombro se vuelve limitado."
+      },
+      {
+        "question": "¿Cuáles son los síntomas del hombro congelado?",
+        "answer": "Los síntomas incluyen dolor en el hombro, rigidez y una limitada capacidad de movimiento. El dolor puede empeorar por la noche y dificultar las actividades diarias."
+      },
+      {
+        "question": "¿Te preocupa la posibilidad de tener hombro congelado?",
+        "answer": "Si experimentas dolor y rigidez en el hombro, consulta a nuestros especialistas para obtener un diagnóstico preciso y un tratamiento adecuado. ¡Programa tu cita hoy mismo!"
+      }
+    ],
+    "Pubalgia": [
+      {
+        "question": "¿Qué es la pubalgia?",
+        "answer": "La pubalgia es un dolor en la región del pubis y la parte baja del abdomen, comúnmente causado por actividades deportivas que implican movimientos repetitivos y estrés en la zona."
+      },
+      {
+        "question": "¿Cuáles son los síntomas de la pubalgia?",
+        "answer": "Los síntomas incluyen dolor en la región del pubis, que puede irradiarse hacia el abdomen y los muslos. El dolor puede empeorar con la actividad física y movimientos bruscos."
+      },
+      {
+        "question": "¿Te preocupa la posibilidad de tener pubalgia?",
+        "answer": "Si experimentas dolor en la región del pubis, consulta a nuestros especialistas para obtener un diagnóstico preciso y un tratamiento adecuado. ¡Programa tu cita hoy mismo!"
+      }
+    ],
+    "Depresión crónica": [
+      {
+        "question": "¿Qué es la depresión crónica?",
+        "answer": "La depresión crónica, también conocida como trastorno depresivo persistente, es una forma de depresión que dura por lo menos dos años. Puede incluir síntomas como tristeza, baja energía y cambios en el apetito y el sueño."
+      },
+      {
+        "question": "¿Cuáles son los síntomas de la depresión crónica?",
+        "answer": "Los síntomas incluyen tristeza persistente, baja autoestima, fatiga, cambios en el apetito y el sueño, y dificultades para concentrarse. Estos síntomas pueden afectar significativamente la vida diaria."
+      },
+      {
+        "question": "¿Te preocupa la posibilidad de tener depresión crónica?",
+        "answer": "Si experimentas síntomas de depresión crónica, consulta a nuestros especialistas para obtener un diagnóstico preciso y un tratamiento adecuado. ¡Programa tu cita hoy mismo!"
+      }
+    ],
+    "Enfermedades autoinmunes": [
+      {
+        "question": "¿Qué son las enfermedades autoinmunes?",
+        "answer": "Las enfermedades autoinmunes son trastornos en los que el sistema inmunológico ataca por error a las células y tejidos saludables del cuerpo. Ejemplos incluyen la artritis reumatoide, lupus y esclerosis múltiple."
+      },
+      {
+        "question": "¿Cuáles son los síntomas de las enfermedades autoinmunes?",
+        "answer": "Los síntomas varían según la enfermedad, pero pueden incluir fatiga, dolor en las articulaciones, erupciones cutáneas, fiebre y problemas digestivos. Estos síntomas pueden ser crónicos y afectar la calidad de vida."
+      },
+      {
+        "question": "¿Te preocupa la posibilidad de tener una enfermedad autoinmune?",
+        "answer": "Si experimentas síntomas de una enfermedad autoinmune, consulta a nuestros especialistas para obtener un diagnóstico preciso y un tratamiento adecuado. ¡Programa tu cita hoy mismo!"
+      }
+    ],
+    "Insomnio": [
+      {
+        "question": "¿Qué es el insomnio?",
+        "answer": "El insomnio es un trastorno del sueño que dificulta conciliar el sueño, mantenerlo o provoca despertar temprano y no poder volver a dormir. Puede afectar la salud física y mental."
+      },
+      {
+        "question": "¿Cuáles son los síntomas del insomnio?",
+        "answer": "Los síntomas incluyen dificultad para conciliar el sueño, despertares frecuentes durante la noche, despertar temprano y cansancio diurno. El insomnio puede afectar el rendimiento diario y la calidad de vida."
+      },
+      {
+        "question": "¿Te preocupa la posibilidad de tener insomnio?",
+        "answer": "Si experimentas problemas para dormir, consulta a nuestros especialistas para obtener un diagnóstico preciso y un tratamiento adecuado. ¡Programa tu cita hoy mismo!"
+      }
+    ],
+    "Migraña": [
+      {
+        "question": "¿Qué es la migraña?",
+        "answer": "La migraña es un tipo de dolor de cabeza intenso y debilitante, a menudo acompañado de náuseas, vómitos y sensibilidad a la luz y al sonido. Puede durar desde horas hasta días."
+      },
+      {
+        "question": "¿Cuáles son los síntomas de la migraña?",
+        "answer": "Los síntomas incluyen dolor de cabeza severo, generalmente en un lado de la cabeza, náuseas, vómitos y sensibilidad a la luz y al sonido. Algunas personas experimentan auras visuales antes del inicio del dolor."
+      },
+      {
+        "question": "¿Te preocupa la posibilidad de tener migraña?",
+        "answer": "Si experimentas dolores de cabeza intensos y debilitantes, consulta a nuestros especialistas para obtener un diagnóstico preciso y un tratamiento adecuado. ¡Programa tu cita hoy mismo!"
+      }
+    ],
+    "Praxis vertebral": [
+      {
+        "question": "¿Qué es la praxis vertebral?",
+        "answer": "La praxis vertebral es un conjunto de técnicas manuales utilizadas para corregir disfunciones de la columna vertebral, mejorando la postura y aliviando el dolor."
+      },
+      {
+        "question": "¿Cuáles son los beneficios de la praxis vertebral?",
+        "answer": "Los beneficios incluyen mejor postura, alivio del dolor de espalda y cuello, y mejora de la función neuromuscular. Puede ayudar a prevenir problemas futuros de la columna."
+      },
+      {
+        "question": "¿Te gustaría mejorar tu postura y aliviar el dolor de espalda?",
+        "answer": "Si buscas mejorar tu postura y aliviar el dolor de espalda, nuestros especialistas en praxis vertebral están aquí para ayudarte. ¡Programa tu cita hoy mismo!"
+      }
+    ],
+    "Rectificación cervical": [
+      {
+        "question": "¿Qué es la rectificación cervical?",
+        "answer": "La rectificación cervical es una condición en la que la curvatura natural del cuello se endereza, lo que puede causar dolor y rigidez en el cuello y la espalda."
+      },
+      {
+        "question": "¿Cuáles son los síntomas de la rectificación cervical?",
+        "answer": "Los síntomas incluyen dolor y rigidez en el cuello, dolor de cabeza y, en algunos casos, mareos. El dolor puede empeorar con ciertos movimientos del cuello."
+      },
+      {
+        "question": "¿Te preocupa la posibilidad de tener rectificación cervical?",
+        "answer": "Si experimentas dolor y rigidez en el cuello, consulta a nuestros especialistas para obtener un diagnóstico preciso y un tratamiento adecuado. ¡Programa tu cita hoy mismo!"
+      }
+    ],
+    "Estrés": [
+      {
+        "question": "¿Qué es el estrés?",
+        "answer": "El estrés es la respuesta del cuerpo a situaciones demandantes o amenazantes. Puede ser causado por factores físicos, emocionales o ambientales, y puede afectar la salud física y mental."
+      },
+      {
+        "question": "¿Cuáles son los síntomas del estrés?",
+        "answer": "Los síntomas incluyen ansiedad, irritabilidad, fatiga, problemas de sueño, dolores de cabeza y problemas digestivos. El estrés crónico puede afectar negativamente la salud general."
+      },
+      {
+        "question": "¿Te preocupa la posibilidad de estar experimentando estrés?",
+        "answer": "Si te sientes abrumado por el estrés, consulta a nuestros especialistas para obtener apoyo y estrategias efectivas de manejo del estrés. ¡Programa tu cita hoy mismo!"
+      }
+    ]
+  }
+}
