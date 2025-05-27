@@ -10,9 +10,8 @@ const AccordionItem = ({ header, ...rest }: any) => (
       <div className="flex items-center font-bold ">
         {header}
         <Image
-          className={`ml-auto transition-transform duration-200 ease-out${
-            isEnter ? "rotate-180" : ""
-          }`}
+          className={`ml-auto transition-transform duration-200 ease-out${isEnter ? "rotate-180" : ""
+            }`}
           src={chevron}
           alt="Chevron"
           width={24}
@@ -23,15 +22,14 @@ const AccordionItem = ({ header, ...rest }: any) => (
     className="border-b  w-full"
     buttonProps={{
       className: ({ isEnter }) =>
-        `flex w-full p-4 text-left hover:bg-blue hover:text-white ${
-          isEnter ? "bg-lightBlue" : ""
+        `flex w-full p-4 text-left hover:bg-primary hover:text-colorText.Primary ${isEnter ? "bg-secondary" : ""
         }`,
     }}
     contentProps={{
       className: "transition-height w-full duration-200 ease-out ",
     }}
     panelProps={{
-      className: "p-4 text-black w-full bg-lightBlue",
+      className: "p-4 text-black w-full bg-secondary",
       style: { backgroundColor: "#f7f7f7" },
     }}
   />

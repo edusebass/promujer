@@ -14,7 +14,7 @@ const UpperNavbar = () => {
     <div className="w-full flex-col md:flex-row h-32 flex justify-center items-center px-12 gap-4">
       <div className="w-full flex flex-col gap-4">
         <div className="flex justify-center items-center">
-          <div className="hidden md:flex gap-7 justify-around items-center border-orange ">
+          <div className="hidden md:flex gap-7 justify-around items-center border-colorText.Primary ">
             <FaPhoneVolume className="text-xl" />
             <div className="text-sm text-center">
               <p className="font-bold">Agenda tu cita ahora</p>
@@ -53,7 +53,7 @@ const UpperNavbar = () => {
         <a
           href={`https://wa.me/+5930995129878?text=¡Saludos!,%20Me%20interesa%20su%20servicio.`}
           target="_BLANK"
-          className="hidden md:block bg-orange py-3 px-7 rounded-xl font-bold text-white cursor-pointer transition duration-500 ease-in-out hover:bg-orange/90 hover:text-white/90 uppercase italic animate-pulse"
+          className="hidden md:block bg-colorButton py-3 px-7 rounded-xl font-bold text-colorText.Primary cursor-pointer transition duration-500 ease-in-out hover:bg-colorButton/90 hover:text-colorText.Primary/90 uppercase italic animate-pulse"
         >
           Contáctanos
         </a>
@@ -62,7 +62,7 @@ const UpperNavbar = () => {
             href="https://www.instagram.com/termo_oasis/"
             title="Instagram"
           >
-            <FaInstagram className="text-orange" />
+            <FaInstagram className="text-colorDropdown" />
           </SocialIcon>
           <SocialIcon href="https://www.tiktok.com/@termooasis" title="TikTok">
             <FaTiktok className="text-black" />

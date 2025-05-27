@@ -11,17 +11,17 @@ const FloatButtons = () => {
         href="https://wa.me/+5930995129878?text=¡Saludos!,%20Me%20interesa%20su%20servicio."
         target="_blank"
       >
-        <Fab color="primary" className="bg-blue hover:bg-lightBlue text-3xl">
+        <Fab color="primary" className="bg-primary hover:bg-secondary text-3xl">
           <FaWhatsapp />
         </Fab>
       </a>
       <a href="https://maps.app.goo.gl/DFFTRT7eG9E7xFNL7" target="_blank">
-        <Fab color="primary" className="bg-blue hover:bg-lightBlue text-3xl">
+        <Fab color="primary" className="bg-primary hover:bg-secondary text-3xl">
           <FaMapMarkedAlt />
         </Fab>
       </a>
       <a href="tel:+5930995129878">
-        <Fab color="primary" className="bg-blue hover:bg-lightBlue text-3xl">
+        <Fab color="primary" className="bg-primary hover:bg-secondary text-3xl">
           <MdCall />
         </Fab>
       </a>

@@ -27,11 +27,10 @@ const CustomLink = ({
       onClick={onClick}
     >
       <p
-        className={`${classNameText} ${
-          pathname === href
-            ? "text-orange"
-            : "text-blue hover:text-orange duration-200"
-        }`}
+        className={`${classNameText} ${pathname === href
+          ? "text-colorDropdown"
+          : "text-colorTextPrimary hover:text-colorDropdown duration-200"
+          }`}
       >
         {title}
       </p>

@@ -32,10 +32,10 @@ const ImageSlider = ({ images }: ImageSliderProps) => {
     >
       <div className="absolute inset-0 "></div>
       <div className="flex items-center justify-center flex-col pt-10">
-        {/* <h2 className="relative text-center text-3xl font-semibold text-white p-4">
+        {/* <h2 className="relative text-center text-3xl font-semibold text-colorText.Primary p-4">
           {currentImage.title1}
         </h2>
-        <h2 className="relative text-center text-4xl font-bold text-white p-4">
+        <h2 className="relative text-center text-4xl font-bold text-colorText.Primary p-4">
           {currentImage.title2}
         </h2> */}
       </div>

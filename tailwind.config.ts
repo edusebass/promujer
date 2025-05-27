@@ -14,10 +14,15 @@ const config: Config = {
     },
     extend: {
       colors: {
-        orange: "#F27F1B",
+        colorDropdown: "#B698BC",
+        colorButton: "#D90089",
+        colorTextPrimary: "#212121",
+        colorTextSecondary: "#666666",
+        background: "#FFFFFF",
+        primary: "#C8057F",
+        secondary: "#6FBFAD",
+
         white: "#FCFAF1",
-        blue: "#267373",
-        lightBlue: "#B7D5CF",
         extraWhite: "#FFFFFF",
       },
       boxShadow: {

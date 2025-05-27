@@ -67,7 +67,7 @@ const ExperienciasEntrevistas = () => {
           href="https://www.instagram.com/termo_oasis/"
           title="Instagram"
         >
-          <FaInstagram className="text-orange" />
+          <FaInstagram className="text-colorDropdown" />
         </SocialIcon>
         <SocialIcon href="https://www.tiktok.com/@termooasis" title="TikTok">
           <FaTiktok className="text-black" />

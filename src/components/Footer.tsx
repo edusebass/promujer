@@ -9,7 +9,7 @@ const logo =
 
 const Footer = () => {
   return (
-    <footer className="bg-blue w-full">
+    <footer className="bg-primary w-full">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0 flex flex-col justify-center">
@@ -19,16 +19,16 @@ const Footer = () => {
             >
               <img src={logo} className="h-16 me-3" alt="FlowBite Logo" />
             </a>
-            <span className="self-center text-center text-xl font-sans font-medium whitespace-nowrap text-white ">
+            <span className="self-center text-center text-xl font-sans font-medium whitespace-nowrap text-colorText.Primary ">
               Manos que curan con amor
             </span>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-white uppercase ">
+              <h2 className="mb-6 text-sm font-semibold text-colorText.Primary uppercase ">
                 CENTRO
               </h2>
-              <ul className="text-orange font-medium">
+              <ul className="text-colorDropdown font-medium">
                 <li className="mb-4">
                   <a href="/" className="hover:underline text-sm">
                     Inicio
@@ -45,10 +45,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
+              <h2 className="mb-6 text-sm font-semibold text-colorText.Primary uppercase">
                 Contactanos
               </h2>
-              <ul className="text-orange font-medium">
+              <ul className="text-colorDropdown font-medium">
                 <li className="mb-4 text-xs">
                   <a href="/" className="hover:underline text-sm ">
                     0995129878  |  0987140893  |  0995026093  |  (02)2622545
@@ -62,9 +62,9 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="flex  items-center p-3 justify-center mt-3 md:h-11 bg-orange hover:bg-orange/95 rounded-lg md:px-5 md:py-2 cursor-pointer">
+          <div className="flex  items-center p-3 justify-center mt-3 md:h-11 bg-colorButton hover:bg-colorButton/95 rounded-lg md:px-5 md:py-2 cursor-pointer">
             <a
-              className="text-white"
+              className="text-colorText.Primary"
               target="_blank"
               href="https://wa.me/+5930995129878?text=¡Saludos!,%20Me%20interesa%20su%20servicio."
             >
@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-white sm:text-center dark:text-gray-400">
+          <span className="text-sm text-colorText.Primary sm:text-center dark:text-gray-400">
             © {new Date().getFullYear()}{" "}
             <a href="https://flowbite.com/" className="hover:underline">
               TERMO OASIS™
@@ -87,28 +87,28 @@ const Footer = () => {
               <SocialIcon
                 href="https://termoasis.vercel.app/"
                 title="Facebook"
-                className="text-white"
+                className="text-colorText.Primary"
               >
                 <FaFacebook className="text-sky-500 text-3xl" />
               </SocialIcon>
               <SocialIcon
                 href="https://www.instagram.com/termo_oasis/"
                 title="Instagram"
-                className="text-white"
+                className="text-colorText.Primary"
               >
-                <FaInstagram className="text-orange text-3xl" />
+                <FaInstagram className="text-colorDropdown text-3xl" />
               </SocialIcon>
               <SocialIcon
                 href="https://www.tiktok.com/@termooasis"
                 title="TikTok"
-                className="text-white"
+                className="text-colorText.Primary"
               >
                 <FaTiktok className="text-black text-3xl" />
               </SocialIcon>
               <SocialIcon
                 href="https://termoasis.vercel.app/"
                 title="Whatsapp"
-                className="text-white"
+                className="text-colorText.Primary"
               >
                 <FaWhatsapp className="text-green-500 text-3xl" />
               </SocialIcon>

@@ -6,7 +6,6 @@ import {
   quiropraxia,
   praxisvertebral,
   tkemocional,
-  otrosServicios,
   fisioterapia,
 } from "@/constants/servicios_lista";
 import Link from "next/link";
@@ -44,7 +43,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full h-[55px] justify-betweenpx-8 sm:px-16 md:px-16  font-normal flex items-center justify-between sticky top-0 z-50 bg-lightBlue select-none text-sm shadow-md">
+    <header className="w-full h-[55px] justify-betweenpx-8 sm:px-16 md:px-16  font-normal flex items-center justify-between sticky top-0 z-50 bg-secondary select-none text-sm shadow-md">
       <nav className="justify-start items-center flex gap-3 sm:gap-10 w-full">
         <Link href="/" className="md:hidden flex">
           <Image
@@ -105,29 +104,19 @@ const Navbar = () => {
               setOpen={setIsTkEmocionalOpen}
             />
           </div>
-          <div
-            onMouseEnter={() => handleMouseEnter(setIsOtrosServiciosOpen)}
-            onMouseLeave={() => handleMouseLeave(setIsOtrosServiciosOpen)}
-          >
-            <DropdownMenu
-              title="OTROS SERVICIOS"
-              data={otrosServicios}
-              open={isOtrosServiciosOpen}
-              setOpen={setIsOtrosServiciosOpen}
-            />
-          </div>
+
         </div>
         <CustomLink
           href="/contacto"
           title="CONTACTO"
-          classNameText="hover:text-orange hidden md:block"
+          classNameText="hover:text-colorDropdown hidden md:block"
         />
         <CustomLink
           href="/productos"
           title="PRODUCTOS"
-          classNameText="hover:text-orange hidden md:block"
+          classNameText="hover:text-colorDropdown hidden md:block"
         />
-        <button className="md:hidden flex items-center gap-2 bg-orange h-full py-1  ">
+        <button className="md:hidden flex items-center gap-2 bg-colorButton h-full py-1  ">
           <p className=" text-sm font-semibold text-extraWhite px-2">
             <a
               target="_blank"
@@ -155,7 +144,7 @@ const Navbar = () => {
               d="M4 6h16M4 12h16m-7 6h7"
             ></path>
           </svg>
-          <p className="text-blue text-base font-bold">MENU</p>
+          <p className="text-colorTextPrimary text-base font-bold">MENU</p>
         </button>
       </nav>
       {isMobileMenuOpen && (

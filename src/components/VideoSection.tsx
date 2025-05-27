@@ -3,7 +3,7 @@ import React from "react";
 const VideoSection = ({ title, videoSrc }: any) => {
   return (
     <div className="flex flex-col">
-      <p className="bg-orange text-extraWhite p-4">{title}</p>
+      <p className="bg-colorButton text-extraWhite p-4">{title}</p>
       <video
         className="h-[550px] border-r-8"
         src={videoSrc}

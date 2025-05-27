@@ -1,138 +1,138 @@
 export const quiropraxia = [
   {
     title: "Hernias de disco cervical",
-    href: "/servicios/quiropraxia/herniasDiscales",
+    href: "/quiropraxia/herniasDiscales",
   },
   {
     title: "Lumbalgias",
-    href: "/servicios/quiropraxia/lumbalgias",
+    href: "/quiropraxia/lumbalgias",
   },
   {
     title: "Cervicalgia",
-    href: "/servicios/quiropraxia/cervicalgia",
+    href: "/quiropraxia/cervicalgia",
   },
   {
     title: "Tendinitis",
-    href: "/servicios/quiropraxia/tendinitis",
+    href: "/quiropraxia/tendinitis",
   },
   {
     title: "Hombro congelado",
-    href: "/servicios/quiropraxia/hombrocongelado",
+    href: "/quiropraxia/hombrocongelado",
   },
   {
     title: "Pubalgia",
-    href: "/servicios/quiropraxia/pubalgia",
+    href: "/quiropraxia/pubalgia",
   },
 ];
 
 export const praxisvertebral = [
   {
     title: "Rectificacion cervical",
-    href: "/servicios/praxisvertebral/rectificacioncervical",
+    href: "/praxisvertebral/rectificacioncervical",
   },
   {
     title: "Estrechamiento de canal lumbar",
-    href: "/servicios/praxisvertebral/estrechamientocanallumbar",
+    href: "/praxisvertebral/estrechamientocanallumbar",
   },
   {
     title: "Hiperlordosis cervical",
-    href: "/servicios/praxisvertebral/hiperlordosiscervical",
+    href: "/praxisvertebral/hiperlordosiscervical",
   },
   {
     title: "Hiperlordosis lumbar",
-    href: "/servicios/praxisvertebral/hiperlordosislumbar",
+    href: "/praxisvertebral/hiperlordosislumbar",
   },
   {
     title: "Desviacion de la columna",
-    href: "/servicios/praxisvertebral/desviacioncolumna",
+    href: "/praxisvertebral/desviacioncolumna",
   },
   {
     title: "Desplazamiento de cadera",
-    href: "/servicios/praxisvertebral/desplazamientocadera",
+    href: "/praxisvertebral/desplazamientocadera",
   },
 ];
 
 export const tkemocional = [
   {
     title: "Depresion crónica",
-    href: "/servicios/tkemocional/depresioncronica",
+    href: "/tkemocional/depresioncronica",
   },
   {
     title: "Enfermedades autoinmunes",
-    href: "/servicios/tkemocional/enfermedadesautoinmunes",
+    href: "/tkemocional/enfermedadesautoinmunes",
   },
   {
     title: "Insomnio",
-    href: "/servicios/tkemocional/insomnio",
+    href: "/tkemocional/insomnio",
   },
   {
     title: "Migraña",
-    href: "/servicios/tkemocional/migrana",
+    href: "/tkemocional/migrana",
   },
 ];
 
-export const otrosServicios = [
+export const otro = [
   {
     title: "Escoliosis",
-    href: "/servicios/otros/escoliosis",
+    href: "/otros/escoliosis",
   },
   {
     title: "Ciatalgia",
-    href: "/servicios/otros/ciatalgia",
+    href: "/otros/ciatalgia",
   },
   {
     title: "Nervio aciatico",
-    href: "/servicios/otros/nervioaciatico",
+    href: "/otros/nervioaciatico",
   },
   {
     title: "Estres",
-    href: "/servicios/otros/estres",
+    href: "/otros/estres",
   },
   {
     title: "Crecimiento de niños y jovenes",
-    href: "/servicios/otros/crecimiento",
+    href: "/otros/crecimiento",
   },
 ];
 
 export const fisioterapia = [
   {
     title: "Cervical",
-    href: "/servicios/fisioterapia/cervical",
+    href: "/fisioterapia/cervical",
   },
   {
     title: "Hombro",
-    href: "/servicios/fisioterapia/hombro",
+    href: "/fisioterapia/hombro",
   },
   {
     title: "Lumbar",
-    href: "/servicios/fisioterapia/lumbar",
+    href: "/fisioterapia/lumbar",
   },
   {
     title: "Cadera",
-    href: "/servicios/fisioterapia/cadera",
+    href: "/fisioterapia/cadera",
   },
   {
     title: "Dorsal",
-    href: "/servicios/fisioterapia/dorsal",
+    href: "/fisioterapia/dorsal",
   },
   {
     title: "Mano y codo",
-    href: "/servicios/fisioterapia/manoycodo",
+    href: "/fisioterapia/manoycodo",
   },
   {
     title: "Rodilla",
-    href: "/servicios/fisioterapia/rodilla",
+    href: "/fisioterapia/rodilla",
   },
   {
     title: "Tobillo y pie",
-    href: "/servicios/fisioterapia/tobilloypie",
+    href: "/fisioterapia/tobilloypie",
   },
   {
     title: "Cuello",
-    href: "/servicios/fisioterapia/cuello",
+    href: "/fisioterapia/cuello",
   },
   {
     title: "Lesiones",
-    href: "/servicios/fisioterapia/lesiones",
+    href: "/fisioterapia/lesiones",
   },
 ];

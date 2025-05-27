@@ -246,10 +246,10 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="flex items-center justify-center flex-col pt-10">
-          <h3 className="relative text-center text-3xl font-semibold text-white p-4">
+          <h3 className="relative text-center text-3xl font-semibold text-colorText.Primary p-4">
             {currentData.title1}
           </h3>
-          <h3 className="relative text-center text-4xl font-bold text-white p-4">
+          <h3 className="relative text-center text-4xl font-bold text-colorText.Primary p-4">
             {currentData.title2}
           </h3>
         </div>
@@ -361,10 +361,10 @@ export default function Home() {
             height={500}
           />
           <div className="flex flex-col justify-center p-6">
-            <h5 className="mb-2 text-2xl font-bold text-blue">
+            <h5 className="mb-2 text-2xl font-bold text-colorTextPrimary">
               Dr. Quiropracta Oswaldo Aviles
             </h5>
-            <p className="mb-4 text-base  text-blue/80">
+            <p className="mb-4 text-base  text-colorTextPrimary/80">
               * Con más de 23 años de experiencia en quiropraxia y en todas las
               patologias. <br />* Formacion en el instituto nacional Nuevo
               Amanecer de Lima, Perú. <br /> * Además, cuentan con una

@@ -27,8 +27,8 @@ const GridServicios = ({ items }: GridServiciosProps) => {
             height={100}
           />
           <h2 className="text-center mb-4">{item.description}</h2>
-          <div className="flex items-center p-1 justify-center md:h-6 bg-orange hover:bg-orange/95 rounded-lg md:px-5 md:py-1 cursor-pointer">
-            <Link href={item.link} className="text-white text-sm">
+          <div className="flex items-center p-1 justify-center md:h-6 bg-colorButton hover:bg-colorButton/95 rounded-lg md:px-5 md:py-1 cursor-pointer">
+            <Link href={item.link} className="text-colorText.Primary text-sm">
               Más informacion{" "}
             </Link>
           </div>

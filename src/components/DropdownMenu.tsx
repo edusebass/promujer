@@ -27,9 +27,8 @@ const DropdownMenu = ({ title, open, setOpen, data }: Props) => {
         <p
           onClick={() => setOpen(!open)}
           ref={mainRef}
-          className={`transition-colors duration-300 ${
-            open ? "text-orange" : ""
-          }`}
+          className={`transition-colors duration-300 ${open ? "text-colorDropdown" : ""
+            }`}
         >
           {title}
         </p>
@@ -42,7 +41,7 @@ const DropdownMenu = ({ title, open, setOpen, data }: Props) => {
       </div>
       {open && (
         <div
-          className="absolute flex flex-col text-sm bg-blue max-w-40 bg-clip-padding backdrop-filter backdrop-blur-md  py-3 px-5 top-[55px] shadow-sm gap-4 rounded-b-lg border-b-2 border-r-2 border-solid border-blue/20"
+          className="absolute flex flex-col text-sm bg-primary max-w-40 bg-clip-padding backdrop-filter backdrop-blur-md  py-3 px-5 top-[55px] shadow-sm gap-4 rounded-b-lg border-b-2 border-r-2 border-solid border-blue/20"
           ref={dropdownRef}
           onClick={() => setOpen(false)}
         >
@@ -53,7 +52,7 @@ const DropdownMenu = ({ title, open, setOpen, data }: Props) => {
                 title={item.title}
                 key={key}
                 className="border-b border-white"
-                classNameText="text-white hover:text-black"
+                classNameText="text-colorText.Primary hover:text-black"
               />
             </>
           ))}
