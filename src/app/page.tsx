@@ -352,7 +352,7 @@ export default function Home() {
           diversos tipos de tratamientos para lograr la readaptación,
           rehabilitación muscular y articular de cualquier patología.
         </p>
-        <div className="flex flex-col justify-center items-center rounded-lg bg-extraWhite  md:max-w-3xl md:flex-row">
+        <div className="flex flex-col justify-center items-center rounded-lg bg-colorTextSecondary  md:max-w-3xl md:flex-row">
           <Image
             className="h-full w-full rounded-t-lg object-cover md:h-auto md:w-72 md:!rounded-none md:!rounded-s-lg"
             src="https://res.cloudinary.com/dwowtb0ya/image/upload/v1722910354/termooasis/servicios%20y%20personal/oswaldo_aviles_cuerpo_completo_rqiztw.png"
@@ -361,10 +361,10 @@ export default function Home() {
             height={500}
           />
           <div className="flex flex-col justify-center p-6">
-            <h5 className="mb-2 text-2xl font-bold text-colorTextPrimary">
+            <h5 className="mb-2 text-2xl font-bold text-primary">
               Dr. Quiropracta Oswaldo Aviles
             </h5>
-            <p className="mb-4 text-base  text-colorTextPrimary/80">
+            <p className="mb-4 text-base  text-primary/80">
               * Con más de 23 años de experiencia en quiropraxia y en todas las
               patologias. <br />* Formacion en el instituto nacional Nuevo
               Amanecer de Lima, Perú. <br /> * Además, cuentan con una

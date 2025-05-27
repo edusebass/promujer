@@ -14,7 +14,7 @@ export const InfoContact = () => {
           </p>
         </div>
         <div className="phone-icon flex flex-col items-center text-center hover:cursor-pointer hover:scale-110">
-          <FaPhoneAlt className="text-colorTextPrimary text-xl mb-2" />
+          <FaPhoneAlt className="text-primary text-xl mb-2" />
           <a
             target="_blank"
             href="https://wa.me/+5930995129878?text=¡Saludos!,%20Me%20interesa%20su%20servicio."
@@ -24,11 +24,11 @@ export const InfoContact = () => {
           </a>
         </div>
         <div className="email-icon flex flex-col items-center text-center">
-          <FaEnvelope className="text-colorTextPrimary text-xl mb-2" />
+          <FaEnvelope className="text-primary text-xl mb-2" />
           <p className="text-gray-700 text-xs">termoasis@gmail.com</p>
         </div>
         <div className="appointment-icon flex flex-col items-center text-center hover:cursor-pointer hover:scale-110   ">
-          <FaCalendarCheck className="text-colorTextPrimary text-xl mb-2" />
+          <FaCalendarCheck className="text-primary text-xl mb-2" />
           <a
             target="_blank"
             href="https://wa.me/+5930995129878?text=¡Saludos!,%20Me%20interesa%20su%20servicio."

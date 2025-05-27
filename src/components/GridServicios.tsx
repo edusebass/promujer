@@ -18,7 +18,7 @@ const GridServicios = ({ items }: GridServiciosProps) => {
       {items.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col items-center p-4 border rounded-lg shadow-lg bg-extraWhite"
+          className="flex flex-col items-center p-4 border rounded-lg shadow-lg bg-colorTextSecondary"
         >
           <Image
             src={item.icon}

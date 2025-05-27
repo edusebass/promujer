@@ -29,7 +29,7 @@ const CustomLink = ({
       <p
         className={`${classNameText} ${pathname === href
           ? "text-colorDropdown"
-          : "text-colorTextPrimary hover:text-colorDropdown duration-200"
+          : "text-primary hover:text-colorDropdown duration-200"
           }`}
       >
         {title}

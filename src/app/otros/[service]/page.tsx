@@ -50,13 +50,13 @@ const Otros = ({ params }: { params: { service: string } }) => {
 
       <section className="flex flex-col w-10/12 bg-white mx-10 md:mx-16 ">
         <InfoContact />
-        <div className="bg-extraWhite mt-16 mb-5 p-5">
-          <p className="text-3xl bg-extraWhite font-semibold">
+        <div className="bg-colorTextSecondary mt-16 mb-5 p-5">
+          <p className="text-3xl bg-colorTextSecondary font-semibold">
             {informacion[service].servicio}
           </p>
-          <p className="bg-extraWhite">Informacion sobre este padecimiento</p>
+          <p className="bg-colorTextSecondary">Informacion sobre este padecimiento</p>
         </div>
-        <div className="flex flex-col gap-3 justify-center w-full md:flex-row bg-extraWhite p-3">
+        <div className="flex flex-col gap-3 justify-center w-full md:flex-row bg-colorTextSecondary p-3">
           <div className="flex-1 ">
             <AccordionComponent questions={informacion[service].questions} />
           </div>

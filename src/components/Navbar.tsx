@@ -117,7 +117,7 @@ const Navbar = () => {
           classNameText="hover:text-colorDropdown hidden md:block"
         />
         <button className="md:hidden flex items-center gap-2 bg-colorButton h-full py-1  ">
-          <p className=" text-sm font-semibold text-extraWhite px-2">
+          <p className=" text-sm font-semibold text-SECONDARY px-2">
             <a
               target="_blank"
               href="https://wa.me/+5930995129878?text=¡Saludos!,%20Me%20interesa%20agendar%20una%20cita."
@@ -144,7 +144,7 @@ const Navbar = () => {
               d="M4 6h16M4 12h16m-7 6h7"
             ></path>
           </svg>
-          <p className="text-colorTextPrimary text-base font-bold">MENU</p>
+          <p className="text-primary text-base font-bold">MENU</p>
         </button>
       </nav>
       {isMobileMenuOpen && (

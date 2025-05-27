@@ -86,7 +86,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://termoasis.com" />
       </head>
       <body
-        className={`bg-white w-full min-h-screen flex flex-col items-center text-colorTextPrimary ${inter.className}`}
+        className={`bg-white w-full min-h-screen flex flex-col items-center text-primary ${inter.className}`}
       >
         <UpperNavbar />
         <Navbar />

@@ -9,7 +9,7 @@ interface ProductCardProps {
 }
 const ProductCard = ({ img, nombre, informacion }: ProductCardProps) => {
   return (
-    <div className="relative flex justify-center w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-extraWhite shadow-md">
+    <div className="relative flex justify-center w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-colorTextSecondary shadow-md">
       <a
         className="relative mx-3 mt-3 flex h-60 justify-center overflow-hidden rounded-xl items-center"
         href="#"

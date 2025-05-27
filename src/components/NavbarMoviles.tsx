@@ -36,7 +36,7 @@ const NavbarMoviles = ({
         <div className="py-2 w-full">
           <div
             className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "fisioterapia"
-              ? "bg-primary text-extraWhite p-2"
+              ? "bg-primary text-SECONDARY p-2"
               : ""
               }`}
           >
@@ -74,7 +74,7 @@ const NavbarMoviles = ({
 
         <div className="py-2 w-full">
           <div
-            className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "quiropraxia" ? "bg-primary text-extraWhite p-2" : ""
+            className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "quiropraxia" ? "bg-primary text-SECONDARY p-2" : ""
               }`}
           >
             <button
@@ -112,7 +112,7 @@ const NavbarMoviles = ({
         <div className="py-2 w-full">
           <div
             className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "praxisVertebral"
-              ? "bg-primary text-extraWhite p-2"
+              ? "bg-primary text-SECONDARY p-2"
               : ""
               }`}
           >
@@ -150,7 +150,7 @@ const NavbarMoviles = ({
 
         <div className="py-2 w-full">
           <div
-            className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "tkEmocional" ? "bg-primary text-extraWhite p-2" : ""
+            className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "tkEmocional" ? "bg-primary text-SECONDARY p-2" : ""
               }`}
           >
             <button
@@ -188,7 +188,7 @@ const NavbarMoviles = ({
         <div className="py-2 w-full">
           <div
             className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "otrosServicios"
-              ? "bg-primary text-extraWhite p-2"
+              ? "bg-primary text-SECONDARY p-2"
               : ""
               }`}
           >
@@ -220,7 +220,7 @@ const NavbarMoviles = ({
         <a
           target="_blank"
           href="https://wa.me/+5930995129878?text=¡Saludos!,%20Me%20interesa%20agendar%20una%20cita."
-          className="text-center text-extraWhite m-3 font-semibold text-lg"
+          className="text-center text-SECONDARY m-3 font-semibold text-lg"
         >
           PEDIR CITA
         </a>

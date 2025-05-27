@@ -19,13 +19,13 @@ const Footer = () => {
             >
               <img src={logo} className="h-16 me-3" alt="FlowBite Logo" />
             </a>
-            <span className="self-center text-center text-xl font-sans font-medium whitespace-nowrap text-colorText.Primary ">
+            <span className="self-center text-center text-xl font-sans font-medium whitespace-nowrap text-secondary ">
               Manos que curan con amor
             </span>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-colorText.Primary uppercase ">
+              <h2 className="mb-6 text-sm font-semibold text-secondary uppercase ">
                 CENTRO
               </h2>
               <ul className="text-colorDropdown font-medium">
@@ -45,7 +45,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-colorText.Primary uppercase">
+              <h2 className="mb-6 text-sm font-semibold text-secondary uppercase">
                 Contactanos
               </h2>
               <ul className="text-colorDropdown font-medium">
@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
           <div className="flex  items-center p-3 justify-center mt-3 md:h-11 bg-colorButton hover:bg-colorButton/95 rounded-lg md:px-5 md:py-2 cursor-pointer">
             <a
-              className="text-colorText.Primary"
+              className="text-secondary"
               target="_blank"
               href="https://wa.me/+5930995129878?text=¡Saludos!,%20Me%20interesa%20su%20servicio."
             >
@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-colorText.Primary sm:text-center dark:text-gray-400">
+          <span className="text-sm text-secondary sm:text-center dark:text-gray-400">
             © {new Date().getFullYear()}{" "}
             <a href="https://flowbite.com/" className="hover:underline">
               TERMO OASIS™
@@ -87,28 +87,28 @@ const Footer = () => {
               <SocialIcon
                 href="https://termoasis.vercel.app/"
                 title="Facebook"
-                className="text-colorText.Primary"
+                className="text-secondary"
               >
                 <FaFacebook className="text-sky-500 text-3xl" />
               </SocialIcon>
               <SocialIcon
                 href="https://www.instagram.com/termo_oasis/"
                 title="Instagram"
-                className="text-colorText.Primary"
+                className="text-secondary"
               >
                 <FaInstagram className="text-colorDropdown text-3xl" />
               </SocialIcon>
               <SocialIcon
                 href="https://www.tiktok.com/@termooasis"
                 title="TikTok"
-                className="text-colorText.Primary"
+                className="text-secondary"
               >
                 <FaTiktok className="text-black text-3xl" />
               </SocialIcon>
               <SocialIcon
                 href="https://termoasis.vercel.app/"
                 title="Whatsapp"
-                className="text-colorText.Primary"
+                className="text-secondary"
               >
                 <FaWhatsapp className="text-green-500 text-3xl" />
               </SocialIcon>
