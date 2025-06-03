@@ -1,33 +1,40 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { IMG_SERVICIES } from "@/constants/imgServicios";
 
 interface MediaService {
   src: string;
   title: string;
-  type: "image" | "video"; // Add a type to distinguish between images and videos
+  type: "image" | "video";
 }
 
 interface RandomImageProps {
-  media?: MediaService[]; // Optional array of media to override the default
-  count?: number; // Optional count to specify how many media items to display
+  count?: number;
 }
 
-const RandomImage: React.FC<RandomImageProps> = ({
-  media = IMG_SERVICIES,
-  count = 1,
-}) => {
+const RandomImage: React.FC<RandomImageProps> = ({ count = 1 }) => {
   const [randomMedia, setRandomMedia] = useState<MediaService[]>([]);
 
   useEffect(() => {
-    const getRandomMedia = (): MediaService[] => {
-      const shuffledMedia = [...media].sort(() => 0.5 - Math.random());
-      return shuffledMedia.slice(0, count); // Return the specified number of random media items
+    const fetchCloudinaryMedia = async () => {
+      try {
+        const res = await fetch("/api/cloudinary-dr");
+        if (!res.ok) return;
+        const data = await res.json();
+        // Mezcla los recursos y toma los primeros 'count'
+        const shuffled = data.sort(() => 0.5 - Math.random());
+        const selected = shuffled.slice(0, count).map((item: any) => ({
+          src: item.secure_url,
+          title: item.public_id,
+          type: item.resource_type === "video" ? "video" : "image",
+        }));
+        setRandomMedia(selected);
+      } catch (error) {
+        setRandomMedia([]);
+      }
     };
-
-    setRandomMedia(getRandomMedia());
-  }, [media, count]);
+    fetchCloudinaryMedia();
+  }, [count]);
 
   if (randomMedia.length === 0) return null;
 
