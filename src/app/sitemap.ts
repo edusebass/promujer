@@ -16,127 +16,71 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/fisioterapia/cervical",
+      url: "https://termoasis.com/ginecologia/herniasDiscales",
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/fisioterapia/hombro",
+      url: "https://termoasis.com/ginecologia/lumbalgias",
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/fisioterapia/lumbar",
+      url: "https://termoasis.com/ginecologia/cervicalgia",
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/fisioterapia/cadera",
+      url: "https://termoasis.com/ginecologia/tendinitis",
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/fisioterapia/dorsal",
+      url: "https://termoasis.com/ginecologia/hombrocongelado",
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/fisioterapia/manoycodo",
+      url: "https://termoasis.com/ginecologia/pubalgia",
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/fisioterapia/rodilla",
+      url: "https://termoasis.com/obstetricia/rectificacioncervical",
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/fisioterapia/tobilloypie",
+      url: "https://termoasis.com/obstetricia/estrechamientocanallumbar",
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/fisioterapia/cuello",
+      url: "https://termoasis.com/obstetricia/hiperlordosiscervical",
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/fisioterapia/lesiones",
+      url: "https://termoasis.com/obstetricia/hiperlordosislumbar",
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/quiropraxia/herniasDiscales",
+      url: "https://termoasis.com/obstetricia/desviacioncolumna",
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/quiropraxia/lumbalgias",
+      url: "https://termoasis.com/obstetricia/desplazamientocadera",
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/quiropraxia/cervicalgia",
+      url: "https://termoasis.com/otros/escoliosis",
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/quiropraxia/tendinitis",
+      url: "https://termoasis.com/otros/ciatalgia",
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/quiropraxia/hombrocongelado",
+      url: "https://termoasis.com/otros/nervioaciatico",
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/quiropraxia/pubalgia",
+      url: "https://termoasis.com/otros/estres",
       lastModified,
     },
     {
-      url: "https://termoasis.com/servicios/praxisvertebral/rectificacioncervical",
-      lastModified,
-    },
-    {
-      url: "https://termoasis.com/servicios/praxisvertebral/estrechamientocanallumbar",
-      lastModified,
-    },
-    {
-      url: "https://termoasis.com/servicios/praxisvertebral/hiperlordosiscervical",
-      lastModified,
-    },
-    {
-      url: "https://termoasis.com/servicios/praxisvertebral/hiperlordosislumbar",
-      lastModified,
-    },
-    {
-      url: "https://termoasis.com/servicios/praxisvertebral/desviacioncolumna",
-      lastModified,
-    },
-    {
-      url: "https://termoasis.com/servicios/praxisvertebral/desplazamientocadera",
-      lastModified,
-    },
-    {
-      url: "https://termoasis.com/servicios/tkemocional/depresioncronica",
-      lastModified,
-    },
-    {
-      url: "https://termoasis.com/servicios/tkemocional/enfermedadesautoinmunes",
-      lastModified,
-    },
-    {
-      url: "https://termoasis.com/servicios/tkemocional/insomnio",
-      lastModified,
-    },
-    {
-      url: "https://termoasis.com/servicios/tkemocional/migrana",
-      lastModified,
-    },
-    {
-      url: "https://termoasis.com/servicios/otros/escoliosis",
-      lastModified,
-    },
-    {
-      url: "https://termoasis.com/servicios/otros/ciatalgia",
-      lastModified,
-    },
-    {
-      url: "https://termoasis.com/servicios/otros/nervioaciatico",
-      lastModified,
-    },
-    {
-      url: "https://termoasis.com/servicios/otros/estres",
-      lastModified,
-    },
-    {
-      url: "https://termoasis.com/servicios/otros/crecimiento",
+      url: "https://termoasis.com/otros/crecimiento",
       lastModified,
     },
   ];

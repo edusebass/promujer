@@ -27,7 +27,7 @@ const DropdownMenu = ({ title, open, setOpen, data }: Props) => {
         <p
           onClick={() => setOpen(!open)}
           ref={mainRef}
-          className={`transition-colors duration-300 ${open ? "text-colorDropdown" : ""
+          className={`transition-colors duration-300 ${open ? "text-text-primary" : ""
             }`}
         >
           {title}

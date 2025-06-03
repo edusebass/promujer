@@ -1,4 +1,4 @@
-export const SERVICIOS_QUIROPRAXIA: any = {
+export const SERVICIOS_ginecologia: any = {
   herniasDiscales: {
     servicio: "Hernias de Disco Cervical",
     imgBanner: "https://example.com/hernias-discales-cervicales.jpg", // Reemplaza con una URL real

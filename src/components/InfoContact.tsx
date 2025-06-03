@@ -34,7 +34,7 @@ export const InfoContact = () => {
             href="https://wa.me/+5930995129878?text=¡Saludos!,%20Me%20interesa%20su%20servicio."
             className="text-gray-700 text-xs "
           >
-            Pedir cita
+            Solicitie una cita
           </a>
         </div>
       </section>

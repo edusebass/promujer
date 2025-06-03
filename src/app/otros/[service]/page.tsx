@@ -109,7 +109,7 @@ const Otros = ({ params }: { params: { service: string } }) => {
             {informacion[service].servicio}
           </h2>
           <p className="text-black text-base md:text-sm">
-            La quiropraxia y la fisioterapia ayudan a tratar enfermedades
+            La ginecologia y la fisioterapia ayudan a tratar enfermedades
             autoinmunes al mejorar la función nerviosa, reducir la inflamación,
             aliviar el dolor y aumentar la movilidad, mejorando así la calidad
             de vida del paciente.

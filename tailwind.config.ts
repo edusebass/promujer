@@ -15,14 +15,15 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#B12B72",
-        secondary: "#6BA79F",
+        secondary: "#CC2A8D",
         accent: "#D8CFEA",
+        button: "#F7F7F7",
         text: {
-          primary: "#1C1C1C",
-          secondary: "#6E6E6E",
+          primary: "white",
+          secondary: "#CC2A8D",
         },
         background: {
-          DEFAULT: "#FFFFFF",
+          DEFAULT: "#F7F7F7",
           soft: "#F9F9F9",
           border: "#E3E3E3",
         },
@@ -34,6 +35,20 @@ const config: Config = {
         xs: "1px",
       },
       backgroundImage: {},
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(8px)" }, // mueve 8px a la derecha
+        },
+        zoom: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.07)" }, // Zoom leve
+        },
+      },
+      animation: {
+        wiggle: "wiggle 1.5s ease-in-out infinite",
+        zoom: "zoom 1.5s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

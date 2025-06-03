@@ -1,138 +1,79 @@
-export const quiropraxia = [
+export const ginecologia = [
   {
-    title: "Hernias de disco cervical",
-    href: "/quiropraxia/herniasDiscales",
+    title: "Síndrome de ovario poliquístico (SOP)",
+    href: "/ginecologia/sindrome-ovario-poliquistico",
   },
   {
-    title: "Lumbalgias",
-    href: "/quiropraxia/lumbalgias",
+    title: "Endometriosis",
+    href: "/ginecologia/endometriosis",
   },
   {
-    title: "Cervicalgia",
-    href: "/quiropraxia/cervicalgia",
+    title: "Miomas uterinos",
+    href: "/ginecologia/miomas-uterinos",
   },
   {
-    title: "Tendinitis",
-    href: "/quiropraxia/tendinitis",
+    title: "Infecciones vaginales recurrentes",
+    href: "/ginecologia/infecciones-vaginales",
   },
   {
-    title: "Hombro congelado",
-    href: "/quiropraxia/hombrocongelado",
+    title: "Dolor pélvico crónico",
+    href: "/ginecologia/dolor-pelvico-cronico",
   },
   {
-    title: "Pubalgia",
-    href: "/quiropraxia/pubalgia",
-  },
-];
-
-export const praxisvertebral = [
-  {
-    title: "Rectificacion cervical",
-    href: "/praxisvertebral/rectificacioncervical",
-  },
-  {
-    title: "Estrechamiento de canal lumbar",
-    href: "/praxisvertebral/estrechamientocanallumbar",
-  },
-  {
-    title: "Hiperlordosis cervical",
-    href: "/praxisvertebral/hiperlordosiscervical",
-  },
-  {
-    title: "Hiperlordosis lumbar",
-    href: "/praxisvertebral/hiperlordosislumbar",
-  },
-  {
-    title: "Desviacion de la columna",
-    href: "/praxisvertebral/desviacioncolumna",
-  },
-  {
-    title: "Desplazamiento de cadera",
-    href: "/praxisvertebral/desplazamientocadera",
+    title: "Trastornos menstruales",
+    href: "/ginecologia/trastornos-menstruales",
   },
 ];
 
-export const tkemocional = [
+export const obstetricia = [
   {
-    title: "Depresion crónica",
-    href: "/tkemocional/depresioncronica",
+    title: "Control prenatal",
+    href: "/obstetricia/control-prenatal",
   },
   {
-    title: "Enfermedades autoinmunes",
-    href: "/tkemocional/enfermedadesautoinmunes",
+    title: "Diabetes gestacional",
+    href: "/obstetricia/diabetes-gestacional",
   },
   {
-    title: "Insomnio",
-    href: "/tkemocional/insomnio",
+    title: "Preeclampsia",
+    href: "/obstetricia/preeclampsia",
   },
   {
-    title: "Migraña",
-    href: "/tkemocional/migrana",
-  },
-];
-
-export const otro = [
-  {
-    title: "Escoliosis",
-    href: "/otros/escoliosis",
+    title: "Parto prematuro",
+    href: "/obstetricia/parto-prematuro",
   },
   {
-    title: "Ciatalgia",
-    href: "/otros/ciatalgia",
+    title: "Cesárea y recuperación",
+    href: "/obstetricia/cesarea-recuperacion",
   },
   {
-    title: "Nervio aciatico",
-    href: "/otros/nervioaciatico",
-  },
-  {
-    title: "Estres",
-    href: "/otros/estres",
-  },
-  {
-    title: "Crecimiento de niños y jovenes",
-    href: "/otros/crecimiento",
+    title: "Cuidados postparto",
+    href: "/obstetricia/cuidados-postparto",
   },
 ];
 
-export const fisioterapia = [
+export const otros = [
   {
-    title: "Cervical",
-    href: "/fisioterapia/cervical",
+    title: "Anticoncepción y planificación familiar",
+    href: "/otros/planificacion-familiar",
   },
   {
-    title: "Hombro",
-    href: "/fisioterapia/hombro",
+    title: "Menopausia y terapia hormonal",
+    href: "/otros/menopausia",
   },
   {
-    title: "Lumbar",
-    href: "/fisioterapia/lumbar",
+    title: "Cáncer ginecológico",
+    href: "/otros/cancer-ginecologico",
   },
   {
-    title: "Cadera",
-    href: "/fisioterapia/cadera",
+    title: "Salud sexual femenina",
+    href: "/otros/salud-sexual",
   },
   {
-    title: "Dorsal",
-    href: "/fisioterapia/dorsal",
-  },
-  {
-    title: "Mano y codo",
-    href: "/fisioterapia/manoycodo",
-  },
-  {
-    title: "Rodilla",
-    href: "/fisioterapia/rodilla",
-  },
-  {
-    title: "Tobillo y pie",
-    href: "/fisioterapia/tobilloypie",
-  },
-  {
-    title: "Cuello",
-    href: "/fisioterapia/cuello",
-  },
-  {
-    title: "Lesiones",
-    href: "/fisioterapia/lesiones",
+    title: "Chequeos ginecológicos anuales",
+    href: "/otros/chequeos-ginecologicos",
   },
 ];
+
+
+

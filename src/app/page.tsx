@@ -7,31 +7,31 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaCircleInfo } from "react-icons/fa6";
 
-const itemsQuiropraxia = [
+const itemsginecologia = [
   {
     icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722867647/termooasis/hernias_de_disco_cervical_bi9hkw.png",
     description: "Hernias de disco Cervical",
-    link: "/servicios/quiropraxia/herniasDiscales",
+    link: "/servicios/ginecologia/herniasDiscales",
   },
   {
     icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722867845/termooasis/lumbalgias_gycpkj.webp",
     description: "Lumbalgias",
-    link: "/servicios/quiropraxia/lumbalgias",
+    link: "/servicios/ginecologia/lumbalgias",
   },
   {
     icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722867916/termooasis/Cervicalgia_eclcvi.jpg",
     description: "Cervicalgia",
-    link: "/servicios/quiropraxia/cervicalgia",
+    link: "/servicios/ginecologia/cervicalgia",
   },
   {
     icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722867979/termooasis/Tendinitis_s0x4tb.jpg",
     description: "Tendinitis",
-    link: "/servicios/quiropraxia/tendinitis",
+    link: "/servicios/ginecologia/tendinitis",
   },
   {
     icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722868015/termooasis/homrbo_congelado_ukzr2b.jpg",
     description: "Hombro Congelado",
-    link: "/servicios/quiropraxia/hombrocongelado",
+    link: "/servicios/ginecologia/hombrocongelado",
   },
 ];
 
@@ -62,32 +62,32 @@ const itemsTPrVertebral = [
   {
     icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722864932/termooasis/Asset_111-512_dlswwc.webp",
     description: "Rectificacion Cervical",
-    link: "/servicios/praxisvertebral/rectificacioncervical",
+    link: "/servicios/obstetricia/rectificacioncervical",
   },
   {
     icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722865043/termooasis/canal_lumbar_mn55uw.png",
     description: "Estrechamiento de Canal Lumbar",
-    link: "/servicios/praxisvertebral/estrechamientocanallumbar",
+    link: "/servicios/obstetricia/estrechamientocanallumbar",
   },
   {
     icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722868180/termooasis/Hiperlordosis_lumbar_ifzqa2.jpg",
     description: "Hiperlordosis lumbar",
-    link: "/servicios/praxisvertebral/hiperlordosislumbar",
+    link: "/servicios/obstetricia/hiperlordosislumbar",
   },
   {
     icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722868253/termooasis/Hiperlordosis_cervical_skmj1z.png",
     description: "Hiperlordosis cervical",
-    link: "/servicios/praxisvertebral/hiperlordosiscervical",
+    link: "/servicios/obstetricia/hiperlordosiscervical",
   },
   {
     icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722868530/termooasis/desviacion_de_la_columna_aqudmt.jpg",
     description: "Desviacion de la columna",
-    link: "/servicios/praxisvertebral/desviacioncolumna",
+    link: "/servicios/obstetricia/desviacioncolumna",
   },
   {
     icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722868663/termooasis/Desplazamiento_de_cadera_jr1s8q.jpg",
     description: "Desplazamiento de cadera",
-    link: "/servicios/praxisvertebral/desplazamientocadera",
+    link: "/servicios/obstetricia/desplazamientocadera",
   },
 ];
 
@@ -182,7 +182,7 @@ export default function Home() {
     },
     {
       image:
-        "url(https://backbone.care/cdn/shop/articles/Quiropraxia_y_fisioterapia_1024x1024.png?v=1649423997)",
+        "url(https://backbone.care/cdn/shop/articles/ginecologia_y_fisioterapia_1024x1024.png?v=1649423997)",
       title1: "Especializados en Argentina, Alemania, Peru y Mexico",
       title2: "Fisioterapia",
     },
@@ -190,7 +190,7 @@ export default function Home() {
       image:
         "url(https://cfisiomad.org/wp-content/uploads/2022/12/iStock-1291920859-1024x683.jpg)",
       title1: "Mas de 25 años de experiencia",
-      title2: "Quiropraxia",
+      title2: "ginecologia",
     },
   ];
 
@@ -227,14 +227,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Centro de Quiropraxia Termo Oasis</title>
+        <title>PRO MUJER</title>
         <meta
           name="description"
-          content="El mejor centro de quiropraxia y fisioterapia. Especialistas en tratamientos para hernias discales, lumbalgias, cervicalgias, y más."
+          content="El mejor centro de ginecologia y fisioterapia. Especialistas en tratamientos para hernias discales, lumbalgias, cervicalgias, y más."
         />
         <meta
           name="keywords"
-          content="quiropraxia, fisioterapia, hernias discales, lumbalgias, cervicalgias"
+          content="ginecologia, fisioterapia, hernias discales, lumbalgias, cervicalgias"
         />
         <meta name="author" content="Termo Oasis" />
         <link rel="canonical" href="https://www.termooasis.com/" />
@@ -257,10 +257,10 @@ export default function Home() {
 
       <section className="flex flex-col items-center justify-center">
         <h1 className="text-4xl mt-3 md:text-6xl font-extrabold text-center md:px-16 md:mt-3">
-          Centro Terapeutico Termo Oasis
+          PRO MUJER
         </h1>
         <h2 className="text-4xl mt-3 md:text-6xl font-bold text-center md:px-16 md:mt-3">
-          Quiropraxia, Fisioterapia, Praxis Vertebral y TK Emocional
+          GINECOLOGIA & OBSTETRICIA
         </h2>
       </section>
 
@@ -274,12 +274,12 @@ export default function Home() {
 
       {/* Servicios */}
       <section className="flex flex-col text-center">
-        <h2 className="text-2xl mt-6">Servicios de QUIROPRAXIA</h2>
+        <h2 className="text-2xl mt-6">Servicios de ginecologia</h2>
         <p className="my-3 mx-10">
-          La quiropraxia alinea la columna para aliviar dolores y mejorar tu
+          La ginecologia alinea la columna para aliviar dolores y mejorar tu
           bienestar. Descubre sus beneficios y cómo puede transformar tu vida.
         </p>
-        <GridServicios items={itemsQuiropraxia} />
+        <GridServicios items={itemsginecologia} />
         <RandomImage count={4} />
 
         <h2 className="text-2xl mt-6">Servicios de PRAXIS VERTEBRAL</h2>
@@ -348,7 +348,7 @@ export default function Home() {
           Nuestro equipo de especialistas
         </h3>
         <p className="text-black mb-6">
-          Nuestros expertos en quiropraxia praxista y fisioterapia emplearán
+          Nuestros expertos en ginecologia praxista y fisioterapia emplearán
           diversos tipos de tratamientos para lograr la readaptación,
           rehabilitación muscular y articular de cualquier patología.
         </p>
@@ -365,7 +365,7 @@ export default function Home() {
               Dr. Quiropracta Oswaldo Aviles
             </h5>
             <p className="mb-4 text-base  text-primary/80">
-              * Con más de 23 años de experiencia en quiropraxia y en todas las
+              * Con más de 23 años de experiencia en ginecologia y en todas las
               patologias. <br />* Formacion en el instituto nacional Nuevo
               Amanecer de Lima, Perú. <br /> * Además, cuentan con una
               preparación académica de dos años en Lima, Perú, por la
@@ -425,13 +425,13 @@ export default function Home() {
       {/* Entrevista experiencias */}
       <ExperienciasEntrevistas />
 
-      {/* Opiniones google */}
+      {/* Opiniones google
       <section className="flex">
         <div
           className="elfsight-app-6887b6eb-7864-4a58-9b8b-34a7ad28cfe1"
           data-elfsight-app-lazy
         ></div>
-      </section>
+      </section> */}
 
       {/* Historia */}
     </>

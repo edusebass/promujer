@@ -4,7 +4,7 @@ import { InfoContact } from "@/components/InfoContact";
 import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
 import Image from "next/image";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { SERVICIOS_QUIROPRAXIA as informacion } from "@/constants/servicios_descrip";
+import { SERVICIOS_ginecologia as informacion } from "@/constants/servicios_descrip";
 import AccordionItem from "@/components/AccordionItem";
 import { Metadata } from "next";
 import AccordionComponent from "@/components/AccordionComponent";
@@ -20,13 +20,13 @@ export async function generateMetadata({
   return {
     title,
     description:
-      "Servicios de quiropraxia profesional para el tratamiento de hernias discales, lumbalgias, cervicalgias y otros problemas musculoesqueléticos. Alivia el dolor y mejora tu calidad de vida con nuestros tratamientos quiroprácticos en Termo Oasis.",
+      "Servicios de ginecologia profesional para el tratamiento de hernias discales, lumbalgias, cervicalgias y otros problemas musculoesqueléticos. Alivia el dolor y mejora tu calidad de vida con nuestros tratamientos quiroprácticos en Termo Oasis.",
     icons:
       "https://res.cloudinary.com/ds41xxspf/image/upload/v1721864671/termoasis/WhatsApp_Image_2024-07-23_at_13.47.22-removebg-preview_2_1_1_mgqds4.png",
   };
 }
 
-const Quiropraxia = ({ params }: { params: { service: string } }) => {
+const ginecologia = ({ params }: { params: { service: string } }) => {
   const { service } = params;
   console.log(informacion[service].urlVideo);
   return (
@@ -107,7 +107,7 @@ const Quiropraxia = ({ params }: { params: { service: string } }) => {
             {informacion[service].servicio}
           </h2>
           <p className="text-black text-base md:text-sm">
-            La quiropraxia y la fisioterapia ayudan a tratar enfermedades
+            La ginecologia y la fisioterapia ayudan a tratar enfermedades
             autoinmunes al mejorar la función nerviosa, reducir la inflamación,
             aliviar el dolor y aumentar la movilidad, mejorando así la calidad
             de vida del paciente.
@@ -118,4 +118,4 @@ const Quiropraxia = ({ params }: { params: { service: string } }) => {
   );
 };
 
-export default Quiropraxia;
+export default ginecologia;
