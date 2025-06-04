@@ -59,7 +59,7 @@ const NavbarMoviles = ({
 
         <div className="py-2 w-full">
           <div
-            className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "ginecologia" ? "bg-primary text-SECONDARY p-2" : ""
+            className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "ginecologia" ? "bg-primary/5 text-SECONDARY p-2" : ""
               }`}
           >
             <button
@@ -97,7 +97,7 @@ const NavbarMoviles = ({
         <div className="py-2 w-full">
           <div
             className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "obstetricia"
-              ? "bg-primary text-SECONDARY p-2"
+              ? "bg-primary/5 text-SECONDARY p-2"
               : ""
               }`}
           >
@@ -135,8 +135,8 @@ const NavbarMoviles = ({
 
         <div className="py-2 w-full">
           <div
-            className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "obstetricia"
-              ? "bg-primary text-SECONDARY p-2"
+            className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "otros"
+              ? "bg-primary/5 text-SECONDARY p-2"
               : ""
               }`}
           >

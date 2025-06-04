@@ -26,7 +26,6 @@ export async function GET() {
 
     // Combina ambos arrays
     const resources = [...images.resources, ...videos.resources];
-    console.log(resources)
 
     return NextResponse.json(resources);
   } catch (err: any) {
