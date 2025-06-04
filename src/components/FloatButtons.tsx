@@ -1,9 +1,51 @@
+"use client";
 import { Fab } from "@mui/material";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const FloatButtons = () => {
+  const [offset, setOffset] = useState(0);
+  const scrollTimeout = useRef<NodeJS.Timeout | null>(null);
+  const lastScroll = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+      const diff = currentScroll - lastScroll.current;
+
+      // Si sube la pantalla (scroll hacia arriba), botones abajo (visibles)
+      if (diff < 0) {
+        setOffset(300);
+        // Limpia el timeout para que no suban mientras subes
+        if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
+        scrollTimeout.current = setTimeout(() => {
+          setOffset(0);
+        }, 300);
+      }
+
+      // Si baja la pantalla (scroll hacia abajo), botones suben (ocultos)
+      if (diff > 0) {
+        setOffset(-800); // Ajusta este valor según el alto de tus botones
+        // Cuando paras de scrollear, después de 300ms, bajan (rebote)
+        if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
+        scrollTimeout.current = setTimeout(() => {
+          setOffset(0);
+        }, 500);
+      }
+
+      lastScroll.current = currentScroll;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="fixed bottom-4 left-4 flex flex-col gap-4 z-50">
+    <div
+      className="fixed bottom-4 left-4 flex flex-col gap-1 z-50 transition-transform duration-300"
+      style={{
+        transform: `translateY(${offset}px)`,
+      }}
+    >
       <a
         href="https://maps.app.goo.gl/DFFTRT7eG9E7xFNL7"
         target="_blank"
