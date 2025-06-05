@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export const SERVICIOS_ginecologia: any = {
   herniasDiscales: {
     servicio: "Hernias de Disco Cervical",

@@ -28,8 +28,12 @@ export async function GET() {
     const resources = [...images.resources, ...videos.resources];
 
     return NextResponse.json(resources);
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error("Cloudinary error:", err);
-    return NextResponse.json({ error: err.message }, { status: 500 });
+    const message =
+      typeof err === "object" && err !== null && "message" in err
+        ? (err as { message: string }).message
+        : "Error desconocido";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }

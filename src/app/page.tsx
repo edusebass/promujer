@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import ExperienciasEntrevistas from "@/components/ExperienciasEntrevistas";
 import GridServicios from "@/components/GridServicios";
@@ -45,7 +46,7 @@ export default function Home() {
       }, 1000);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [imagesAndTitles.length]);
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -213,7 +214,7 @@ export default function Home() {
           />
           <Image
             src={
-              "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722310417/Portfolio/instalaciones_termosoasis_3_pa6szh.jpg"
+              "https://res.cloudinary.com/dwowtb0ya/image/upload_v1722310417/Portfolio/instalaciones_termosoasis_3_pa6szh.jpg"
             }
             alt="Centro Quiropractico y Praxista Termo Oasis"
             width={300}

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useRef } from "react";
 import CustomLink from "./CustomLink";
 import { RiArrowDownDoubleLine } from "react-icons/ri";

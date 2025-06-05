@@ -1,12 +1,14 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { BsFillCartFill } from "react-icons/bs";
-import { SlDocs } from "react-icons/sl";
+import Image from "next/image"; // Importa Image de Next.js
+
 interface ProductCardProps {
   img: string;
   nombre: string;
   informacion: string;
 }
+
 const ProductCard = ({ img, nombre, informacion }: ProductCardProps) => {
   return (
     <div className="relative flex justify-center w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-colorTextSecondary shadow-md">
@@ -14,10 +16,12 @@ const ProductCard = ({ img, nombre, informacion }: ProductCardProps) => {
         className="relative mx-3 mt-3 flex h-60 justify-center overflow-hidden rounded-xl items-center"
         href="#"
       >
-        <img
+        <Image
           className="object-cover items-center justify-center"
           src={img}
           alt="product image"
+          width={240}
+          height={240}
         />
         <span className="absolute top-0 left-0 m-2 rounded-full bg-black px-2 text-center text-sm font-medium text-colorText.Primary">
           39% OFF
@@ -49,13 +53,6 @@ const ProductCard = ({ img, nombre, informacion }: ProductCardProps) => {
             <BsFillCartFill className="mr-2 h-6 w-6" />
             Cotizar
           </a>
-          {/* <a
-            href="#"
-            className="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-colorText.Primary hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
-          >
-            <SlDocs className="mr-2 h-6 w-6" />
-            Ver mas
-          </a> */}
         </div>
       </div>
     </div>

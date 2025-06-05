@@ -1,4 +1,4 @@
-import Layout from "@/components/Layout";
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from "react";
 import { InfoContact } from "@/components/InfoContact";
 import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
@@ -6,15 +6,17 @@ import Image from "next/image";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { SERVICIOS_ginecologia as informacion } from "@/constants/servicios_descrip";
 import AccordionItem from "@/components/AccordionItem";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import AccordionComponent from "@/components/AccordionComponent";
 import RandomImage from "@/components/RandomImage";
 
+type PageProps = {
+  params: { service: string };
+};
+
 export async function generateMetadata({
   params,
-}: {
-  params: { service: string };
-}): Promise<Metadata> {
+}: PageProps): Promise<Metadata> {
   const { service } = params;
   const title = `${informacion[service].servicio}`;
   return {
@@ -26,7 +28,7 @@ export async function generateMetadata({
   };
 }
 
-const ginecologia = ({ params }: { params: { service: string } }) => {
+const GinecologiaPage = ({ params }: PageProps) => {
   const { service } = params;
   console.log(informacion[service].urlVideo);
   return (
@@ -118,4 +120,4 @@ const ginecologia = ({ params }: { params: { service: string } }) => {
   );
 };
 
-export default ginecologia;
+export default GinecologiaPage;

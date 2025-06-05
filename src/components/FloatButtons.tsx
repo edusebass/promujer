@@ -1,6 +1,7 @@
 "use client";
 import { Fab } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 const FloatButtons = () => {
   const [offset, setOffset] = useState(0);
@@ -52,20 +53,22 @@ const FloatButtons = () => {
         rel="noopener noreferrer"
       >
         <Fab color="primary" className="bg-white hover:bg-secondary">
-          <img
+          <Image
             src="/maps.png"
             alt="Google Maps"
-            className="w-8 h-8"
+            width={32}
+            height={32}
             draggable={false}
           />
         </Fab>
       </a>
       <a href="tel:+5930995129878">
         <Fab color="primary" className="bg-white hover:bg-secondary">
-          <img
+          <Image
             src="/phone.png"
             alt="Llamar"
-            className="w-8 h-8"
+            width={32}
+            height={32}
             draggable={false}
           />
         </Fab>
@@ -77,10 +80,11 @@ const FloatButtons = () => {
         className="no-underline"
       >
         <div className="flex items-center gap-2 bg-white hover:bg-secondary rounded-full shadow-md px-4 py-2 transition-colors">
-          <img
+          <Image
             src="/whatsapp.png"
             alt="WhatsApp"
-            className="w-8 h-8"
+            width={32}
+            height={32}
             draggable={false}
           />
           <span className="font-semibold text-green-700 text-base whitespace-nowrap">
