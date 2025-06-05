@@ -1,4 +1,12 @@
-export const SERVICIOS_GINECOLOGIA: any = {
+export interface ServicioDescripcion {
+  servicio: string;
+  imgBanner: string;
+  questions: { question: string; answer: string }[];
+  urlVideo: string;
+}
+
+// Ginecología
+export const SERVICIOS_GINECOLOGIA: Record<string, ServicioDescripcion> = {
   "sindrome-ovario-poliquistico": {
     servicio: "Síndrome de ovario poliquístico (SOP)",
     imgBanner: "https://static.vecteezy.com/system/resources/previews/010/328/397/non_2x/polycystic-ovary-syndrome-endocrinology-color-icon-illustration-vector.jpg",
@@ -115,7 +123,8 @@ export const SERVICIOS_GINECOLOGIA: any = {
   },
 };
 
-export const SERVICIOS_OBSTETRICIA: any = {
+// Obstetricia
+export const SERVICIOS_OBSTETRICIA: Record<string, ServicioDescripcion> = {
   "control-prenatal": {
     servicio: "Control prenatal",
     imgBanner: "https://cdn-icons-png.flaticon.com/512/8123/8123645.png",
@@ -232,7 +241,8 @@ export const SERVICIOS_OBSTETRICIA: any = {
   },
 };
 
-export const SERVICIOS_OTROS: any = {
+// Otros
+export const SERVICIOS_OTROS: Record<string, ServicioDescripcion> = {
   "planificacion-familiar": {
     servicio: "Anticoncepción y planificación familiar",
     imgBanner: "https://static.vecteezy.com/system/resources/previews/033/062/441/non_2x/postpartum-care-gynecologist-color-icon-illustration-vector.jpg",
