@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaCircleInfo } from "react-icons/fa6";
 import { ginecologia, obstetricia, otros } from "@/constants/servicios_lista";
+import PerfilComponent from "@/components/PerfilComponent";
 
 export default function Home() {
   const imagesAndTitles = [
@@ -92,9 +93,9 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col items-center justify-center">
-        <h1 className="text-4xl mt-3 md:text-6xl font-extrabold text-center md:px-16 md:mt-3">
+        {/* <h1 className="text-4xl mt-3 md:text-6xl font-extrabold text-center md:px-16 md:mt-3">
           PRO MUJER
-        </h1>
+        </h1> */}
         <h2 className="text-4xl mt-3 md:text-6xl font-bold text-center md:px-16 md:mt-3">
           GINECOLOGIA & OBSTETRICIA
         </h2>
@@ -111,10 +112,7 @@ export default function Home() {
       {/* Servicios */}
       <section className="flex flex-col text-center">
         <h2 className="text-2xl mt-6">Servicios de ginecologia</h2>
-        <p className="my-3 mx-10">
-          La ginecologia alinea la columna para aliviar dolores y mejorar tu
-          bienestar. Descubre sus beneficios y cómo puede transformar tu vida.
-        </p>
+
         <GridServicios
           items={ginecologia.map(({ title, href, descripcion, icon }) => ({
             title,
@@ -178,44 +176,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Personal */}
-      <section className="mx-14 my-14 flex flex-col items-center justify-center">
-        <h3 className="text-center font-semibold text-5xl mb-3">
-          Nuestro equipo de especialistas
-        </h3>
-        <p className="text-black mb-6">
-          Nuestros expertos en ginecologia praxista y fisioterapia emplearán
-          diversos tipos de tratamientos para lograr la readaptación,
-          rehabilitación muscular y articular de cualquier patología.
-        </p>
-        <div className="flex flex-col justify-center items-center rounded-lg bg-colorTextSecondary  md:max-w-3xl md:flex-row">
-          <Image
-            className="h-full w-full rounded-t-lg object-cover md:h-auto md:w-72 md:!rounded-none md:!rounded-s-lg"
-            src="https://res.cloudinary.com/dwowtb0ya/image/upload/v1722910354/termooasis/servicios%20y%20personal/oswaldo_aviles_cuerpo_completo_rqiztw.png"
-            alt="Fisioterapeuta Oswaldo Aviles"
-            width={700}
-            height={500}
-          />
-          <div className="flex flex-col justify-center p-6">
-            <h5 className="mb-2 text-2xl font-bold text-primary">
-              Dr. Quiropracta Oswaldo Aviles
-            </h5>
-            <p className="mb-4 text-base  text-primary/80">
-              * Con más de 23 años de experiencia en ginecologia y en todas las
-              patologias. <br />* Formacion en el instituto nacional Nuevo
-              Amanecer de Lima, Perú. <br /> * Además, cuentan con una
-              preparación académica de dos años en Lima, Perú, por la
-              Universidad San Marcos.
-              <br />* Especializacion en Alemania
-              <br />* Especializacion en Mexico
-              <br />* Especializacion en Argentina
-            </p>
-          </div>
-        </div>
-      </section>
+      <PerfilComponent />
 
       {/* Instalaciones */}
-      <section className="flex flex-col md:flex-row-reverse md:items-center md:space-x-4 p-4 ">
+      {/* <section className="flex flex-col md:flex-row-reverse md:items-center md:space-x-4 p-4 ">
         <div className="flex flex-col gap-4 md:w-1/2 mt-4 md:mt-0 md:pl-10 ">
           <Image
             alt="Icono fisioterapia"
@@ -256,9 +220,9 @@ export default function Home() {
             height={500}
           />
         </div>
-      </section>
+      </section> */}
 
-      <ExperienciasEntrevistas />
+      {/* <ExperienciasEntrevistas /> */}
 
     </>
   );
