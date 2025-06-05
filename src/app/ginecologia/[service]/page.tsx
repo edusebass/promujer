@@ -9,11 +9,13 @@ import { Metadata } from "next";
 import RandomImage from "@/components/RandomImage";
 import BannerDoctor from "@/components/BannerDoctor";
 
+type PageProps = {
+  params: { service: string };
+};
+
 export async function generateMetadata({
   params,
-}: {
-  params: { service: string };
-}): Promise<Metadata> {
+}: PageProps): Promise<Metadata> {
   const { service } = params;
   const title = `${informacion[service].servicio}`;
   return {
@@ -22,7 +24,7 @@ export async function generateMetadata({
       "https://res.cloudinary.com/ds41xxspf/image/upload/v1721864671/termoasis/WhatsApp_Image_2024-07-23_at_13.47.22-removebg-preview_2_1_1_mgqds4.png",
   };
 }
-const Ginecologia = ({ params }: { params: { service: string } }) => {
+const Ginecologia = ({ params }: PageProps) => {
   const { service } = params;
 
   return (
@@ -61,7 +63,6 @@ const Ginecologia = ({ params }: { params: { service: string } }) => {
       </section>
 
       <BannerDoctor servicio={informacion[service].servicio} />
-
 
       <section className="flex flex-col-reverse md:flex-row md:px-16 md:my-1 md:items-center md:space-x-4 p-4">
         <div className="md:w-1/2">
