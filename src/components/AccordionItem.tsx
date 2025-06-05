@@ -1,11 +1,13 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
-import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
+import { AccordionItem as Item, AccordionItemProps } from "@szhsin/react-accordion";
 import Image from "next/image";
 import chevron from "../../public/chevron-down.svg";
 
-const AccordionItem = ({ header, ...rest }: any) => (
+interface CustomAccordionItemProps extends Omit<AccordionItemProps, "header"> {
+  header: React.ReactNode;
+}
+
+const AccordionItem = ({ header, ...rest }: CustomAccordionItemProps) => (
   <Item
     {...rest}
     header={({ state: { isEnter } }) => (

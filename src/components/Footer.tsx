@@ -1,12 +1,7 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import React from "react";
-import Image from "next/image";
-import CustomLink from "./CustomLink";
-import SocialIcon from "./SocialIcon";
-import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
-const logo =
-  "https://res.cloudinary.com/ds41xxspf/image/upload/v1721959811/horizontal_n3nhyy.png";
+import React from "react";
+import { FaFacebook, FaInstagram, FaTiktok, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+
 
 const Footer = () => {
   return (

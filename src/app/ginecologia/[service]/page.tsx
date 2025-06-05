@@ -1,21 +1,16 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import { InfoContact } from "@/components/InfoContact";
 import AccordionComponent from "@/components/AccordionComponent";
-import Image from "next/image";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { SERVICIOS_GINECOLOGIA as informacion } from "@/constants/servicios_descrip";
 import type { Metadata } from "next";
 import RandomImage from "@/components/RandomImage";
 import BannerDoctor from "@/components/BannerDoctor";
 
-type PageProps = {
-  params: { service: string };
-};
 
-export async function generateMetadata({
-  params,
-}: PageProps): Promise<Metadata> {
+
+export async function generateMetadata({ params }: any): Promise<Metadata> {
   const { service } = params;
   const title = `${informacion[service].servicio}`;
   return {
@@ -25,7 +20,7 @@ export async function generateMetadata({
   };
 }
 
-const Ginecologia = ({ params }: PageProps) => {
+const Ginecologia = ({ params }: any) => {
   const { service } = params;
 
   return (

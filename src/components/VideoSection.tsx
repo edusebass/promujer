@@ -1,7 +1,11 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 
-const VideoSection = ({ title, videoSrc }: any) => {
+interface VideoSectionProps {
+  title: string;
+  videoSrc: string;
+}
+
+const VideoSection = ({ title, videoSrc }: VideoSectionProps) => {
   return (
     <div className="flex flex-col">
       <p className="bg-colorButton text-SECONDARY p-4">{title}</p>

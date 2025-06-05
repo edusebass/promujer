@@ -1,19 +1,14 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import { InfoContact } from "@/components/InfoContact";
 import AccordionComponent from "@/components/AccordionComponent";
-import Image from "next/image";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { SERVICIOS_OBSTETRICIA as informacion } from "@/constants/servicios_descrip";
 import { Metadata } from "next";
 import RandomImage from "@/components/RandomImage";
 import BannerDoctor from "@/components/BannerDoctor";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { service: string };
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: any): Promise<Metadata> {
   const { service } = params;
   const title = `${informacion[service].servicio}`;
   return {
@@ -22,8 +17,9 @@ export async function generateMetadata({
       "https://res.cloudinary.com/ds41xxspf/image/upload/v1721864671/termoasis/WhatsApp_Image_2024-07-23_at_13.47.22-removebg-preview_2_1_1_mgqds4.png",
   };
 }
-const Obstetricia = ({ params }: { params: { service: string } }) => {
+const Obstetricia = ({ params }: any) => {
   const { service } = params;
+
 
   return (
     <>

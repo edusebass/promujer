@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState } from "react";
 type Image = {
   image: string;
@@ -28,7 +27,7 @@ const ImageSlider = ({ images }: ImageSliderProps) => {
 
   return (
     <div
-      className={`relative flex items-start justify-center w-96 h-96 bg-cover bg-center fade-enter fade-enter-active`}
+      className={`relative flex items-start justify-center w-96 h-96 bg-cover bg-center ${fadeClass}`}
       style={{ backgroundImage: currentImage.image }}
     >
       <div className="absolute inset-0 "></div>

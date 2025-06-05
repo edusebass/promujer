@@ -1,7 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import Image from "next/image";
 import Link from "next/link";
-import { ReactElement } from "react";
 
 type Item = {
   icon: string;

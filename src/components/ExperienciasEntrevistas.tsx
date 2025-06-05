@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import React from "react";
 import TikTokEmbed from "./TikTokEmbed";
 import InstagramEmbed from "./InstagramEmbed";
@@ -7,7 +7,6 @@ import SocialIcon from "./SocialIcon";
 import {
   FaInstagram,
   FaTiktok,
-  FaWhatsapp,
   FaWhatsappSquare,
 } from "react-icons/fa";
 const ExperienciasEntrevistas = () => {

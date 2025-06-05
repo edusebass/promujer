@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 "use client";
 import React, { useState } from "react";
 import CustomLink from "./CustomLink";
@@ -14,9 +14,6 @@ import NavbarMoviles from "./NavbarMoviles";
 const Navbar = () => {
   const [isginecologiaOpen, setIsginecologiaOpen] = useState(false);
   const [isobstetriciaOpen, setIsobstetriciaOpen] = useState(false);
-  const [isTkEmocionalOpen, setIsTkEmocionalOpen] = useState(false);
-  const [isOtrosServiciosOpen, setIsOtrosServiciosOpen] = useState(false);
-  const [isFisioterapiaOpen, setIsFisioterapiaOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleMouseEnter = (
@@ -31,8 +28,6 @@ const Navbar = () => {
     setOpen(false);
   };
 
-  const logo =
-    "https://res.cloudinary.com/ds41xxspf/image/upload/v1721864671/termoasis/WhatsApp_Image_2024-07-23_at_13.47.22-removebg-preview_2_2_vng5mp.png";
 
   const logoNavbar =
     "/logo.jpg";

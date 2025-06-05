@@ -1,10 +1,7 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
-import ExperienciasEntrevistas from "@/components/ExperienciasEntrevistas";
 import GridServicios from "@/components/GridServicios";
 import RandomImage from "@/components/RandomImage";
 import Head from "next/head";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaCircleInfo } from "react-icons/fa6";
 import { ginecologia, obstetricia, otros } from "@/constants/servicios_lista";
@@ -33,16 +30,13 @@ export default function Home() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [fadeClass, setFadeClass] = useState("fade-enter");
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setFadeClass("fade-exit");
       setTimeout(() => {
         setCurrentIndex(
           (prevIndex) => (prevIndex + 1) % imagesAndTitles.length
         );
-        setFadeClass("fade-enter");
       }, 1000);
     }, 5000);
     return () => clearInterval(interval);
@@ -115,7 +109,7 @@ export default function Home() {
         <h2 className="text-2xl mt-6">Servicios de ginecologia</h2>
 
         <GridServicios
-          items={ginecologia.map(({ title, href, descripcion, icon }) => ({
+          items={ginecologia.map(({ title, href, icon }) => ({
             title,
             link: href,
             description: title,
@@ -126,7 +120,7 @@ export default function Home() {
 
         <h2 className="text-2xl mt-6">Servicios de obstetricia</h2>
         <GridServicios
-          items={obstetricia.map(({ title, href, descripcion, icon }) => ({
+          items={obstetricia.map(({ title, href, icon }) => ({
             title,
             link: href,
             description: title,
@@ -137,7 +131,7 @@ export default function Home() {
 
         <h2 className="text-2xl mt-6">OTROS SERVICIOS</h2>
         <GridServicios
-          items={otros.map(({ title, href, descripcion, icon }) => ({
+          items={otros.map(({ title, href, icon }) => ({
             title,
             link: href,
             description: title,
@@ -145,7 +139,6 @@ export default function Home() {
           }))}
         />
         <RandomImage count={4} />
-
 
         <RandomImage count={4} />
       </section>
@@ -166,7 +159,7 @@ export default function Home() {
         </div>
         <div className="md:w-1/2">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2547.0122069503054!2d-78.54958674413513!3d-0.2797872801011895!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59976e8b0a6b5%3A0xb9e333dbdad9a81d!2sTermo%20Oasis%20Centro%20Terap%C3%A9utico!5e0!3m2!1sen!2sec!4v1722607762487!5m2!1sen!2sec"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2547.0122069503054!2d-78.54958674413513!3d-0.2797872801011895!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59976e8b0a6b5%3A0xb9e333dbdad9a81d!2sTermo%20Oasis%20Centro%20Terap%C3%A9utico!5e0!3m2!1sen!2ec!4v1722607762487!5m2!1sen!2ec"
             width="100%"
             height="450"
             style={{ border: 0 }}
@@ -224,7 +217,6 @@ export default function Home() {
       </section> */}
 
       {/* <ExperienciasEntrevistas /> */}
-
     </>
   );
 }

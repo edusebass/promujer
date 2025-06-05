@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
@@ -8,6 +6,12 @@ interface MediaService {
   src: string;
   title: string;
   type: "image" | "video";
+}
+
+interface CloudinaryResource {
+  secure_url: string;
+  public_id: string;
+  resource_type: string;
 }
 
 interface RandomImageProps {
@@ -22,16 +26,16 @@ const RandomImage: React.FC<RandomImageProps> = ({ count = 1 }) => {
       try {
         const res = await fetch("/api/cloudinary-dr");
         if (!res.ok) return;
-        const data = await res.json();
+        const data: CloudinaryResource[] = await res.json();
         // Mezcla los recursos y toma los primeros 'count'
         const shuffled = data.sort(() => 0.5 - Math.random());
-        const selected = shuffled.slice(0, count).map((item: any) => ({
+        const selected = shuffled.slice(0, count).map((item) => ({
           src: item.secure_url,
           title: item.public_id,
-          type: item.resource_type === "video" ? "video" : "image",
+          type: item.resource_type === "video" ? "video" : "image" as "image" | "video",
         }));
         setRandomMedia(selected);
-      } catch (error) {
+      } catch {
         setRandomMedia([]);
       }
     };

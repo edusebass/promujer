@@ -1,13 +1,17 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useRef } from "react";
 import CustomLink from "./CustomLink";
 import { RiArrowDownDoubleLine } from "react-icons/ri";
+
+interface DropdownItem {
+  href: string;
+  title: string;
+}
 
 interface Props {
   title: string;
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  data: any;
+  data: DropdownItem[];
 }
 
 const DropdownMenu = ({ title, open, setOpen, data }: Props) => {
@@ -46,16 +50,14 @@ const DropdownMenu = ({ title, open, setOpen, data }: Props) => {
           ref={dropdownRef}
           onClick={() => setOpen(false)}
         >
-          {data.map((item: any, key: number) => (
-            <>
-              <CustomLink
-                href={item.href}
-                title={item.title}
-                key={key}
-                className="border-b border-white"
-                classNameText="text-colorText.Primary hover:text-black"
-              />
-            </>
+          {data.map((item, key) => (
+            <CustomLink
+              href={item.href}
+              title={item.title}
+              key={key}
+              className="border-b border-white"
+              classNameText="text-colorText.Primary hover:text-black"
+            />
           ))}
         </div>
       )}
