@@ -54,7 +54,7 @@ const UpperNavbar = () => {
       {/* Botón solo en desktop */}
       <div className="w-full flex flex-col-reverse justify-center items-center gap-5">
         <a
-          href={`https://wa.me/+5930995129878?text=¡Saludos!,%20Me%20interesa%20su%20servicio.`}
+          href={`https://wa.me/+5930969618902?text=¡Saludos!,%20Me%20interesa%20su%20servicio.`}
           target="_BLANK"
           className="hidden md:block bg-colorButton py-3 px-7 rounded-xl font-bold text-colorText.Primary cursor-pointer transition duration-500 ease-in-out hover:bg-colorButton/90 hover:text-colorText.Primary/90 uppercase italic animate-pulse"
         >

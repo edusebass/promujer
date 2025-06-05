@@ -46,7 +46,7 @@ const ProductCard = ({ img, nombre, informacion }: ProductCardProps) => {
         <p className="mb-5">{informacion}</p>
         <div className="flex justify-center gap-4">
           <a
-            href={`https://wa.me/+5930995129878?text=¡Saludos!,%20Me%20interesa%20el%20producto%20${nombre}`}
+            href={`https://wa.me/+5930969618902?text=¡Saludos!,%20Me%20interesa%20el%20producto%20${nombre}`}
             target="_blank"
             className="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-colorText.Primary hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
           >

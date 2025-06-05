@@ -74,7 +74,7 @@ const ExperienciasEntrevistas = () => {
           <FaTiktok className="text-black" />
         </SocialIcon>
         <SocialIcon
-          href="https://wa.me/+5930995129878?text=¡Saludos!,%20Me%20interesa%20su%20servicio."
+          href="https://wa.me/+5930969618902?text=¡Saludos!,%20Me%20interesa%20su%20servicio."
           title="Whatsapp"
         >
           <FaWhatsappSquare className="text-green-500" />

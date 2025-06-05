@@ -12,10 +12,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://termoasis.com"),
   title: {
     default: "Termo Oasis ",
-    template: "%s - Termo Oasis | ginecologia, Fisioterapia, Praxis Vertebral",
+    template: "%s - Termo Oasis | ginecologia, Ginecologia, Praxis Vertebral",
   },
   description:
-    "Termo Oasis ofrece tratamientos especializados en ginecologia, Fisioterapia, y Praxis Vertebral para aliviar cualquier tipo de dolor. Contamos con expertos en cuidados de espalda, cuello, y más.",
+    "Termo Oasis ofrece tratamientos especializados en ginecologia, Ginecologia, y Praxis Vertebral para aliviar cualquier tipo de dolor. Contamos con expertos en cuidados de espalda, cuello, y más.",
 
   icons:
     "https://res.cloudinary.com/ds41xxspf/image/upload/v1721864671/termoasis/WhatsApp_Image_2024-07-23_at_13.47.22-removebg-preview_2_1_1_mgqds4.png",
@@ -23,22 +23,22 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@TermoOasis",
-    title: "Termo Oasis | ginecologia, Fisioterapia, Praxis Vertebral",
+    title: "Termo Oasis | ginecologia, Ginecologia, Praxis Vertebral",
     description:
-      "Descubre cómo nuestros tratamientos en ginecologia, Fisioterapia y Praxis Vertebral pueden mejorar tu calidad de vida.",
+      "Descubre cómo nuestros tratamientos en ginecologia, Ginecologia y Praxis Vertebral pueden mejorar tu calidad de vida.",
   },
   openGraph: {
     type: "website",
     url: "https://termoasis.com",
-    title: "Termo Oasis | ginecologia, Fisioterapia, Praxis Vertebral",
+    title: "Termo Oasis | ginecologia, Ginecologia, Praxis Vertebral",
     description:
-      "Especialistas en ginecologia, Fisioterapia y Praxis Vertebral para tratar dolores de espalda, cuello, y más.",
+      "Especialistas en ginecologia, Ginecologia y Praxis Vertebral para tratar dolores de espalda, cuello, y más.",
     images: [
       {
         url: "opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Termo Oasis - Tratamientos de ginecologia y Fisioterapia",
+        alt: "Termo Oasis - Tratamientos de ginecologia y Ginecologia",
       },
     ],
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   keywords: [
     "Termo Oasis",
     "termoasis",
-    "Fisioterapia",
+    "Ginecologia",
     "ginecologia",
     "dolores de espalda",
     "cuidado de lesiones",

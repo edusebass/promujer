@@ -24,7 +24,7 @@ const AccordionItem = ({ header, ...rest }: any) => (
     className="border-b  w-full"
     buttonProps={{
       className: ({ isEnter }) =>
-        `flex w-full p-4 text-left hover:bg-primary hover:text-colorText.Primary ${isEnter ? "bg-secondary" : ""
+        `flex w-full p-4 text-left  hover:bg-primary hover:text-white ${isEnter ? "bg-secondary text-white" : ""
         }`,
     }}
     contentProps={{

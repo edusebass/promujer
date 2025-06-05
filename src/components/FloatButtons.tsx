@@ -62,7 +62,7 @@ const FloatButtons = () => {
           />
         </Fab>
       </a>
-      <a href="tel:+5930995129878">
+      <a href="tel:+5930969618902">
         <Fab color="primary" className="bg-white hover:bg-secondary">
           <Image
             src="/phone.png"
@@ -74,7 +74,7 @@ const FloatButtons = () => {
         </Fab>
       </a>
       <a
-        href="https://wa.me/+5930995129878?text=¡Saludos!,%20Me%20interesa%20su%20servicio."
+        href="https://wa.me/+5930969618902?text=¡Saludos!,%20Me%20interesa%20su%20servicio."
         target="_blank"
         rel="noopener noreferrer"
         className="no-underline"

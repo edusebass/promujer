@@ -95,7 +95,7 @@ const Navbar = () => {
           <p className=" text-sm font-semibold text-SECONDARY px-2">
             <a
               target="_blank"
-              href="https://wa.me/+5930995129878?text=¡Saludos!,%20Me%20interesa%20agendar%20una%20cita."
+              href="https://wa.me/+5930969618902?text=¡Saludos!,%20Me%20interesa%20agendar%20una%20cita."
             >
               Solicite una cita
             </a>

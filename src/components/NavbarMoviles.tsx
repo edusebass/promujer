@@ -182,7 +182,7 @@ const NavbarMoviles = ({
       <div className="bg-primary flex justify-center items-center animate-zoom">
         <a
           target="_blank"
-          href="https://wa.me/+5930995129878?text=¡Saludos!,%20Me%20interesa%20agendar%20una%20cita."
+          href="https://wa.me/+5930969618902?text=¡Saludos!,%20Me%20interesa%20agendar%20una%20cita."
           className="text-center text-white m-3 font-semibold text-lg"
         >
           SOLICITE UNA CITA

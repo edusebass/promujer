@@ -22,13 +22,13 @@ const Footer = () => {
               <a
                 className="flex flex-col items-center text-black no-underline"
                 target="_blank"
-                href="https://wa.me/+5930995129878?text=¡Saludos!,%20Me%20interesa%20su%20servicio."
+                href="https://wa.me/+5930969618902?text=¡Saludos!,%20Me%20interesa%20su%20servicio."
               >
                 <div className="flex items-center gap-2">
                   <FaPhoneAlt className="text-green-600 text-lg" />
                   <span className="font-semibold">PROGRAME UNA CITA</span>
                 </div>
-                <span className="text-xs text-gray-700 mt-1">0995129878</span>
+                <span className="text-xs text-gray-700 mt-1">0969618902</span>
               </a>
             </div>
             <div className="flex flex-col items-center p-3 justify-center mt-3 md:h-16 bg-background hover:bg-colorButton/95 rounded-lg md:px-5 md:py-2 cursor-pointer">
