@@ -76,6 +76,7 @@ const Footer = () => {
       <div>
         <br />
         <br />
+        <br />
       </div>
     </>
 

@@ -21,11 +21,23 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "st.depositphotos.com",
+      },
+      {
+        protocol: "https",
         hostname: "cdn-icons-png.flaticon.com",
       },
       {
         protocol: "https",
         hostname: "tecdn.b-cdn.net",
+      },
+      {
+        protocol: "https",
+        hostname: "thumbs.dreamstime.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.stop-pe.org",
       },
     ],
   },

@@ -6,171 +6,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaCircleInfo } from "react-icons/fa6";
-
-const itemsginecologia = [
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722867647/termooasis/hernias_de_disco_cervical_bi9hkw.png",
-    description: "Hernias de disco Cervical",
-    link: "/servicios/ginecologia/herniasDiscales",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722867845/termooasis/lumbalgias_gycpkj.webp",
-    description: "Lumbalgias",
-    link: "/servicios/ginecologia/lumbalgias",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722867916/termooasis/Cervicalgia_eclcvi.jpg",
-    description: "Cervicalgia",
-    link: "/servicios/ginecologia/cervicalgia",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722867979/termooasis/Tendinitis_s0x4tb.jpg",
-    description: "Tendinitis",
-    link: "/servicios/ginecologia/tendinitis",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722868015/termooasis/homrbo_congelado_ukzr2b.jpg",
-    description: "Hombro Congelado",
-    link: "/servicios/ginecologia/hombrocongelado",
-  },
-];
-
-const itemsTkEmocional = [
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722868719/termooasis/depresion_cronica_i0qgjq.png",
-    description: "Depresion Cronica",
-    link: "/servicios/tkemocional/depresioncronica",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722869056/termooasis/autoimmune-disease-line-icon-illustration-vector_a8dims.jpg",
-    description: "Enfermedades autoinmunes",
-    link: "/servicios/tkemocional/enfermedadesautoinmunes",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722869106/termooasis/insomnio_gsmhqy.png",
-    description: "Insomnio",
-    link: "/servicios/tkemocional/insomnio",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722869162/termooasis/migra%C3%B1a_vm0jt5.png",
-    description: "Migraña",
-    link: "/servicios/tkemocional/migrana",
-  },
-];
-
-const itemsTPrVertebral = [
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722864932/termooasis/Asset_111-512_dlswwc.webp",
-    description: "Rectificacion Cervical",
-    link: "/servicios/obstetricia/rectificacioncervical",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722865043/termooasis/canal_lumbar_mn55uw.png",
-    description: "Estrechamiento de Canal Lumbar",
-    link: "/servicios/obstetricia/estrechamientocanallumbar",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722868180/termooasis/Hiperlordosis_lumbar_ifzqa2.jpg",
-    description: "Hiperlordosis lumbar",
-    link: "/servicios/obstetricia/hiperlordosislumbar",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722868253/termooasis/Hiperlordosis_cervical_skmj1z.png",
-    description: "Hiperlordosis cervical",
-    link: "/servicios/obstetricia/hiperlordosiscervical",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722868530/termooasis/desviacion_de_la_columna_aqudmt.jpg",
-    description: "Desviacion de la columna",
-    link: "/servicios/obstetricia/desviacioncolumna",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722868663/termooasis/Desplazamiento_de_cadera_jr1s8q.jpg",
-    description: "Desplazamiento de cadera",
-    link: "/servicios/obstetricia/desplazamientocadera",
-  },
-];
-
-const itemsOtroServicio = [
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722869263/termooasis/escoliosis_nlrcde.png",
-    description: "Escoliosis",
-    link: "/servicios/otros/escoliosis",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722869383/termooasis/ciatalgia_whliyd.webp",
-    description: "Ciatalgia",
-    link: "",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722870835/termooasis/CIATICA_NERVIO_khcvjl.jpg",
-    description: "Nervio aciatico",
-    link: "/servicios/otros/ciatalgia",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722870891/termooasis/estres_rreypo.png",
-    description: "Estres",
-    link: "/servicios/otros/estres",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722872705/termooasis/crecimiento_de_ni%C3%B1os_y_jovenes_sa9cap.png",
-    description: "Crecimiento de niños y jovenes",
-    link: "/servicios/otros/crecimiento",
-  },
-];
-
-const itemsPatalogias = [
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722872816/termooasis/cervicald_y0jyb6.jpg",
-    description: "Cervical",
-    link: "/servicios/fisioterapia/cervical",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722872853/termooasis/hombro_kpxh0p.png",
-    description: "Hombro",
-    link: "/servicios/fisioterapia/hombro",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722872895/termooasis/lumbar_ldjjim.jpg",
-    description: "Lumbar",
-    link: "/servicios/fisioterapia/lumbar",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722873341/termooasis/cadera_lmhbid.png",
-    description: "Cadera",
-    link: "/servicios/fisioterapia/cadera",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722873367/termooasis/dorsal_v9uxvo.png",
-    description: "Dorsal",
-    link: "/servicios/fisioterapia/dorsal",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722873468/termooasis/codo_c9sezk.png",
-    description: "Mano y Codo",
-    link: "/servicios/fisioterapia/manoycodo",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722873519/termooasis/rodilla_o10txf.png",
-    description: "Rodilla",
-    link: "/servicios/fisioterapia/rodilla",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722873551/termooasis/tobillo_sk58vl.png",
-    description: "Tobillo y Pie",
-    link: "/servicios/fisioterapia/tobilloypie",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722873579/termooasis/cuello_lgq1zj.png",
-    description: "Cuello",
-    link: "/servicios/fisioterapia/cuello",
-  },
-  {
-    icon: "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722873619/termooasis/lesiones_w5kva6.png",
-    description: "Lesiones",
-    link: "/servicios/fisioterapia/lesiones",
-  },
-];
+import { ginecologia, obstetricia, otros } from "@/constants/servicios_lista";
 
 export default function Home() {
   const imagesAndTitles = [
@@ -178,19 +14,19 @@ export default function Home() {
       image:
         "url(https://blogs.unitec.mx/hubfs/Imported_Blog_Media/fisioterapeuta-quiropractico-1-compressor-1.jpg)",
       title1: "Mas de 25000 pacientes atendidos",
-      title2: "Praxistas",
+      title2: "Obstetricia",
     },
     {
       image:
         "url(https://backbone.care/cdn/shop/articles/ginecologia_y_fisioterapia_1024x1024.png?v=1649423997)",
-      title1: "Especializados en Argentina, Alemania, Peru y Mexico",
-      title2: "Fisioterapia",
+      title1: "Especializado en Mexico",
+      title2: "Ginecologia",
     },
     {
       image:
         "url(https://cfisiomad.org/wp-content/uploads/2022/12/iStock-1291920859-1024x683.jpg)",
       title1: "Mas de 25 años de experiencia",
-      title2: "ginecologia",
+      title2: "Ginecologia y Obstetricia",
     },
   ];
 
@@ -244,12 +80,12 @@ export default function Home() {
         className="relative flex items-start justify-center w-full h-72 bg-cover bg-center fade-enter fade-enter-active"
         style={{ backgroundImage: currentData.image }}
       >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="flex items-center justify-center flex-col pt-10">
-          <h3 className="relative text-center text-3xl font-semibold text-colorText.Primary p-4">
+          <h3 className="relative text-center text-3xl font-semibold text-white p-4">
             {currentData.title1}
           </h3>
-          <h3 className="relative text-center text-4xl font-bold text-colorText.Primary p-4">
+          <h3 className="relative text-center text-4xl font-bold text-white p-4">
             {currentData.title2}
           </h3>
         </div>
@@ -279,39 +115,39 @@ export default function Home() {
           La ginecologia alinea la columna para aliviar dolores y mejorar tu
           bienestar. Descubre sus beneficios y cómo puede transformar tu vida.
         </p>
-        <GridServicios items={itemsginecologia} />
+        <GridServicios
+          items={ginecologia.map(({ title, href, descripcion, icon }) => ({
+            title,
+            link: href,
+            description: title,
+            icon,
+          }))}
+        />
         <RandomImage count={4} />
 
-        <h2 className="text-2xl mt-6">Servicios de PRAXIS VERTEBRAL</h2>
-        <p className="my-3 mx-10">
-          La praxis vertebral mejora la salud mediante ajustes específicos en la
-          columna, promoviendo el bienestar general. Explora cómo esta técnica
-          puede ayudarte a sentirte mejor y vivir sin dolor.
-        </p>
-        <GridServicios items={itemsTPrVertebral} />
-        <RandomImage count={4} />
-
-        <h2 className="text-2xl mt-6">Servicios de TK EMOCIONAL</h2>
-        <p className="my-3 mx-10">
-          La Terapia Kinesiológica Emocional trabaja para liberar bloqueos
-          emocionales y promover un equilibrio mental y físico. Descubre cómo
-          esta técnica puede ayudarte a encontrar paz y bienestar.
-        </p>
-        <GridServicios items={itemsTkEmocional} />
+        <h2 className="text-2xl mt-6">Servicios de obstetricia</h2>
+        <GridServicios
+          items={obstetricia.map(({ title, href, descripcion, icon }) => ({
+            title,
+            link: href,
+            description: title,
+            icon,
+          }))}
+        />
         <RandomImage count={4} />
 
         <h2 className="text-2xl mt-6">OTROS SERVICIOS</h2>
-        <GridServicios items={itemsOtroServicio} />
+        <GridServicios
+          items={otros.map(({ title, href, descripcion, icon }) => ({
+            title,
+            link: href,
+            description: title,
+            icon,
+          }))}
+        />
         <RandomImage count={4} />
 
-        <h2 className="text-3xl md:text-5xl font-semibold my-6 mx-2">
-          Patologías y tratamientos de fisioterapia
-        </h2>
-        <p>
-          Infórmate sobre lo último en lesiones y rehabilitación muscular y
-          articular
-        </p>
-        <GridServicios items={itemsPatalogias} />
+
         <RandomImage count={4} />
       </section>
 
@@ -422,18 +258,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Entrevista experiencias */}
       <ExperienciasEntrevistas />
 
-      {/* Opiniones google
-      <section className="flex">
-        <div
-          className="elfsight-app-6887b6eb-7864-4a58-9b8b-34a7ad28cfe1"
-          data-elfsight-app-lazy
-        ></div>
-      </section> */}
-
-      {/* Historia */}
     </>
   );
 }
