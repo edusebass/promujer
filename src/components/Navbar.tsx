@@ -97,10 +97,10 @@ const Navbar = () => {
           </p>
         </button>
         <button
-          className="md:hidden flex pr-7 gap-2 text-text-primary"
+          className="md:hidden flex pr-4 py-2 p gap-2 text-text-primary bg-primary/90 rounded-lg"
           onClick={toggleMobileMenu}
         >
-          <span className="relative w-6 h-6">
+          <span className="relative ml-4 w-6 h-6 ">
             {/* Hamburger */}
             <span
               className={`absolute left-0 top-1/2 w-6 h-0.5 bg-current transition-all duration-300
