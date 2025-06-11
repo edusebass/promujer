@@ -1,4 +1,3 @@
-
 import React from "react";
 import { FaFacebook, FaInstagram, FaTiktok, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
@@ -8,6 +7,10 @@ const Footer = () => {
     <>
       <footer className="bg-primary w-full relative overflow-hidden rounded-b-2xl">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+          {/* Título de canales de atención */}
+          <h2 className="text-xl font-bold text-white mb-4 text-center">
+            Canales de Atención
+          </h2>
           <div className="md:flex md:justify-between">
 
 

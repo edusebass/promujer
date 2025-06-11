@@ -39,13 +39,13 @@ const Navbar = () => {
   return (
     <header className="w-full h-[55px] justify-betweenpx-8 sm:px-16 md:px-16  font-normal flex items-center justify-between sticky top-0 z-50 bg-secondary select-none text-sm shadow-md">
       <nav className="justify-start items-center flex gap-3 sm:gap-10 w-full">
-        <Link href="/" className="md:hidden flex">
+        <Link href="/" className="md:hidden flex pl-2 ">
           <Image
             src={logoNavbar}
             alt="Logo "
             width={150}
             height={150}
-            className="py-2 object-contain"
+            className="py-2 object-contain rounded-xl"
             priority
             draggable={false}
           />
@@ -86,7 +86,7 @@ const Navbar = () => {
           classNameText=" hidden md:block"
         />
 
-        <button className="md:hidden flex items-center gap-2 bg-button h-full py-1  ">
+        <button className="md:hidden flex items-center gap-2 bg-button h-full rounded-lg px-4 hover:bg-button/90 transition-colors duration-300">
           <p className=" text-sm font-semibold text-SECONDARY px-2">
             <a
               target="_blank"
@@ -118,9 +118,7 @@ const Navbar = () => {
               `}
             />
           </span>
-          <p className="text-text-primary text-base font-bold">
-            {isMobileMenuOpen ? "CERRAR" : "MENU"}
-          </p>
+
         </button>
       </nav>
       <NavbarMoviles isOpen={isMobileMenuOpen} toggleMobileMenu={toggleMobileMenu} />

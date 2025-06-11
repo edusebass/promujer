@@ -2,7 +2,7 @@
 import GridServicios from "@/components/GridServicios";
 import RandomImage from "@/components/RandomImage";
 import Head from "next/head";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { FaCircleInfo } from "react-icons/fa6";
 import { ginecologia, obstetricia, otros } from "@/constants/servicios_lista";
 import PerfilComponent from "@/components/PerfilComponent";
@@ -56,6 +56,9 @@ export default function Home() {
 
   const currentData = imagesAndTitles[currentIndex];
 
+  // 1. Crea el ref
+  const perfilRef = useRef<HTMLDivElement>(null);
+
   return (
     <>
       <Head>
@@ -86,8 +89,47 @@ export default function Home() {
           </h3>
         </div>
       </section>
-
-      <section className="flex flex-col items-center justify-center">
+      {/* Médico Especialista */}
+      <section className="flex flex-col items-start justify-start my-8">
+        <span className="text-lg font-bold text-black">
+          MÉDICO ESPECIALISTA
+        </span>
+        <span className="text-2xl font-bold mt-2">Dr. Juan Yancha</span>
+        <span className="text-base mt-1 text-start text-black">
+          Especialista en Ginecología y Obstetricia
+          <br />
+          Subespecialista en Medicina Materno Fetal.
+        </span>
+        {/* Botón Perfil Académico */}
+        <div className="w-full flex justify-start mt-4">
+          <button
+            className="flex items-center gap-2 bg-secondary text-white font-semibold px-4 py-2 rounded-lg shadow hover:bg-colorButton/90 transition"
+            onClick={() => {
+              perfilRef.current?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            <span>
+              {/* Icono usuario */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5.121 17.804A9 9 0 1112 21a9 9 0 01-6.879-3.196zM15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </span>
+            <p className="text-white">Perfil Académico</p>
+          </button>
+        </div>
+      </section>
+      <section className="flex flex-col  justify-start">
         {/* <h1 className="text-4xl mt-3 md:text-6xl font-extrabold text-center md:px-16 md:mt-3">
           PRO MUJER
         </h1> */}
@@ -95,14 +137,6 @@ export default function Home() {
           GINECOLOGIA & OBSTETRICIA
         </h2>
       </section>
-
-      <div className="info-icon flex flex-col items-center text-center">
-        <FaCircleInfo className="text-xl mb-2" />
-        <p className="text-gray-700 text-xs">
-          Horario de atención: <br /> Lunes - Viernes 10.30 am a 17 pm <br />{" "}
-          Sabado 10 am - 15 pm
-        </p>
-      </div>
 
       {/* Servicios */}
       <section className="flex flex-col text-center">
@@ -149,28 +183,31 @@ export default function Home() {
           <h2 className="text-4xl font-normal mb-4 ">
             Ubicación del Centro Quiropractico y Praxista
           </h2>
-          <p className="text-gray-700">
+          {/* <p className="text-gray-700">
             El Centro Terapéutico Quiropractico y praxista Termo Oasis se como
             referencia por el Estadio del Aucas, en la calle Apuela S28-180 y
             Quito 170606. Para llegar, puedes tomar el metro hasta la estación
             Morán Valverde, bajar por la calle Rumichaca y luego ingresar a la
             ubicación.
-          </p>
+          </p> */}
         </div>
         <div className="md:w-1/2">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2547.0122069503054!2d-78.54958674413513!3d-0.2797872801011895!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59976e8b0a6b5%3A0xb9e333dbdad9a81d!2sTermo%20Oasis%20Centro%20Terap%C3%A9utico!5e0!3m2!1sen!2ec!4v1722607762487!5m2!1sen!2ec"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d331.6576361530139!2d-78.47897986643864!3d-0.2932220595095898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d599094ab85f49%3A0x3bf7d9b51b73e952!2sDr.%20Juan%20Yancha%20.T.%20-%20Pro_mujer.!5e1!3m2!1sen!2sec!4v1749607658772!5m2!1sen!2sec"
             width="100%"
             height="450"
             style={{ border: 0 }}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Termo Oasis Centro Terapéutico"
+            title="Dr. Juan Yancha - PRO MUJER"
           ></iframe>
         </div>
       </section>
 
-      <PerfilComponent />
+      {/* 2. Aplica el ref aquí */}
+      <div ref={perfilRef}>
+        <PerfilComponent />
+      </div>
 
       {/* Instalaciones */}
       {/* <section className="flex flex-col md:flex-row-reverse md:items-center md:space-x-4 p-4 ">
