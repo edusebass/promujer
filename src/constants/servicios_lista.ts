@@ -41,11 +41,18 @@ export const ginecologia = [
       "Tratamientos personalizados para regular el ciclo menstrual y optimizar la salud hormonal.",
     icon: "https://static.vecteezy.com/system/resources/previews/003/855/071/non_2x/menstruation-color-icon-menstrual-bleeding-vaginal-discharge-female-health-disorder-isolated-illustration-vector.jpg",
   },
+  {
+    title: "Consulta ginecológica",
+    href: "/ginecologia/consulta-ginecologica",
+    descripcion:
+      "Tratamientos personalizados para regular el ciclo menstrual y optimizar la salud hormonal.",
+    icon: "https://static.vecteezy.com/system/resources/previews/003/855/071/non_2x/menstruation-color-icon-menstrual-bleeding-vaginal-discharge-female-health-disorder-isolated-illustration-vector.jpg",
+  },
 ];
 
 export const obstetricia = [
   {
-    title: "Control prenatal",
+    title: "Control prenatal o del embarazo",
     href: "/obstetricia/control-prenatal",
     descripcion:
       "Seguimiento médico integral para un embarazo saludable y seguro, cuidando de la madre y el bebé.",
@@ -125,3 +132,4 @@ export const otros = [
     icon: "https://static.vecteezy.com/system/resources/previews/033/062/441/non_2x/postpartum-care-gynecologist-color-icon-illustration-vector.jpg",
   },
 ];
+

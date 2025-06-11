@@ -59,6 +59,17 @@ export default function Home() {
   // 1. Crea el ref
   const perfilRef = useRef<HTMLDivElement>(null);
 
+  // Filtra los servicios específicos
+  const consultaGinecologica = ginecologia.find(
+    (item) => item.title.toLowerCase().includes("consulta ginecológica")
+  );
+
+  const controlPrenatal = obstetricia.find(
+    (item) =>
+      item.title.toLowerCase().includes("control prenatal") ||
+      item.title.toLowerCase().includes("control del embarazo")
+  );
+
   return (
     <>
       <Head>
@@ -76,7 +87,7 @@ export default function Home() {
       </Head>
 
       <section
-        className="relative flex items-start justify-center w-full h-72 bg-cover bg-center fade-enter fade-enter-active"
+        className="relative flex items-start justify-center w-full h-72 bg-cover bg-center fade-enter fade-enter-active rounded-t-xl"
         style={{ backgroundImage: currentData.image }}
       >
         <div className="absolute inset-0 bg-black opacity-30"></div>
@@ -129,6 +140,64 @@ export default function Home() {
           </button>
         </div>
       </section>
+
+
+      {/* Servicios Específicos */}
+      <section className="flex flex-col md:flex-row gap-6 my-8 items-center justify-center">
+        {consultaGinecologica && (
+          <div className="flex flex-col items-center p-4 border rounded-lg shadow-lg bg-white max-w-xs">
+            <img
+              src={consultaGinecologica.icon}
+              alt={consultaGinecologica.title}
+              width={80}
+              height={80}
+            />
+            <h3 className="font-bold text-lg mt-2">
+              {consultaGinecologica.title}
+            </h3>
+            <p className="text-sm text-gray-600 mt-1">
+              {consultaGinecologica.descripcion}
+            </p>
+          </div>
+        )}
+        {controlPrenatal && (
+          <div className="flex flex-col items-center p-4 border rounded-lg shadow-lg bg-white max-w-xs">
+            <img
+              src={controlPrenatal.icon}
+              alt={controlPrenatal.title}
+              width={80}
+              height={80}
+            />
+            <h3 className="font-bold text-lg mt-2">
+              {controlPrenatal.title}
+            </h3>
+            <p className="text-sm text-gray-600 mt-1">
+              {controlPrenatal.descripcion}
+            </p>
+          </div>
+        )}
+        <div className="flex flex-col w-full items-center p-4 border rounded-lg shadow-lg bg-primary max-w-xs">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5759/5759940.png"
+            alt="hola"
+            width={80}
+            height={80}
+          />
+          <h3 className="font-bold text-lg mt-2 text-white">
+            Contacto Médico al cliente
+          </h3>
+          <p className="text-sm text-white mt-1">
+            0986572316
+          </p>
+        </div>
+      </section>
+
+      {/* 2. Aplica el ref aquí */}
+      <div ref={perfilRef}>
+        <PerfilComponent />
+      </div>
+
+      {/* Servicios */}
       <section className="flex flex-col  justify-start">
         {/* <h1 className="text-4xl mt-3 md:text-6xl font-extrabold text-center md:px-16 md:mt-3">
           PRO MUJER
@@ -138,7 +207,6 @@ export default function Home() {
         </h2>
       </section>
 
-      {/* Servicios */}
       <section className="flex flex-col text-center">
         <h2 className="text-2xl mt-6">Servicios de ginecologia</h2>
 
@@ -177,57 +245,6 @@ export default function Home() {
         <RandomImage count={4} />
       </section>
 
-
-      {/* 2. Aplica el ref aquí */}
-      <div ref={perfilRef}>
-        <PerfilComponent />
-      </div>
-
-      {/* Instalaciones */}
-      {/* <section className="flex flex-col md:flex-row-reverse md:items-center md:space-x-4 p-4 ">
-        <div className="flex flex-col gap-4 md:w-1/2 mt-4 md:mt-0 md:pl-10 ">
-          <Image
-            alt="Icono fisioterapia"
-            src={"https://cdn-icons-png.flaticon.com/512/6180/6180520.png"}
-            width={100}
-            height={100}
-            className="mx-auto"
-          />
-          <span className="text-5xl font-semibold mb-4 text-center">
-            Instalaciones
-          </span>
-          <h3 className="text-xl font-medium">
-            UNIMOS PROFESIONALIDAD Y ESTILO PARA CREAR UNA CENTRO QUIROPRACTICO
-            UNICO
-          </h3>
-          <p className="text-gray-700 mb-4 md:mb-0">
-            Creemos que para garantizar una recuperación rápida y eficiente el
-            paciente debe sentirse cómodo y tener el espacio que necesita, por
-            ello nos esforzamos tanto en cuidar nuestro lugar de trabajo.
-          </p>
-        </div>
-
-        <div className="md:w-1/2 flex flex-col justify-center items-center md:flex-row gap-10 ">
-          <Image
-            src={
-              "https://res.cloudinary.com/dwowtb0ya/image/upload/v1722310422/Portfolio/instalaciones_termosoasis_2_tro5af.jpg"
-            }
-            alt="Centro Quiropractico y Praxista Termo Oasis"
-            width={300}
-            height={500}
-          />
-          <Image
-            src={
-              "https://res.cloudinary.com/dwowtb0ya/image/upload_v1722310417/Portfolio/instalaciones_termosoasis_3_pa6szh.jpg"
-            }
-            alt="Centro Quiropractico y Praxista Termo Oasis"
-            width={300}
-            height={500}
-          />
-        </div>
-      </section> */}
-
-      {/* <ExperienciasEntrevistas /> */}
     </>
   );
 }
