@@ -76,13 +76,13 @@ export default function Home() {
         <title>PRO MUJER</title>
         <meta
           name="description"
-          content="El mejor centro de ginecologia y fisioterapia. Especialistas en tratamientos para hernias discales, lumbalgias, cervicalgias, y más."
+          content="Atención profesional en ginecología y obstetricia en Quito. Consulta ginecológica, control prenatal, ecografías y salud femenina integral con el Dr. Juan Yancha, especialista en el cuidado de la mujer."
         />
         <meta
           name="keywords"
-          content="ginecologia, fisioterapia, hernias discales, lumbalgias, cervicalgias"
+          content="ginecología, obstetricia, ecografías, consulta ginecológica, control prenatal, salud femenina, Dr. Juan Yancha, Ginecólogo Quito, Obstetra Quito"
         />
-        <meta name="author" content="Dr. Juan Yancha, Ginecólogo Obstreta Quito " />
+        <meta name="author" content="Dr. Juan Yancha, Ginecólogo Obstetra Quito" />
         <link rel="canonical" href="https://www.termooasis.com/" />
       </Head>
 
