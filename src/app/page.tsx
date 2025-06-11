@@ -3,9 +3,9 @@ import GridServicios from "@/components/GridServicios";
 import RandomImage from "@/components/RandomImage";
 import Head from "next/head";
 import { useEffect, useState, useRef } from "react";
-import { FaCircleInfo } from "react-icons/fa6";
 import { ginecologia, obstetricia, otros } from "@/constants/servicios_lista";
 import PerfilComponent from "@/components/PerfilComponent";
+import Image from "next/image";
 
 export default function Home() {
   const imagesAndTitles = [
@@ -146,7 +146,7 @@ export default function Home() {
       <section className="flex flex-col md:flex-row gap-6 my-8 items-center justify-center">
         {consultaGinecologica && (
           <div className="flex flex-col items-center p-4 border rounded-lg shadow-lg bg-white max-w-xs">
-            <img
+            <Image
               src={consultaGinecologica.icon}
               alt={consultaGinecologica.title}
               width={80}
@@ -162,7 +162,7 @@ export default function Home() {
         )}
         {controlPrenatal && (
           <div className="flex flex-col items-center p-4 border rounded-lg shadow-lg bg-white max-w-xs">
-            <img
+            <Image
               src={controlPrenatal.icon}
               alt={controlPrenatal.title}
               width={80}
@@ -177,7 +177,7 @@ export default function Home() {
           </div>
         )}
         <div className="flex flex-col w-full items-center p-4 border rounded-lg shadow-lg bg-primary max-w-xs">
-          <img
+          <Image
             src="https://cdn-icons-png.flaticon.com/512/5759/5759940.png"
             alt="hola"
             width={80}
