@@ -82,12 +82,12 @@ export default function Home() {
           name="keywords"
           content="ginecologia, fisioterapia, hernias discales, lumbalgias, cervicalgias"
         />
-        <meta name="author" content="Termo Oasis" />
+        <meta name="author" content="Dr. Juan Yancha, Ginecólogo Obstreta Quito " />
         <link rel="canonical" href="https://www.termooasis.com/" />
       </Head>
 
       <section
-        className="relative flex items-start justify-center w-full h-72 bg-cover bg-center fade-enter fade-enter-active rounded-t-xl"
+        className="relative flex items-start justify-center w-full h-72 bg-cover bg-center fade-enter fade-enter-active  "
         style={{ backgroundImage: currentData.image }}
       >
         <div className="absolute inset-0 bg-black opacity-30"></div>
@@ -101,7 +101,7 @@ export default function Home() {
         </div>
       </section>
       {/* Médico Especialista */}
-      <section className="flex flex-col items-start justify-start my-8">
+      <section className="flex flex-col items-start justify-start my-8 rounded-t-full bg-">
         <span className="text-lg font-bold text-black">
           MÉDICO ESPECIALISTA
         </span>

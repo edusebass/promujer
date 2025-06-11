@@ -35,7 +35,7 @@ const UpperNavbar = () => {
           >
             <Image
               src={logo}
-              alt="Logo Termo Oasis"
+              alt="Logo Dr. Juan Yancha, Ginecólogo Obstreta Quito "
               width={60}
               height={32}
               className="object-contain"

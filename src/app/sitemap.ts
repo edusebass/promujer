@@ -4,83 +4,83 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const lastModified = new Date().toISOString();
   return [
     {
-      url: "https://termoasis.com/contacto",
+      url: "https://drjuanyancha.com/contacto",
       lastModified,
     },
     {
-      url: "https://termoasis.com/productos",
+      url: "https://drjuanyancha.com/productos",
       lastModified,
     },
     {
-      url: "https://termoasis.com/",
+      url: "https://drjuanyancha.com/",
       lastModified,
     },
     {
-      url: "https://termoasis.com/ginecologia/herniasDiscales",
+      url: "https://drjuanyancha.com/ginecologia/herniasDiscales",
       lastModified,
     },
     {
-      url: "https://termoasis.com/ginecologia/lumbalgias",
+      url: "https://drjuanyancha.com/ginecologia/lumbalgias",
       lastModified,
     },
     {
-      url: "https://termoasis.com/ginecologia/cervicalgia",
+      url: "https://drjuanyancha.com/ginecologia/cervicalgia",
       lastModified,
     },
     {
-      url: "https://termoasis.com/ginecologia/tendinitis",
+      url: "https://drjuanyancha.com/ginecologia/tendinitis",
       lastModified,
     },
     {
-      url: "https://termoasis.com/ginecologia/hombrocongelado",
+      url: "https://drjuanyancha.com/ginecologia/hombrocongelado",
       lastModified,
     },
     {
-      url: "https://termoasis.com/ginecologia/pubalgia",
+      url: "https://drjuanyancha.com/ginecologia/pubalgia",
       lastModified,
     },
     {
-      url: "https://termoasis.com/obstetricia/rectificacioncervical",
+      url: "https://drjuanyancha.com/obstetricia/rectificacioncervical",
       lastModified,
     },
     {
-      url: "https://termoasis.com/obstetricia/estrechamientocanallumbar",
+      url: "https://drjuanyancha.com/obstetricia/estrechamientocanallumbar",
       lastModified,
     },
     {
-      url: "https://termoasis.com/obstetricia/hiperlordosiscervical",
+      url: "https://drjuanyancha.com/obstetricia/hiperlordosiscervical",
       lastModified,
     },
     {
-      url: "https://termoasis.com/obstetricia/hiperlordosislumbar",
+      url: "https://drjuanyancha.com/obstetricia/hiperlordosislumbar",
       lastModified,
     },
     {
-      url: "https://termoasis.com/obstetricia/desviacioncolumna",
+      url: "https://drjuanyancha.com/obstetricia/desviacioncolumna",
       lastModified,
     },
     {
-      url: "https://termoasis.com/obstetricia/desplazamientocadera",
+      url: "https://drjuanyancha.com/obstetricia/desplazamientocadera",
       lastModified,
     },
     {
-      url: "https://termoasis.com/otros/escoliosis",
+      url: "https://drjuanyancha.com/otros/escoliosis",
       lastModified,
     },
     {
-      url: "https://termoasis.com/otros/ciatalgia",
+      url: "https://drjuanyancha.com/otros/ciatalgia",
       lastModified,
     },
     {
-      url: "https://termoasis.com/otros/nervioaciatico",
+      url: "https://drjuanyancha.com/otros/nervioaciatico",
       lastModified,
     },
     {
-      url: "https://termoasis.com/otros/estres",
+      url: "https://drjuanyancha.com/otros/estres",
       lastModified,
     },
     {
-      url: "https://termoasis.com/otros/crecimiento",
+      url: "https://drjuanyancha.com/otros/crecimiento",
       lastModified,
     },
   ];
