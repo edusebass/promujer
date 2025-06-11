@@ -11,11 +11,9 @@ const Footer = () => {
           <h2 className="text-xl font-bold text-white mb-4 text-center">
             Canales de Atención
           </h2>
+
+
           <div className="md:flex md:justify-between">
-
-
-
-
             <div className="flex flex-col items-center p-3 justify-center mt-3 md:h-16 bg-background hover:bg-colorButton/95 rounded-lg md:px-5 md:py-2 cursor-pointer">
               <a
                 className="flex flex-col items-center text-black no-underline"
@@ -29,7 +27,7 @@ const Footer = () => {
                 <span className="text-xs text-gray-700 mt-1">0969618902</span>
               </a>
             </div>
-            <div className="flex flex-col items-center p-3 justify-center mt-3 md:h-16 bg-background hover:bg-colorButton/95 rounded-lg md:px-5 md:py-2 cursor-pointer">
+            <div className="flex flex-col items-center p-3 justify-center mt-3 md:h-16 bg-background hover:bg-colorButton/95 rounded-t-xl md:px-5 md:py-2 cursor-pointer">
               <a
                 className="flex flex-col items-center text-black no-underline"
                 target="_blank"
@@ -44,6 +42,21 @@ const Footer = () => {
                 </span>
               </a>
             </div>
+            {/* Ubicacion */}
+            <section className="flex flex-col md:flex-row md:items-center md:space-x-4 p-4 bg-slate-50">
+
+              <div className="md:w-1/2">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d331.6576361530139!2d-78.47897986643864!3d-0.2932220595095898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d599094ab85f49%3A0x3bf7d9b51b73e952!2sDr.%20Juan%20Yancha%20.T.%20-%20Pro_mujer.!5e1!3m2!1sen!2sec!4v1749607658772!5m2!1sen!2sec"
+                  width="100%"
+                  height="450"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Dr. Juan Yancha - PRO MUJER"
+                ></iframe>
+              </div>
+            </section>
           </div>
           <div className="flex flex-col items-center p-3 justify-center mt-3 bg-background rounded-lg md:px-5 md:py-2">
             <span className="font-semibold mb-2 text-black">REDES SOCIALES</span>

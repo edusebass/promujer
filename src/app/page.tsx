@@ -177,32 +177,6 @@ export default function Home() {
         <RandomImage count={4} />
       </section>
 
-      {/* Ubicacion */}
-      <section className="flex flex-col md:flex-row md:items-center md:space-x-4 p-4 bg-slate-50">
-        <div className="md:w-1/2 mt-4 md:mt-0 md:pl-10">
-          <h2 className="text-4xl font-normal mb-4 ">
-            Ubicación del Centro Quiropractico y Praxista
-          </h2>
-          {/* <p className="text-gray-700">
-            El Centro Terapéutico Quiropractico y praxista Termo Oasis se como
-            referencia por el Estadio del Aucas, en la calle Apuela S28-180 y
-            Quito 170606. Para llegar, puedes tomar el metro hasta la estación
-            Morán Valverde, bajar por la calle Rumichaca y luego ingresar a la
-            ubicación.
-          </p> */}
-        </div>
-        <div className="md:w-1/2">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d331.6576361530139!2d-78.47897986643864!3d-0.2932220595095898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d599094ab85f49%3A0x3bf7d9b51b73e952!2sDr.%20Juan%20Yancha%20.T.%20-%20Pro_mujer.!5e1!3m2!1sen!2sec!4v1749607658772!5m2!1sen!2sec"
-            width="100%"
-            height="450"
-            style={{ border: 0 }}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Dr. Juan Yancha - PRO MUJER"
-          ></iframe>
-        </div>
-      </section>
 
       {/* 2. Aplica el ref aquí */}
       <div ref={perfilRef}>
