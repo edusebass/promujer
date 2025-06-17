@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-// Si usas Material UI Fab, importa aquí: import Fab from "@mui/material/Fab";
 
 const FloatButtons = () => {
   const [offset, setOffset] = useState(0);
@@ -32,7 +31,7 @@ const FloatButtons = () => {
         >
           <div className="flex items-center gap-2 bg-black text-white hover:bg-white rounded-full shadow-md px-2 py-1 transition-colors">
             <Image
-              src="/whatsapp.jpg"
+              src="/whatsaap.jpg"
               alt="WhatsApp"
               width={24}
               height={24}
@@ -45,17 +44,50 @@ const FloatButtons = () => {
         </a>
       </div>
 
-      {/* Botones Maps y Phone a la derecha */}
+      {/* Botones sociales, Maps y Phone a la derecha, más arriba */}
       <div
-        className="fixed bottom-4 right-1 flex flex-col gap-1 z-50 transition-transform duration-300"
+        className="fixed top-[450px] right-1 flex flex-col gap-1 z-50 transition-transform duration-300"
         style={{ transform: `translateY(${offset}px)` }}
       >
+        {/* Instagram */}
+        <a
+          href="https://instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="bg-white hover:bg-white rounded-full shadow-md p-2 transition-colors">
+            <Image
+              src="/instagram.webp"
+              alt="Instagram"
+              width={24}
+              height={24}
+              draggable={false}
+            />
+          </div>
+        </a>
+        {/* Facebook */}
+        <a
+          href="https://facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="bg-white hover:bg-white rounded-full shadow-md p-2 transition-colors">
+            <Image
+              src="/facebook.png"
+              alt="Facebook"
+              width={24}
+              height={24}
+              draggable={false}
+            />
+          </div>
+        </a>
+        {/* Google Maps */}
         <a
           href="https://maps.app.goo.gl/DFFTRT7eG9E7xFNL7"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="bg-white hover:bg-secondary rounded-full shadow-md p-2 transition-colors">
+          <div className="bg-white hover:bg-white rounded-full shadow-md p-2 transition-colors">
             <Image
               src="/maps.png"
               alt="Google Maps"
@@ -65,8 +97,9 @@ const FloatButtons = () => {
             />
           </div>
         </a>
+        {/* Teléfono */}
         <a href="tel:+5930969618902">
-          <div className="bg-white hover:bg-secondary rounded-full shadow-md p-2 transition-colors">
+          <div className="bg-white hover:bg-white rounded-full shadow-md p-2 transition-colors">
             <Image
               src="/phone.png"
               alt="Llamar"
