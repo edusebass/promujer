@@ -42,9 +42,9 @@ const FloatButtons = () => {
     <>
       {/* WhatsApp a la izquierda */}
       <div
-        className="fixed bottom-4 left-4 z-50 transition-transform duration-300"
+        className="fixed bottom-2 left-2 z-50 transition-transform duration-300"
         style={{
-          transform: `translateY(-${offset}px)`,
+          transform: `translateY(${offset}px)`,
         }}
       >
         <a
@@ -70,9 +70,9 @@ const FloatButtons = () => {
 
       {/* Sociales, Maps y Phone a la derecha */}
       <div
-        className="fixed bottom-4 right-1 flex flex-col gap-1 z-50 transition-transform duration-300"
+        className="fixed top-16 right-2 flex flex-col gap-1 z-50 transition-transform duration-300"
         style={{
-          transform: `translateY(-${offset}px)`,
+          transform: `translateY(${offset}px)`,
         }}
       >
         {/* Instagram */}
