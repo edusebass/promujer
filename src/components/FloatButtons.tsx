@@ -70,7 +70,7 @@ const FloatButtons = () => {
 
       {/* Sociales, Maps y Phone a la derecha */}
       <div
-        className="fixed top-24 right-4 flex flex-col gap-1 z-50 transition-transform duration-300"
+        className="fixed top-2/4 right-1 flex flex-col gap-1 z-50 transition-transform duration-300"
         style={{
           transform: `translateY(${offset}px)`,
         }}
