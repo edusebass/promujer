@@ -3,56 +3,46 @@ import GridServicios from "@/components/GridServicios";
 import RandomImage from "@/components/RandomImage";
 import Head from "next/head";
 import { useEffect, useState, useRef } from "react";
-import { ginecologia, obstetricia, otros } from "@/constants/servicios_lista";
+import { ecografias, ginecologia, obstetricia, otros } from "@/constants/servicios_lista";
 import PerfilComponent from "@/components/PerfilComponent";
 import Image from "next/image";
+import GridExtra from "@/components/GridExtra";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Home() {
   const imagesAndTitles = [
     {
       image:
-        "url(https://blogs.unitec.mx/hubfs/Imported_Blog_Media/fisioterapeuta-quiropractico-1-compressor-1.jpg)",
-      title1: "Mas de 25000 pacientes atendidos",
-      title2: "Obstetricia",
+        "url(https://res.cloudinary.com/dwowtb0ya/image/upload/v1750174040/dr/Captura_de_pantalla_2025-06-17_101754_1_hvapyy.jpg)",
     },
     {
       image:
-        "url(https://backbone.care/cdn/shop/articles/ginecologia_y_fisioterapia_1024x1024.png?v=1649423997)",
-      title1: "Especializado en Mexico",
-      title2: "Ginecologia",
+        "url(https://res.cloudinary.com/dwowtb0ya/image/upload/v1750174748/dr/Captura_de_pantalla_2025-06-17_103856_hqfjrn.png)",
+      title2: "Partos & Cesareas",
     },
     {
       image:
-        "url(https://cfisiomad.org/wp-content/uploads/2022/12/iStock-1291920859-1024x683.jpg)",
-      title1: "Mas de 25 años de experiencia",
-      title2: "Ginecologia y Obstetricia",
+        "url(https://res.cloudinary.com/dwowtb0ya/image/upload/v1750175129/dr/Captura_de_pantalla_2025-06-17_104516_gyb8yl.png)",
+      title2: "Cirugías Ginecológicas",
+    },
+    {
+      image:
+        "url(https://res.cloudinary.com/dwowtb0ya/image/upload/v1750175285/dr/Ecografia-3D-y-ecografia-4D_livjhy.png)",
+      title2: "Ecografias",
     },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTimeout(() => {
-        setCurrentIndex(
-          (prevIndex) => (prevIndex + 1) % imagesAndTitles.length
-        );
-      }, 1000);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [imagesAndTitles.length]);
+  // Duraciones: 7s para la primera, 3.5s para las demás
+  const delays = [4000, 5000, 5000, 4500];
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://static.elfsight.com/platform/platform.js";
-    script.defer = true;
-    script.setAttribute("data-use-service-core", "");
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+    const timeout = setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesAndTitles.length);
+    }, delays[currentIndex]);
+    return () => clearTimeout(timeout);
+  }, [currentIndex]);
 
   const currentData = imagesAndTitles[currentIndex];
 
@@ -83,19 +73,38 @@ export default function Home() {
           content="ginecología, obstetricia, ecografías, consulta ginecológica, control prenatal, salud femenina, Dr. Juan Yancha, Ginecólogo Quito, Obstetra Quito"
         />
         <meta name="author" content="Dr. Juan Yancha, Ginecólogo Obstetra Quito" />
-        <link rel="canonical" href="https://www.termooasis.com/" />
+        <link rel="canonical" href="https://www.drjuanyancha.com/" />
       </Head>
 
-      <section
-        className="relative flex items-start justify-center w-full h-72 bg-cover bg-center fade-enter fade-enter-active  "
-        style={{ backgroundImage: currentData.image }}
-      >
-        <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="flex items-center justify-center flex-col pt-10">
-          <h3 className="relative text-center text-3xl font-semibold text-white p-4">
-            {currentData.title1}
-          </h3>
-          <h3 className="relative text-center text-4xl font-bold text-white p-4">
+      {/* Carrusel con transición y overlay solo en las demás imágenes */}
+      <section className="relative flex items-start justify-center w-full h-[340px] md:h-72 bg-cover bg-center overflow-hidden">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentIndex}
+            initial={{ opacity: 0, filter: "blur(12px)" }}
+            animate={{ opacity: 1, filter: "blur(0px)" }}
+            exit={{ opacity: 0, filter: "blur(12px)" }}
+            transition={{ duration: 0.8 }}
+            className="absolute inset-0 w-full h-full"
+            style={{
+              backgroundImage: currentData.image,
+              backgroundSize: "cover",
+              backgroundPosition: currentIndex === 0 ? "center 30%" : "center",
+            }}
+          />
+        </AnimatePresence>
+        {/* Overlay solo si NO es la primera imagen */}
+        {currentIndex !== 0 && (
+          <div className="absolute inset-0 bg-black opacity-5 transition-opacity duration-500"></div>
+        )}
+        <div
+          className={`relative z-10 flex items-center justify-center flex-col w-full h-full ${currentIndex === 0 ? "pt-24" : "pt-10"
+            }`}
+        >
+          {/* <h3 className="text-center text-3xl font-semibold text-white p-4 drop-shadow-lg">
+            {currentData.? title1}
+          </h3> */}
+          <h3 className="text-center text-4xl font-bold text-white drop-shadow-2xl">
             {currentData.title2}
           </h3>
         </div>
@@ -197,6 +206,15 @@ export default function Home() {
         <PerfilComponent />
       </div>
 
+      <GridExtra
+        items={ecografias.map(({ title, href, icon }) => ({
+          title,
+          link: href,
+          description: title,
+          icon,
+        }))}
+      />
+
       {/* Servicios */}
       <section className="flex flex-col  justify-start">
         {/* <h1 className="text-4xl mt-3 md:text-6xl font-extrabold text-center md:px-16 md:mt-3">
@@ -218,6 +236,7 @@ export default function Home() {
             icon,
           }))}
         />
+
         <RandomImage count={4} />
 
         <h2 className="text-2xl mt-6">Servicios de obstetricia</h2>

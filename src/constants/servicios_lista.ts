@@ -133,3 +133,47 @@ export const otros = [
   },
 ];
 
+export const ecografias = [
+  {
+    title: "Ecografía cromosómica",
+    href: "/ecografias/cromosomica",
+    descripcion:
+      "Permite evaluar la presencia de marcadores asociados a alteraciones cromosómicas en el feto, ayudando en la detección temprana de síndromes genéticos.",
+    icon: "https://cdn-icons-png.flaticon.com/512/8123/8123645.png",
+  },
+  {
+    title: "Ecografía anatómica",
+    href: "/ecografias/anatomica",
+    descripcion:
+      "Estudio detallado de la anatomía fetal para identificar posibles malformaciones estructurales y valorar el desarrollo de los órganos del bebé.",
+    icon: "https://cdn-icons-png.flaticon.com/512/8123/8123645.png",
+  },
+  {
+    title: "Doppler Fetal",
+    href: "/ecografias/doppler-fetal",
+    descripcion:
+      "Evalúa el flujo sanguíneo en los vasos fetales y placentarios, permitiendo detectar alteraciones en la circulación que puedan afectar el bienestar del feto.",
+    icon: "https://cdn-icons-png.flaticon.com/512/8123/8123645.png",
+  },
+  {
+    title: "Ecografía ginecológica",
+    href: "/ecografias/ginecologica",
+    descripcion:
+      "Exploración de los órganos reproductores femeninos para el diagnóstico de patologías como miomas, quistes o alteraciones endometriales.",
+    icon: "https://cdn-icons-png.flaticon.com/512/8123/8123645.png",
+  },
+  {
+    title: "Ecografía obstétrica",
+    href: "/ecografias/obstetrica",
+    descripcion:
+      "Control y seguimiento del embarazo, valoración del crecimiento fetal, cantidad de líquido amniótico y localización placentaria.",
+    icon: "https://cdn-icons-png.flaticon.com/512/8123/8123645.png",
+  },
+  {
+    title: "Ecografía 4D HD Live",
+    href: "/ecografias/4d-hd-live",
+    descripcion:
+      "Tecnología avanzada que permite visualizar imágenes en tiempo real y en alta definición del feto, mostrando movimientos y rasgos faciales con gran detalle.",
+    icon: "https://cdn-icons-png.flaticon.com/512/8123/8123645.png",
+  },
+];

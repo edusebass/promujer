@@ -46,7 +46,7 @@ const PerfilComponent = () => {
                 >
                     <Image
                         className="h-full w-full rounded-t-lg object-cover md:h-auto md:w-72 md:!rounded-none md:!rounded-s-lg"
-                        src="https://res.cloudinary.com/dwowtb0ya/image/upload/v1722910354/termooasis/servicios%20y%20personal/oswaldo_aviles_cuerpo_completo_rqiztw.png"
+                        src="https://res.cloudinary.com/dwowtb0ya/image/upload/v1750174040/dr/Captura_de_pantalla_2025-06-17_101754_1_hvapyy.jpg"
                         alt="Fisioterapeuta Oswaldo Aviles"
                         width={700}
                         height={500}

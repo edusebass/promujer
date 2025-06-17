@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://drjuanyancha.com"),
   title: {
     default: "Dr. Juan Yancha, Ginecólogo Obstreta Quito  ",
-    template: "%s - Dr. Juan Yancha, Ginecólogo Obstreta Quito  | ginecologia, Ginecologia, Praxis Vertebral",
+    template: "%s - Dr. Juan Yancha, Ginecólogo Obstreta Quito  | ginecologia, Ginecologia, ",
   },
   description:
     "El Dr. Juan Yancha es especialista en ginecología, obstetricia y ecografías en Quito. Atención integral y personalizada en consulta ginecológica, control prenatal y estudios ecográficos avanzados para la salud femenina.",
@@ -25,12 +25,12 @@ export const metadata: Metadata = {
     site: "@Dr. Juan Yancha, Ginecólogo Obstreta Quito ",
     title: "Dr. Juan Yancha, Ginecólogo Obstreta Quito  | Ecos y control prenatal",
     description:
-      "Descubre cómo nuestros tratamientos en ginecologia, Ginecologia y Praxis Vertebral pueden mejorar tu calidad de vida.",
+      "Descubre cómo nuestros tratamientos en ginecologia, Ginecologia y  pueden mejorar tu calidad de vida.",
   },
   openGraph: {
     type: "website",
     url: "https://drjuanyancha.com",
-    title: "Dr. Juan Yancha, Ginecólogo Obstreta Quito  | ginecologia, Ginecologia, Praxis Vertebral",
+    title: "Dr. Juan Yancha, Ginecólogo Obstreta Quito  | ginecologia, Ginecologia, ",
     description:
       "El Dr. Juan Yancha es especialista en ginecología, obstetricia y ecografías en Quito. Atención integral y personalizada en consulta ginecológica, control prenatal y estudios ecográficos avanzados para la salud femenina.",
     images: [

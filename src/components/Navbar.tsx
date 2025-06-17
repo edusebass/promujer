@@ -71,7 +71,7 @@ const Navbar = () => {
             onMouseLeave={() => handleMouseLeave(setIsobstetriciaOpen)}
           >
             <DropdownMenu
-              title="PRAXIS VERTEBRAL"
+              title=""
               data={obstetricia}
               open={isobstetriciaOpen}
               setOpen={setIsobstetriciaOpen}
