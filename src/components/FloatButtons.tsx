@@ -44,7 +44,7 @@ const FloatButtons = () => {
 
   return (
     <div
-      className="fixed bottom-36 left-2 flex flex-col gap-1 z-50 transition-transform duration-300"
+      className="fixed bottom-40 left-2 flex flex-col gap-1 z-50 transition-transform duration-300"
       style={{
         transform: `translateY(${offset}px)`,
       }}
