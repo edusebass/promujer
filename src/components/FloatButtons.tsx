@@ -15,16 +15,16 @@ const FloatButtons = () => {
 
       // Si sube la pantalla (scroll hacia arriba), botones abajo (visibles)
       if (diff < 0) {
-        setOffset(300);
+        setOffset(80); // Solo los sube un poco, no fuera de pantalla
         if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
         scrollTimeout.current = setTimeout(() => {
           setOffset(0);
         }, 300);
       }
 
-      // Si baja la pantalla (scroll hacia abajo), botones suben (ocultos)
+      // Si baja la pantalla (scroll hacia abajo), botones bajan (ocultos)
       if (diff > 0) {
-        setOffset(-800);
+        setOffset(120); // Solo los baja un poco, no fuera de pantalla
         if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
         scrollTimeout.current = setTimeout(() => {
           setOffset(0);
@@ -44,7 +44,7 @@ const FloatButtons = () => {
       <div
         className="fixed bottom-4 left-4 z-50 transition-transform duration-300"
         style={{
-          transform: `translateY(${offset}px)`,
+          transform: `translateY(-${offset}px)`,
         }}
       >
         <a
@@ -70,9 +70,9 @@ const FloatButtons = () => {
 
       {/* Sociales, Maps y Phone a la derecha */}
       <div
-        className="fixed top-2/4 right-1 flex flex-col gap-1 z-50 transition-transform duration-300"
+        className="fixed bottom-4 right-1 flex flex-col gap-1 z-50 transition-transform duration-300"
         style={{
-          transform: `translateY(${offset}px)`,
+          transform: `translateY(-${offset}px)`,
         }}
       >
         {/* Instagram */}
