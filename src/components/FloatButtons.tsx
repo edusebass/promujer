@@ -1,27 +1,51 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { Fab } from "@mui/material";
+import React, { useEffect, useRef, useState } from "react";
 
 const FloatButtons = () => {
   const [offset, setOffset] = useState(0);
   const scrollTimeout = useRef<NodeJS.Timeout | null>(null);
+  const lastScroll = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setOffset(0);
-      if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
-      scrollTimeout.current = setTimeout(() => setOffset(0), 200);
+      const currentScroll = window.scrollY;
+      const diff = currentScroll - lastScroll.current;
+
+      // Si sube la pantalla (scroll hacia arriba), botones abajo (visibles)
+      if (diff < 0) {
+        setOffset(300);
+        if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
+        scrollTimeout.current = setTimeout(() => {
+          setOffset(0);
+        }, 300);
+      }
+
+      // Si baja la pantalla (scroll hacia abajo), botones suben (ocultos)
+      if (diff > 0) {
+        setOffset(-800);
+        if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
+        scrollTimeout.current = setTimeout(() => {
+          setOffset(0);
+        }, 500);
+      }
+
+      lastScroll.current = currentScroll;
     };
+
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <>
-      {/* Botón WhatsApp a la izquierda */}
+      {/* WhatsApp a la izquierda */}
       <div
-        className="fixed bottom-4 left-1 z-50 transition-transform duration-300"
-        style={{ transform: `translateY(${offset}px)` }}
+        className="fixed bottom-4 left-4 z-50 transition-transform duration-300"
+        style={{
+          transform: `translateY(${offset}px)`,
+        }}
       >
         <a
           href="https://wa.me/+5930969618902?text=¡Saludos!,%20Me%20interesa%20su%20servicio."
@@ -29,25 +53,27 @@ const FloatButtons = () => {
           rel="noopener noreferrer"
           className="no-underline"
         >
-          <div className="flex items-center gap-2 bg-black text-white hover:bg-white rounded-full shadow-md px-2 py-1 transition-colors">
+          <div className="flex items-center gap-2 bg-white hover:bg-secondary rounded-full shadow-md px-4 py-2 transition-colors">
             <Image
-              src="/whatsaap.jpg"
+              src="/whatsapp.png"
               alt="WhatsApp"
-              width={24}
-              height={24}
+              width={32}
+              height={32}
               draggable={false}
             />
-            <span className="font-semibold text-white text-xs whitespace-nowrap">
+            <span className="font-semibold text-green-700 text-base whitespace-nowrap">
               Programa una cita
             </span>
           </div>
         </a>
       </div>
 
-      {/* Botones sociales, Maps y Phone a la derecha, más arriba */}
+      {/* Sociales, Maps y Phone a la derecha */}
       <div
-        className="fixed top-2/4 right-1 flex flex-col gap-1 z-50 transition-transform duration-300"
-        style={{ transform: `translateY(${offset}px)` }}
+        className="fixed top-24 right-4 flex flex-col gap-1 z-50 transition-transform duration-300"
+        style={{
+          transform: `translateY(${offset}px)`,
+        }}
       >
         {/* Instagram */}
         <a
@@ -55,7 +81,7 @@ const FloatButtons = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="bg-white hover:bg-white rounded-full shadow-md p-2 transition-colors">
+          <div className="bg-white hover:bg-secondary rounded-full shadow-md p-2 transition-colors">
             <Image
               src="/instagram.webp"
               alt="Instagram"
@@ -65,18 +91,18 @@ const FloatButtons = () => {
             />
           </div>
         </a>
-        {/* Facebook */}
+        {/* Facebook (más grande) */}
         <a
           href="https://facebook.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="bg-white hover:bg-white rounded-full shadow-md p-2 transition-colors">
+          <div className="bg-white hover:bg-secondary rounded-full shadow-md p-2 transition-colors">
             <Image
               src="/facebook.png"
               alt="Facebook"
-              width={24}
-              height={24}
+              width={32}
+              height={32}
               draggable={false}
             />
           </div>
@@ -87,7 +113,7 @@ const FloatButtons = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="bg-white hover:bg-white rounded-full shadow-md p-2 transition-colors">
+          <Fab color="primary" className="bg-white hover:bg-secondary" size="small">
             <Image
               src="/maps.png"
               alt="Google Maps"
@@ -95,11 +121,11 @@ const FloatButtons = () => {
               height={24}
               draggable={false}
             />
-          </div>
+          </Fab>
         </a>
         {/* Teléfono */}
         <a href="tel:+5930969618902">
-          <div className="bg-white hover:bg-white rounded-full shadow-md p-2 transition-colors">
+          <Fab color="primary" className="bg-white hover:bg-secondary" size="small">
             <Image
               src="/phone.png"
               alt="Llamar"
@@ -107,7 +133,7 @@ const FloatButtons = () => {
               height={24}
               draggable={false}
             />
-          </div>
+          </Fab>
         </a>
       </div>
     </>
