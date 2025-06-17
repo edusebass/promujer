@@ -44,7 +44,7 @@ const FloatButtons = () => {
 
   return (
     <div
-      className="fixed bottom-32 left-2 flex flex-col gap-1 z-50 transition-transform duration-300"
+      className="fixed bottom-36 left-2 flex flex-col gap-1 z-50 transition-transform duration-300"
       style={{
         transform: `translateY(${offset}px)`,
       }}
@@ -83,7 +83,7 @@ const FloatButtons = () => {
       >
         <div className="flex items-center gap-2 bg-white hover:bg-secondary rounded-full shadow-md px-4 py-2 transition-colors">
           <Image
-            src="/whatsapp.png"
+            src="/whatsaap.jpg"
             alt="WhatsApp"
             width={32}
             height={32}
