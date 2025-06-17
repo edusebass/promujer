@@ -15,7 +15,7 @@ const FloatButtons = () => {
 
       // Si sube la pantalla (scroll hacia arriba), botones abajo (visibles)
       if (diff < 0) {
-        setOffset(80); // Solo los sube un poco, no fuera de pantalla
+        setOffset(900); // Solo los sube un poco, no fuera de pantalla
         if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
         scrollTimeout.current = setTimeout(() => {
           setOffset(0);
@@ -42,7 +42,7 @@ const FloatButtons = () => {
     <>
       {/* WhatsApp a la izquierda */}
       <div
-        className="fixed bottom-2 left-2 z-50 transition-transform duration-300"
+        className="fixed bottom-1 transition-transform duration-300"
         style={{
           transform: `translateY(${offset}px)`,
         }}
@@ -72,7 +72,7 @@ const FloatButtons = () => {
       <div
         className="fixed top-16 right-2 flex flex-col gap-1 z-50 transition-transform duration-300"
         style={{
-          transform: `translateY(${offset}px)`,
+          transform: `translateY(${-offset}px)`,
         }}
       >
         {/* Instagram */}
