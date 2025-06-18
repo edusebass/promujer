@@ -73,7 +73,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://drjuanyancha.com" />
       </head>
-      <body className={`bg-background w-full min-h-screen flex flex-col text-primary ${inter.className}`}>
+      <body className="min-h-screen w-full flex flex-col bg-background text-primary">
         <UpperNavbar />
         <Navbar />
         <main className="flex-1 w-full flex flex-col">{children}</main>
