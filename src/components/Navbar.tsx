@@ -37,7 +37,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full h-[55px] justify-betweenpx-8 sm:px-16 md:px-16  font-normal flex items-center justify-between sticky top-0 z-50 bg-secondary select-none text-sm shadow-md">
+    <header className="w-full h-[55px] justify-betweenpx-8 sm:px-16 md:px-16  font-normal flex items-center justify-between sticky top-0 z-50 bg-secondary select-none text-sm shadow-md pr-2">
       <nav className="justify-start items-center flex gap-3 sm:gap-10 w-full">
         <Link href="/" className="md:hidden flex pl-2 ">
           <Image
@@ -45,7 +45,7 @@ const Navbar = () => {
             alt="Logo "
             width={150}
             height={150}
-            className="py-2 object-contain rounded-xl"
+            className="py-2 object-contain "
             priority
             draggable={false}
           />

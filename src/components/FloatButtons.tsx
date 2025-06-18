@@ -38,7 +38,7 @@ const FloatButtons = () => {
               draggable={false}
             />
             <span className="font-semibold text-white text-xs whitespace-nowrap">
-              Programa una cita
+              PROGRAME SU CITA
             </span>
           </div>
         </a>

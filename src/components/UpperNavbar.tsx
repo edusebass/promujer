@@ -46,7 +46,7 @@ const UpperNavbar = () => {
           {/* Línea negra vertical */}
           <div className="h-16 w-[2px] bg-black mx-2" />
           <h3 className="text-base md:text-lg font-semibold text-colorText-Primary whitespace-nowrap">
-            DR. JUAN YANCHA <br /> Ginecólogo Obstetra
+            <span className="text-black">DR. JUAN YANCHA </span> <br /> Ginecólogo Obstetra
             <br />Medicina Materna
           </h3>
         </div>
