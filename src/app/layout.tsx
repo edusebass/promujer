@@ -70,11 +70,11 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://drjuanyancha.com" />
       </head>
       <body
-        className={`bg-background w-full min-h-screen flex flex-col items-center text-primary ${inter.className}`}
+        className={`bg-background w-full min-h-screen flex flex-col text-primary ${inter.className}`}
       >
         <UpperNavbar />
         <Navbar />
