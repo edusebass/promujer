@@ -77,7 +77,7 @@ export default function Home() {
       </Head>
 
       {/* Carrusel con transición y overlay solo en las demás imágenes */}
-      <section className="relative flex items-start justify-center w-full h-[340px] md:h-72 bg-cover bg-center overflow-hidden">
+      <section className="relative flex items-start justify-center w-full h-[340px] md:h-72 bg-cover bg-center">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
