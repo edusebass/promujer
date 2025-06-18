@@ -23,13 +23,21 @@ interface RandomImageProps {
 // Componente hijo para cada media
 const MediaCard = ({ item, index }: { item: MediaService; index: number }) => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
-  const fromX = index % 2 === 0 ? 100 : -100;
+  const isLeft = index % 2 === 0;
   return (
     <motion.div
       key={index}
       ref={ref}
-      initial={{ opacity: 0, x: fromX, filter: "blur(4px)" }}
-      animate={inView ? { opacity: 1, x: 0, filter: "blur(0px)" } : {}}
+      initial={
+        isLeft
+          ? { opacity: 0, x: -100, filter: "blur(4px)" }
+          : { opacity: 0, y: -100, filter: "blur(4px)" }
+      }
+      animate={
+        inView
+          ? { opacity: 1, x: 0, y: 0, filter: "blur(0px)" }
+          : {}
+      }
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="flex-shrink-0 w-64 m-2"
     >
@@ -83,7 +91,7 @@ const RandomImage: React.FC<RandomImageProps> = ({ count = 1 }) => {
   if (randomMedia.length === 0) return null;
 
   return (
-    <div className="flex flex-wrap justify-center items-center m-auto">
+    <div className="flex flex-wrap justify-center items-center m-auto min-h-[400px]">
       {randomMedia.map((item, index) => (
         <MediaCard key={index} item={item} index={index} />
       ))}

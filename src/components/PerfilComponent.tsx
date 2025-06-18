@@ -22,7 +22,7 @@ const PerfilComponent = () => {
     useEffect(() => {
         if (inView) {
             controlsImg.start({
-                x: 0,
+                y: 0, // <-- Cambia x: 0 por y: 0
                 opacity: 1,
                 filter: "blur(0px)",
                 transition: { duration: 0.8, ease: "easeOut" },
@@ -40,7 +40,7 @@ const PerfilComponent = () => {
         <section ref={ref}>
             <div className="mx-7 mt-14 flex flex-col items-center justify-center">
                 <motion.div
-                    initial={{ x: 100, opacity: 0, filter: "blur(3px)" }}
+                    initial={{ y: -200, opacity: 0, filter: "blur(3px)" }} // <-- Imagen desde arriba
                     animate={controlsImg}
                     className="w-full flex justify-center"
                 >
@@ -54,7 +54,7 @@ const PerfilComponent = () => {
                 </motion.div>
             </div>
             <motion.div
-                initial={{ x: -100, opacity: 0, filter: "blur(3px)" }}
+                initial={{ x: -100, opacity: 0, filter: "blur(3px)" }} // <-- Texto desde la izquierda
                 animate={controlsText}
                 className="flex flex-col justify-center items-center rounded-lg bg-colorTextSecondary md:max-w-3xl md:flex-row"
             >

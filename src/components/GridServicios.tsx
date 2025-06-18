@@ -43,7 +43,7 @@ const ServicioCard = ({ item, index }: { item: Item; index: number }) => {
 
 const GridServicios = ({ items }: GridServiciosProps) => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6 p-4">
+    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6 p-4 min-h-[300px]">
       {items.map((item, index) => (
         <ServicioCard key={index} item={item} index={index} />
       ))}
