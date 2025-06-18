@@ -3,7 +3,7 @@ import React from "react";
 import { InfoContact } from "@/components/InfoContact";
 import AccordionComponent from "@/components/AccordionComponent";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { SERVICIOS_GINECOLOGIA as informacion } from "@/constants/servicios_descrip";
+import { SERVICIOS_ECOGRAFIAS as informacion } from "@/constants/servicios_descrip";
 import type { Metadata } from "next";
 import RandomImage from "@/components/RandomImage";
 import BannerDoctor from "@/components/BannerDoctor";
@@ -45,7 +45,7 @@ const Ecografia = ({ params }: any) => {
                     <p className="text-3xl bg-colorTextSecondary font-semibold">
                         {informacion[service].servicio}
                     </p>
-                    <p>Información sobre este padecimiento</p>
+                    {/* <p>Información sobre este padecimiento</p> */}
                 </div>
                 <div className="flex flex-col gap-3 justify-center w-full md:flex-row">
                     <div className="flex-1">

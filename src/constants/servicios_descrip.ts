@@ -339,3 +339,168 @@ export const SERVICIOS_OTROS: Record<string, ServicioDescripcion> = {
     urlVideo: "kLmNoPqRsTu",
   },
 };
+
+export const SERVICIOS_ECOGRAFIAS: Record<string, ServicioDescripcion> = {
+  cromosomica: {
+    servicio: "Ecografía cromosómica",
+    imgBanner: "https://cdn-icons-png.flaticon.com/512/8123/8123645.png",
+    questions: [
+      {
+        question: "¿Para qué sirve la ecografía cromosómica?",
+        answer:
+          "Permite evaluar la presencia de marcadores asociados a alteraciones cromosómicas en el feto, ayudando en la detección temprana de síndromes genéticos.",
+      },
+      {
+        question: "¿En qué semana del embarazo se recomienda realizarla?",
+        answer:
+          "Generalmente se realiza entre las semanas 11 y 14 de gestación para obtener resultados óptimos.",
+      },
+      {
+        question: "¿Qué ventajas ofrece frente a otros estudios?",
+        answer:
+          "Es un método no invasivo, seguro y proporciona información valiosa para la toma de decisiones tempranas en el embarazo.",
+      },
+      {
+        question: "¿Por qué elegir nuestra clínica para tu ecografía cromosómica?",
+        answer:
+          "Contamos con tecnología de última generación y especialistas en diagnóstico prenatal para brindarte tranquilidad y confianza.",
+      },
+    ],
+    urlVideo: "",
+  },
+  anatomica: {
+    servicio: "Ecografía anatómica",
+    imgBanner: "https://cdn-icons-png.flaticon.com/512/8123/8123645.png",
+    questions: [
+      {
+        question: "¿Qué evalúa la ecografía anatómica?",
+        answer:
+          "Permite un estudio detallado de la anatomía fetal para identificar posibles malformaciones estructurales y valorar el desarrollo de los órganos del bebé.",
+      },
+      {
+        question: "¿Cuándo se recomienda realizarla?",
+        answer:
+          "Se recomienda entre las semanas 18 y 22 de gestación para una evaluación completa del desarrollo fetal.",
+      },
+      {
+        question: "¿Qué tipo de anomalías puede detectar?",
+        answer:
+          "Puede identificar alteraciones en el corazón, cerebro, columna, extremidades y otros órganos vitales.",
+      },
+      {
+        question: "¿Por qué confiar en nuestro equipo para tu ecografía anatómica?",
+        answer:
+          "Nuestros profesionales están altamente capacitados y utilizan equipos avanzados para garantizar diagnósticos precisos.",
+      },
+    ],
+    urlVideo: "",
+  },
+  "doppler-fetal": {
+    servicio: "Doppler Fetal",
+    imgBanner: "https://cdn-icons-png.flaticon.com/512/8123/8123645.png",
+    questions: [
+      {
+        question: "¿Qué es el Doppler Fetal?",
+        answer:
+          "Evalúa el flujo sanguíneo en los vasos fetales y placentarios, permitiendo detectar alteraciones en la circulación que puedan afectar el bienestar del feto.",
+      },
+      {
+        question: "¿En qué casos se recomienda realizar un Doppler Fetal?",
+        answer:
+          "Se indica en embarazos de alto riesgo, sospecha de restricción de crecimiento intrauterino o alteraciones en el líquido amniótico.",
+      },
+      {
+        question: "¿Qué beneficios ofrece este estudio?",
+        answer:
+          "Permite un monitoreo preciso del bienestar fetal y ayuda a tomar decisiones oportunas para la salud del bebé.",
+      },
+      {
+        question: "¿Por qué elegirnos para tu Doppler Fetal?",
+        answer:
+          "Ofrecemos atención personalizada y tecnología de vanguardia para garantizar la seguridad y tranquilidad de tu embarazo.",
+      },
+    ],
+    urlVideo: "",
+  },
+  ginecologica: {
+    servicio: "Ecografía ginecológica",
+    imgBanner: "https://cdn-icons-png.flaticon.com/512/8123/8123645.png",
+    questions: [
+      {
+        question: "¿Para qué sirve la ecografía ginecológica?",
+        answer:
+          "Explora los órganos reproductores femeninos para el diagnóstico de patologías como miomas, quistes o alteraciones endometriales.",
+      },
+      {
+        question: "¿Es dolorosa la ecografía ginecológica?",
+        answer:
+          "Es un procedimiento seguro, rápido y generalmente indoloro, realizado por especialistas en salud femenina.",
+      },
+      {
+        question: "¿Qué ventajas tiene realizarse este estudio regularmente?",
+        answer:
+          "Permite la detección temprana de enfermedades y el seguimiento adecuado de tratamientos ginecológicos.",
+      },
+      {
+        question: "¿Por qué confiar en nuestro centro para tu ecografía ginecológica?",
+        answer:
+          "Brindamos un ambiente cómodo, privacidad y atención profesional para tu tranquilidad y bienestar.",
+      },
+    ],
+    urlVideo: "",
+  },
+  obstetrica: {
+    servicio: "Ecografía obstétrica",
+    imgBanner: "https://cdn-icons-png.flaticon.com/512/8123/8123645.png",
+    questions: [
+      {
+        question: "¿Qué evalúa la ecografía obstétrica?",
+        answer:
+          "Controla y da seguimiento al embarazo, valorando el crecimiento fetal, cantidad de líquido amniótico y localización placentaria.",
+      },
+      {
+        question: "¿Con qué frecuencia se recomienda realizarla?",
+        answer:
+          "Se recomienda en cada trimestre del embarazo para un monitoreo integral de la salud materno-fetal.",
+      },
+      {
+        question: "¿Qué información adicional puede aportar?",
+        answer:
+          "Permite detectar posibles complicaciones y planificar intervenciones médicas si es necesario.",
+      },
+      {
+        question: "¿Por qué elegirnos para tu ecografía obstétrica?",
+        answer:
+          "Nuestro equipo te acompaña en cada etapa del embarazo con calidez, experiencia y tecnología avanzada.",
+      },
+    ],
+    urlVideo: "",
+  },
+  "4d-hd-live": {
+    servicio: "Ecografía 4D HD Live",
+    imgBanner: "https://cdn-icons-png.flaticon.com/512/8123/8123645.png",
+    questions: [
+      {
+        question: "¿Qué es la ecografía 4D HD Live?",
+        answer:
+          "Tecnología avanzada que permite visualizar imágenes en tiempo real y en alta definición del feto, mostrando movimientos y rasgos faciales con gran detalle.",
+      },
+      {
+        question: "¿Qué ventajas ofrece la ecografía 4D HD Live?",
+        answer:
+          "Ofrece una experiencia única y emocional para los padres, permitiendo ver al bebé en movimiento antes del nacimiento.",
+      },
+      {
+        question: "¿Es segura para el bebé y la madre?",
+        answer:
+          "Sí, es un procedimiento no invasivo y seguro, realizado bajo estrictos estándares de calidad.",
+      },
+      {
+        question: "¿Por qué realizar tu ecografía 4D HD Live con nosotros?",
+        answer:
+          "Contamos con equipos de última generación y personal especializado para brindarte imágenes inolvidables y precisas.",
+      },
+    ],
+    urlVideo: "",
+  },
+};
