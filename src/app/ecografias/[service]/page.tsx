@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
     };
 }
 
-const Ginecologia = async ({ params }: any) => {
+const Ecografia = async ({ params }: any) => {
     const { service } = await params;
     return (
         <>

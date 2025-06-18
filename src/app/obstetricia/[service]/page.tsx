@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
   };
 }
 
-const Ginecologia = async ({ params }: any) => {
+const Obstetricia = async ({ params }: any) => {
   const { service } = await params;
 
 
@@ -32,7 +32,7 @@ const Ginecologia = async ({ params }: any) => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="flex items-center justify-center flex-col pt-10">
           <h1 className="relative text-3xl font-semibold text-white p-4">
-            GINECOLOGIA
+            OBSTETRICIA
           </h1>
           <h2 className="relative text-4xl font-bold text-white p-4">
             {informacion[service].servicio}
