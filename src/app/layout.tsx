@@ -76,7 +76,9 @@ export default function RootLayout({
       <body className={`min-h-screen w-full flex flex-col bg-background text-primary ${inter.className}`}>
         <UpperNavbar />
         <Navbar />
-        <main className="flex-1 w-full flex flex-col">{children}</main>
+        <main className="flex-1 min-h-screen w-full flex flex-col">
+          {children}
+        </main>
         <Footer />
         <FloatButtons />
       </body>
