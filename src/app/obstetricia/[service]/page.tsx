@@ -9,16 +9,18 @@ import RandomImage from "@/components/RandomImage";
 import BannerDoctor from "@/components/BannerDoctor";
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
-  const { service } = params;
+  const { service } = await params;
   const title = `${informacion[service].servicio}`;
+  console.log(title)
   return {
     title,
     icons:
-      "https://res.cloudinary.com/ds41xxspf/image/upload/v1721864671/termoasis/WhatsApp_Image_2024-07-23_at_13.47.22-removebg-preview_2_1_1_mgqds4.png",
+      "https://res.cloudinary.com/dwowtb0ya/image/upload/v1750287409/lopgo%20dr/logoMujer_nvo70c.jpg",
   };
 }
-const Obstetricia = ({ params }: any) => {
-  const { service } = params;
+
+const Ginecologia = async ({ params }: any) => {
+  const { service } = await params;
 
 
   return (
