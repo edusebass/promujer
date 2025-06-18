@@ -13,15 +13,14 @@ const FloatButtons = () => {
       const currentScroll = window.scrollY;
       const diff = currentScroll - lastScroll.current;
 
+      // Mostrar botones (posición base)
       if (diff < 0) {
-        setOffset(300);
+        setOffset(0);
         if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
-        scrollTimeout.current = setTimeout(() => {
-          setOffset(0);
-        }, 300);
       }
+      // Ocultar botones (desplazar hacia abajo)
       if (diff > 0) {
-        setOffset(-800);
+        setOffset(80); // Solo los baja un poco, nunca fuera de pantalla
         if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
         scrollTimeout.current = setTimeout(() => {
           setOffset(0);
