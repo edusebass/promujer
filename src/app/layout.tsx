@@ -74,11 +74,13 @@ export default function RootLayout({
         <link rel="canonical" href="https://drjuanyancha.com" />
       </head>
       <body
-        className={`bg-background w-full min-h-screen flex flex-col text-primary ${inter.className}`}
+        className={`bg-background w-full min-h-screen min-w-min flex flex-col text-primary ${inter.className}`}
       >
         <UpperNavbar />
         <Navbar />
-        {children}
+        <div className="flex-1 flex flex-col min-h-screen">
+          {children}
+        </div>
         <FloatButtons />
         <Footer />
       </body>
