@@ -24,7 +24,7 @@ const FloatButtons = () => {
         style={{ transform: `translateY(${offset}px)` }}
       >
         <a
-          href="https://wa.me/+5930969618902?text=¡Saludos!,%20Me%20interesa%20su%20servicio."
+          href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png"
           target="_blank"
           rel="noopener noreferrer"
           className="no-underline"
@@ -51,7 +51,7 @@ const FloatButtons = () => {
       >
         {/* Instagram */}
         <a
-          href="https://instagram.com/"
+          href="https://www.instagram.com/drjuanyanchat"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -67,7 +67,7 @@ const FloatButtons = () => {
         </a>
         {/* Facebook */}
         <a
-          href="https://facebook.com/"
+          href="https://www.facebook.com/drjuanyanchat"
           target="_blank"
           rel="noopener noreferrer"
         >

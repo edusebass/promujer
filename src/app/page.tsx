@@ -206,7 +206,14 @@ export default function Home() {
       <div ref={perfilRef}>
         <PerfilComponent />
       </div>
-
+      <section className="flex flex-col  justify-start">
+        {/* <h1 className="text-4xl mt-3 md:text-6xl font-extrabold text-center md:px-16 md:mt-3">
+          PRO MUJER
+        </h1> */}
+        <h2 className="text-4xl mt-3 md:text-6xl font-bold text-center md:px-16 md:mt-3">
+          ECOGRAFIAS
+        </h2>
+      </section>
       <GridExtra
         items={ecografias.map(({ title, href, icon }) => ({
           title,

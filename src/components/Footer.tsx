@@ -61,15 +61,13 @@ const Footer = () => {
           <div className="flex flex-col items-center p-3 justify-center mt-3 bg-background rounded-lg md:px-5 md:py-2">
             <span className="font-semibold mb-2 text-black">REDES SOCIALES</span>
             <div className="flex flex-row gap-4">
-              <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/drjuanyanchat" target="_blank" rel="noopener noreferrer">
                 <FaFacebook className="text-blue-600 text-2xl hover:scale-110 transition-transform" />
               </a>
-              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/drjuanyanchat" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="text-pink-500 text-2xl hover:scale-110 transition-transform" />
               </a>
-              <a href="https://tiktok.com/" target="_blank" rel="noopener noreferrer">
-                <FaTiktok className="text-black text-2xl hover:scale-110 transition-transform" />
-              </a>
+
             </div>
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />

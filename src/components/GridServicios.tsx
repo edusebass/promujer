@@ -32,11 +32,17 @@ const ServicioCard = ({ item, index }: { item: Item; index: number }) => {
         height={100}
       />
       <h2 className="text-center mb-4 font-bold">{item.description}</h2>
-      <div className="flex items-center p-1 justify-center md:h-6 bg-colorButton hover:bg-colorButton/95 rounded-lg md:px-5 md:py-1 cursor-pointer">
-        <Link href={item.link} className="text-black text-sm">
+      <motion.div
+        whileTap={{ scale: 0.95 }}
+        className="flex items-center p-1 bg-primary justify-center md:h-6 bg-colorButton hover:bg-colorButton/95 active:bg-colorButton/80 rounded-lg md:px-5 md:py-1 cursor-pointer transition"
+      >
+        <Link
+          href={item.link}
+          className="text-white font-extrabold text-sm w-full h-full flex items-center justify-center"
+        >
           Conozca más{" "}
         </Link>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
