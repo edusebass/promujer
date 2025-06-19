@@ -17,6 +17,7 @@ const NavbarMoviles = ({
 }) => {
   const [openSubMenu, setOpenSubMenu] = useState<string | null>(null);
   const [instantClose, setInstantClose] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   // Cierra el menú móvil al hacer scroll
   useEffect(() => {
@@ -30,6 +31,14 @@ const NavbarMoviles = ({
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isOpen, toggleMobileMenu]);
 
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   const handleSubMenu = (menu: string) => {
     setOpenSubMenu((prevMenu) => (prevMenu === menu ? null : menu));
   };
@@ -41,7 +50,7 @@ const NavbarMoviles = ({
   return (
     <div
       className={`
-        md:hidden fixed top-[180px] left-0 w-full z-40 bg-background shadow-md
+        md:hidden fixed ${scrolled ? "top-[55px]" : "top-[180px]"} left-0 w-full z-40 bg-background shadow-md
         ${instantClose ? "" : "transition-all duration-500 ease-in-out"}
         ${isOpen ? "max-h-[100vh] opacity-100 translate-y-0 pointer-events-auto" : "max-h-0 opacity-0 -translate-y-8 pointer-events-none"}
         overflow-hidden
