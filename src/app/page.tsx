@@ -65,7 +65,7 @@ export default function Home() {
       <Head>
         <title>PRO MUJER</title>
         <meta
-          name="description"
+          name="descripcion"
           content="Atención profesional en ginecología y obstetricia en Quito. Consulta ginecológica, control prenatal, ecografías y salud femenina integral con el Dr. Juan Yancha, especialista en el cuidado de la mujer."
         />
         <meta
@@ -215,10 +215,10 @@ export default function Home() {
         </h2>
       </section>
       <GridExtra
-        items={ecografias.map(({ title, href, icon }) => ({
+        items={ecografias.map(({ title, href, icon, descripcion }) => ({
           title,
+          description: descripcion,
           link: href,
-          description: title,
           icon,
         }))}
       />
@@ -237,11 +237,11 @@ export default function Home() {
         <h2 className="text-2xl mt-6">Servicios de ginecologia</h2>
 
         <GridServicios
-          items={ginecologia.map(({ title, href, icon }) => ({
+          items={ginecologia.map(({ href, icon, descripcion, title }) => ({
             title,
-            link: href,
-            description: title,
             icon,
+            description: descripcion,
+            link: href,
           }))}
         />
 
@@ -249,10 +249,10 @@ export default function Home() {
 
         <h2 className="text-2xl mt-6">Servicios de obstetricia</h2>
         <GridServicios
-          items={obstetricia.map(({ title, href, icon }) => ({
+          items={obstetricia.map(({ title, href, icon, descripcion }) => ({
             title,
             link: href,
-            description: title,
+            description: descripcion,
             icon,
           }))}
         />
@@ -260,11 +260,11 @@ export default function Home() {
 
         <h2 className="text-2xl mt-6">OTROS SERVICIOS</h2>
         <GridServicios
-          items={otros.map(({ title, href, icon }) => ({
+          items={otros.map(({ title, href, icon, descripcion }) => ({
             title,
-            link: href,
-            description: title,
             icon,
+            description: descripcion,
+            link: href,
           }))}
         />
         <RandomImage count={4} />

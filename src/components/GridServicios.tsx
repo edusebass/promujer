@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 type Item = {
+  title: string;
   icon: string;
   description: string;
   link: string;
@@ -28,13 +29,14 @@ const ServicioCard = ({ item, index }: { item: Item; index: number }) => {
       <Image
         src={item.icon}
         alt={item.description}
-        width={100}
+        width={125}
         height={100}
       />
-      <h2 className="text-center mb-4 font-bold">{item.description}</h2>
+      <h2 className="text-center text-2xl mb-4 font-bold">{item.title}</h2>
+      <p className="text-sm text-center text-gray-600 leading-loose">{item.description}</p>
       <motion.div
         whileTap={{ scale: 0.95 }}
-        className="flex items-center p-1 bg-primary justify-center md:h-6 bg-colorButton hover:bg-colorButton/95 active:bg-colorButton/80 rounded-lg md:px-5 md:py-1 cursor-pointer transition"
+        className=" mt-4 flex items-center p-1 bg-primary justify-center md:h-6 bg-colorButton hover:bg-colorButton/95 active:bg-colorButton/80 rounded-lg md:px-5 md:py-1 cursor-pointer transition"
       >
         <Link
           href={item.link}
@@ -49,7 +51,7 @@ const ServicioCard = ({ item, index }: { item: Item; index: number }) => {
 
 const GridServicios = ({ items }: GridServiciosProps) => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6 p-4 min-h-[300px]">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 p-4 min-h-[300px]">
       {items.map((item, index) => (
         <ServicioCard key={index} item={item} index={index} />
       ))}
