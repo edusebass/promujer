@@ -29,7 +29,7 @@ const FloatButtons = () => {
           rel="noopener noreferrer"
           className="no-underline"
         >
-          <div className="flex items-center gap-2 bg-black text-white hover:bg-white rounded-full shadow-md px-2 py-1 transition-colors">
+          <div className="flex items-center gap-2 bg-black text-white  rounded-full shadow-md px-2 py-1 transition-colors">
             <Image
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png"
               alt="WhatsApp"
@@ -55,7 +55,7 @@ const FloatButtons = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="bg-white hover:bg-white rounded-full shadow-md p-2 transition-colors">
+          <div className="bg-white  rounded-full shadow-md p-2 transition-colors">
             <Image
               src="/instagram.webp"
               alt="Instagram"
@@ -71,7 +71,7 @@ const FloatButtons = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="bg-white hover:bg-white rounded-full shadow-md p-2 transition-colors">
+          <div className="bg-white  rounded-full shadow-md p-2 transition-colors">
             <Image
               src="/facebook.png"
               alt="Facebook"
@@ -87,7 +87,7 @@ const FloatButtons = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="bg-white hover:bg-white rounded-full shadow-md p-2 transition-colors">
+          <div className="bg-white  rounded-full shadow-md p-2 transition-colors">
             <Image
               src="/maps.png"
               alt="Google Maps"
@@ -99,7 +99,7 @@ const FloatButtons = () => {
         </a>
         {/* Teléfono */}
         <a href="tel:+5930969618902">
-          <div className="bg-white hover:bg-white rounded-full shadow-md p-2 transition-colors">
+          <div className="bg-white  rounded-full shadow-md p-2 transition-colors">
             <Image
               src="/phone.png"
               alt="Llamar"
