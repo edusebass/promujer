@@ -24,14 +24,14 @@ const FloatButtons = () => {
         style={{ transform: `translateY(${offset}px)` }}
       >
         <a
-          href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png"
+          href="https://wa.me/593995129878?text=¡Hola!%20Me%20gustaría%20agendar%20una%20cita."
           target="_blank"
           rel="noopener noreferrer"
           className="no-underline"
         >
           <div className="flex items-center gap-2 bg-black text-white hover:bg-white rounded-full shadow-md px-2 py-1 transition-colors">
             <Image
-              src="/whatsaap.jpg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png"
               alt="WhatsApp"
               width={24}
               height={24}

@@ -39,6 +39,11 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "www.stop-pe.org",
       },
+      {
+        protocol: "https",
+        hostname: "upload.wikimedia.org",
+      },
+
     ],
   },
 };
