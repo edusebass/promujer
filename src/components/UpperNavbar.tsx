@@ -15,7 +15,7 @@ const UpperNavbar = () => {
             <FaPhoneVolume className="text-xl" />
             <div className="text-sm text-center">
               <p className="font-bold">Agenda tu cita ahora</p>
-              <p>099 512 9878</p>
+              <p>096 961 8902</p>
             </div>
           </div>
           <div className="hidden md:flex gap-7 justify-center items-center pl-7">

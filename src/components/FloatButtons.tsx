@@ -24,7 +24,7 @@ const FloatButtons = () => {
         style={{ transform: `translateY(${offset}px)` }}
       >
         <a
-          href="https://wa.me/593995129878?text=¡Hola!%20Me%20gustaría%20agendar%20una%20cita."
+          href="https://wa.me/593969618902?text=¡Hola!%20Me%20gustaría%20agendar%20una%20cita."
           target="_blank"
           rel="noopener noreferrer"
           className="no-underline"
