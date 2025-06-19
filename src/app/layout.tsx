@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://drjuanyancha.com"),
   title: {
     default: "Dr. Juan Yancha, Ginecólogo Obstreta Quito  ",
-    template: "%s - Dr. Juan Yancha, Ginecólogo Obstreta Quito  | ginecologia, Ginecologia, ",
+    template: "%s - Dr. Juan Yancha, Ginecólogo Obstreta Quito  | Ginecologia, Ecografías, Obstetricia, Control Prenatal",
   },
   description:
     "El Dr. Juan Yancha es especialista en ginecología, obstetricia y ecografías en Quito. Atención integral y personalizada en consulta ginecológica, control prenatal y estudios ecográficos avanzados para la salud femenina.",
