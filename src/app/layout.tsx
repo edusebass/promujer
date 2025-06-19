@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "El Dr. Juan Yancha es especialista en ginecología, obstetricia y ecografías en Quito. Atención integral y personalizada en consulta ginecológica, control prenatal y estudios ecográficos avanzados para la salud femenina.",
 
   icons:
-    "/logoMujer.jpg",
+    "/logoMujer.svg",
 
   twitter: {
     card: "summary_large_image",
