@@ -5,7 +5,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { MdMarkEmailUnread } from "react-icons/md";
 
 const logo =
-  "/logoMujer.jpg"; // Replace with your actual logo path
+  "https://res.cloudinary.com/dwowtb0ya/image/upload/v1750287409/lopgo%20dr/logoMujer_nvo70c.jpg"; // Replace with your actual logo path
 const UpperNavbar = () => {
   return (
     <div className="w-full flex-col md:flex-row h-32 flex justify-center items-center px-4 md:px-12 gap-4">
