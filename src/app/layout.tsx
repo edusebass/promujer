@@ -23,14 +23,14 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@Dr. Juan Yancha, Ginecólogo Obstreta Quito ",
-    title: "Dr. Juan Yancha, Ginecólogo Obstreta Quito  | Ecos y control prenatal",
+    title: "Dr. Juan Yancha, Ginecólogo Obstreta Quito   | Ginecologia, Ecografías, Obstetricia, Control Prenatal",
     description:
       "Descubre cómo nuestros tratamientos en ginecologia, Ginecologia y  pueden mejorar tu calidad de vida.",
   },
   openGraph: {
     type: "website",
     url: "https://drjuanyancha.com",
-    title: "Dr. Juan Yancha, Ginecólogo Obstreta Quito  | ginecologia, Ginecologia, ",
+    title: "Dr. Juan Yancha, Ginecólogo Obstreta Quito   | Ginecologia, Ecografías, Obstetricia, Control Prenatal",
     description:
       "El Dr. Juan Yancha es especialista en ginecología, obstetricia y ecografías en Quito. Atención integral y personalizada en consulta ginecológica, control prenatal y estudios ecográficos avanzados para la salud femenina.",
     images: [
