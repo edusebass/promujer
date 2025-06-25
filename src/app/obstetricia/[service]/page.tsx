@@ -7,6 +7,7 @@ import { SERVICIOS_OBSTETRICIA as informacion } from "@/constants/servicios_desc
 import { Metadata } from "next";
 import RandomImage from "@/components/RandomImage";
 import BannerDoctor from "@/components/BannerDoctor";
+import AnimatedVideoSection from "@/components/AnimatedVideoSection";
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
   const { service } = await params;
@@ -42,7 +43,7 @@ const Obstetricia = async ({ params }: any) => {
 
       <section className="flex flex-col w-10/12 mx-10 md:mx-16 bg-white p-3">
         <div className="bg-colorTextSecondary mt-16 mb-5 p-5">
-          <p className="text-3xl bg-colorTextSecondary font-semibold">
+          <p className="text-3xl bg-colorTextSecondary font-bold pb-1">
             {informacion[service].servicio}
           </p>
           <p>Información sobre este padecimiento</p>
@@ -60,31 +61,16 @@ const Obstetricia = async ({ params }: any) => {
 
       <BannerDoctor servicio={informacion[service].servicio} />
 
+      <AnimatedVideoSection
+        servicio={informacion[service].servicio}
+        urlVideo={informacion[service]?.urlVideo}
+        introText={`La obstetricia es la especialidad médica encargada del cuidado integral de la mujer durante el embarazo, el parto y el posparto. Un adecuado control obstétrico permite detectar a tiempo posibles complicaciones, proteger la salud de la madre y el bebé, y brindar acompañamiento profesional en cada etapa de la gestación.
 
-      <section className="flex flex-col-reverse md:flex-row md:px-16 md:my-1 md:items-center md:space-x-4 p-4">
-        <div className="md:w-1/2">
-          <iframe
-            width="100%"
-            height="315"
-            src={`https://www.youtube.com/embed/${informacion[service]?.urlVideo}`}
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-        <div className="md:w-1/2 mt-4 mb-5 md:mt-0 md:pl-10">
-          <h2 className="text-4xl font-normal mb-2">
-            {informacion[service].servicio}
-          </h2>
-          <p className="text-black text-base md:text-sm">
-            La ginecologia y la fisioterapia ayudan a tratar enfermedades
-            autoinmunes al mejorar la función nerviosa, reducir la inflamación,
-            aliviar el dolor y aumentar la movilidad, mejorando así la calidad
-            de vida del paciente.
-          </p>
-        </div>
-      </section>
+        En el siguiente video, conocerá información relevante sobre la importancia de los controles prenatales, los principales padecimientos que pueden presentarse durante el embarazo y las mejores prácticas para un desarrollo saludable. 
+        
+        Le invitamos a verlo para comprender cómo la atención especializada puede marcar una diferencia significativa en la experiencia materna y el bienestar familiar.
+        `}
+      />
     </>
   );
 };

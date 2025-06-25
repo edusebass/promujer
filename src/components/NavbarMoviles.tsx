@@ -5,7 +5,8 @@ import { FaAngleDown } from "react-icons/fa";
 import {
   ginecologia,
   obstetricia,
-  otros
+  otros,
+  ecografias
 } from "@/constants/servicios_lista";
 
 const NavbarMoviles = ({
@@ -128,6 +129,44 @@ const NavbarMoviles = ({
             {openSubMenu === "obstetricia" && (
               <div className="pl-4">
                 {obstetricia.map((item, index) => (
+                  <Link
+                    key={index}
+                    href={item.href}
+                    className="block py-1 pb-2 border-b border-white"
+                    onClick={handleLinkClick}
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+        <div className="py-2 w-full">
+          <div
+            className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "ecografias"
+              ? "bg-primary/5 text-SECONDARY p-2"
+              : ""
+              }`}
+          >
+            <button
+              className="w-full text-left"
+              onClick={() => handleSubMenu("ecografias")}
+            >
+              ECOGRAFIAS
+            </button>
+            <FaAngleDown
+              className={`transform transition-transform duration-300 ${openSubMenu === "ecografias" ? "rotate-180" : ""
+                }`}
+            />
+          </div>
+          <div
+            className={`overflow-hidden transition-all duration-1000 ${openSubMenu === "ecografias" ? "max-h-screen" : "max-h-0"
+              }`}
+          >
+            {openSubMenu === "ecografias" && (
+              <div className="pl-4">
+                {ecografias.map((item, index) => (
                   <Link
                     key={index}
                     href={item.href}

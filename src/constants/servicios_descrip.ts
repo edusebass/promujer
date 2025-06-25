@@ -24,7 +24,7 @@ export const SERVICIOS_GINECOLOGIA: Record<string, ServicioDescripcion> = {
         answer: "El tratamiento puede incluir cambios en el estilo de vida, medicamentos para regular el ciclo menstrual y, en algunos casos, tratamientos de fertilidad.",
       },
     ],
-    urlVideo: "dQw4w9WgXcQ",
+    urlVideo: "IoO35gZfzSA",
   },
   endometriosis: {
     servicio: "Endometriosis",
@@ -43,7 +43,7 @@ export const SERVICIOS_GINECOLOGIA: Record<string, ServicioDescripcion> = {
         answer: "El tratamiento puede incluir medicamentos para el dolor, terapia hormonal y, en casos graves, cirugía.",
       },
     ],
-    urlVideo: "Qw4w9WgXcQd",
+    urlVideo: "Zuro6igibUw",
   },
   "miomas-uterinos": {
     servicio: "Miomas uterinos",
@@ -62,7 +62,7 @@ export const SERVICIOS_GINECOLOGIA: Record<string, ServicioDescripcion> = {
         answer: "El tratamiento depende del tamaño y los síntomas, e incluye medicamentos, procedimientos mínimamente invasivos o cirugía.",
       },
     ],
-    urlVideo: "w9WgXcQdQw4",
+    urlVideo: "Hh578vkrHVQ",
   },
   "infecciones-vaginales": {
     servicio: "Infecciones vaginales recurrentes",
@@ -81,7 +81,7 @@ export const SERVICIOS_GINECOLOGIA: Record<string, ServicioDescripcion> = {
         answer: "Mantener una buena higiene íntima, evitar duchas vaginales y usar ropa interior de algodón.",
       },
     ],
-    urlVideo: "XcQdQw4w9Wg",
+    urlVideo: "xz8TSmb8mJQ",
   },
   "dolor-pelvico-cronico": {
     servicio: "Dolor pélvico crónico",
@@ -100,7 +100,7 @@ export const SERVICIOS_GINECOLOGIA: Record<string, ServicioDescripcion> = {
         answer: "El tratamiento depende de la causa e incluye medicamentos, fisioterapia y, en algunos casos, cirugía.",
       },
     ],
-    urlVideo: "9WgXcQdQw4w",
+    urlVideo: "EpjhihZQQMI",
   },
   "trastornos-menstruales": {
     servicio: "Trastornos menstruales",
@@ -119,7 +119,7 @@ export const SERVICIOS_GINECOLOGIA: Record<string, ServicioDescripcion> = {
         answer: "Con medicamentos hormonales, cambios en el estilo de vida y tratamiento de la causa subyacente.",
       },
     ],
-    urlVideo: "gXcQdQw4w9W",
+    urlVideo: "Y3300MyP_Gc",
   },
 };
 
@@ -142,7 +142,7 @@ export const SERVICIOS_OBSTETRICIA: Record<string, ServicioDescripcion> = {
         answer: "Exámenes físicos, ecografías, análisis de sangre y orina, y asesoría nutricional.",
       },
     ],
-    urlVideo: "aBcDeFgHiJk",
+    urlVideo: "6DesoMNKY1g",
   },
   "diabetes-gestacional": {
     servicio: "Diabetes gestacional",
@@ -161,7 +161,7 @@ export const SERVICIOS_OBSTETRICIA: Record<string, ServicioDescripcion> = {
         answer: "Con dieta, ejercicio y, en algunos casos, medicamentos.",
       },
     ],
-    urlVideo: "bCdEfGhIjKl",
+    urlVideo: "eoex9LHNLrs",
   },
   "preeclampsia": {
     servicio: "Preeclampsia",
@@ -180,7 +180,7 @@ export const SERVICIOS_OBSTETRICIA: Record<string, ServicioDescripcion> = {
         answer: "Con control médico estricto, reposo y, en casos graves, parto anticipado.",
       },
     ],
-    urlVideo: "cDeFgHiJkLm",
+    urlVideo: "lpAcEyjtqDM",
   },
   "parto-prematuro": {
     servicio: "Parto prematuro",
@@ -199,7 +199,7 @@ export const SERVICIOS_OBSTETRICIA: Record<string, ServicioDescripcion> = {
         answer: "Control prenatal adecuado y tratamiento de factores de riesgo.",
       },
     ],
-    urlVideo: "dEfGhIjKlMn",
+    urlVideo: "LKQ-9h-G4DA",
   },
   "cesarea-recuperacion": {
     servicio: "Cesárea y recuperación",
@@ -218,7 +218,7 @@ export const SERVICIOS_OBSTETRICIA: Record<string, ServicioDescripcion> = {
         answer: "Si hay fiebre, dolor intenso, sangrado abundante o signos de infección.",
       },
     ],
-    urlVideo: "eFgHiJkLmNo",
+    urlVideo: "jFdfltCfOA8",
   },
   "cuidados-postparto": {
     servicio: "Cuidados postparto",
@@ -237,7 +237,7 @@ export const SERVICIOS_OBSTETRICIA: Record<string, ServicioDescripcion> = {
         answer: "Fiebre, dolor intenso, sangrado abundante o dificultad para amamantar.",
       },
     ],
-    urlVideo: "fGhIjKlMnOp",
+    urlVideo: "emTzmnEFprY",
   },
 };
 
@@ -260,7 +260,7 @@ export const SERVICIOS_OTROS: Record<string, ServicioDescripcion> = {
         answer: "Permite prevenir embarazos no deseados y planificar la familia de acuerdo a las necesidades de cada persona.",
       },
     ],
-    urlVideo: "gHiJkLmNoPq",
+    urlVideo: "2Sv20zNo5n8",
   },
   "menopausia": {
     servicio: "Menopausia y terapia hormonal",
@@ -279,7 +279,7 @@ export const SERVICIOS_OTROS: Record<string, ServicioDescripcion> = {
         answer: "Es un tratamiento para aliviar los síntomas de la menopausia mediante hormonas.",
       },
     ],
-    urlVideo: "hIjKlMnOpQr",
+    urlVideo: "uKvydd-1LT8",
   },
   "cancer-ginecologico": {
     servicio: "Cáncer ginecológico",
@@ -298,7 +298,7 @@ export const SERVICIOS_OTROS: Record<string, ServicioDescripcion> = {
         answer: "Con chequeos regulares, vacunación contra el VPH y hábitos saludables.",
       },
     ],
-    urlVideo: "iJkLmNoPqRs",
+    urlVideo: "-0JZ-S5Amis",
   },
   "salud-sexual": {
     servicio: "Salud sexual femenina",
@@ -317,7 +317,7 @@ export const SERVICIOS_OTROS: Record<string, ServicioDescripcion> = {
         answer: "Con educación, comunicación, uso de métodos de protección y chequeos médicos.",
       },
     ],
-    urlVideo: "jKlMnOpQrSt",
+    urlVideo: "LKIaEeRQ2N8",
   },
   "chequeos-ginecologicos": {
     servicio: "Chequeos ginecológicos anuales",
@@ -336,7 +336,7 @@ export const SERVICIOS_OTROS: Record<string, ServicioDescripcion> = {
         answer: "Desde el inicio de la vida sexual activa o a partir de los 21 años.",
       },
     ],
-    urlVideo: "kLmNoPqRsTu",
+    urlVideo: "oBnYBTIlZzY",
   },
 };
 
@@ -366,7 +366,7 @@ export const SERVICIOS_ECOGRAFIAS: Record<string, ServicioDescripcion> = {
           "Contamos con tecnología de última generación y especialistas en diagnóstico prenatal para brindarte tranquilidad y confianza.",
       },
     ],
-    urlVideo: "",
+    urlVideo: "5FiHbJX_crg",
   },
   anatomica: {
     servicio: "Ecografía anatómica",
@@ -393,7 +393,7 @@ export const SERVICIOS_ECOGRAFIAS: Record<string, ServicioDescripcion> = {
           "Nuestros profesionales están altamente capacitados y utilizan equipos avanzados para garantizar diagnósticos precisos.",
       },
     ],
-    urlVideo: "",
+    urlVideo: "DuLHeUyCHug",
   },
   "doppler-fetal": {
     servicio: "Doppler Fetal",
@@ -420,7 +420,7 @@ export const SERVICIOS_ECOGRAFIAS: Record<string, ServicioDescripcion> = {
           "Ofrecemos atención personalizada y tecnología de vanguardia para garantizar la seguridad y tranquilidad de tu embarazo.",
       },
     ],
-    urlVideo: "",
+    urlVideo: "yGlP6mraFsI",
   },
   ginecologica: {
     servicio: "Ecografía ginecológica",
@@ -447,7 +447,7 @@ export const SERVICIOS_ECOGRAFIAS: Record<string, ServicioDescripcion> = {
           "Brindamos un ambiente cómodo, privacidad y atención profesional para tu tranquilidad y bienestar.",
       },
     ],
-    urlVideo: "",
+    urlVideo: "m8Rm7VEIGRY",
   },
   obstetrica: {
     servicio: "Ecografía obstétrica",
@@ -474,7 +474,7 @@ export const SERVICIOS_ECOGRAFIAS: Record<string, ServicioDescripcion> = {
           "Nuestro equipo te acompaña en cada etapa del embarazo con calidez, experiencia y tecnología avanzada.",
       },
     ],
-    urlVideo: "",
+    urlVideo: "drNJdvBYrWs",
   },
   "4d-hd-live": {
     servicio: "Ecografía 4D HD Live",
@@ -501,6 +501,6 @@ export const SERVICIOS_ECOGRAFIAS: Record<string, ServicioDescripcion> = {
           "Contamos con equipos de última generación y personal especializado para brindarte imágenes inolvidables y precisas.",
       },
     ],
-    urlVideo: "",
+    urlVideo: "mzR7lJQ-V0g",
   },
 };
