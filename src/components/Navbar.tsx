@@ -80,11 +80,7 @@ const Navbar = () => {
 
 
         </div>
-        <CustomLink
-          href="/contacto"
-          title="CONTACTO"
-          classNameText=" hidden md:block"
-        />
+
 
         <button className="md:hidden flex items-center gap-2 bg-button h-full rounded-lg px-4 hover:bg-button/90 transition-colors duration-300">
           <p className=" text-sm font-semibold text-SECONDARY px-2">

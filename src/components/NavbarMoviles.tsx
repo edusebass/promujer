@@ -220,11 +220,7 @@ const NavbarMoviles = ({
           </div>
         </div>
 
-        <div className="pb-2 border-b pt-2 border-white w-full">
-          <Link href="/contacto" className="py-2" onClick={handleLinkClick}>
-            CONTACTO
-          </Link>
-        </div>
+
 
       </div>
       <div className="bg-primary flex justify-center items-center animate-zoom">
