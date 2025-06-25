@@ -11,7 +11,7 @@ export const ginecologia = [
     href: "/ginecologia/endometriosis",
     descripcion:
       "Abordaje especializado con técnicas mínimamente invasivas para aliviar el dolor y preservar la función reproductiva.",
-    icon: "https://thumbs.dreamstime.com/b/icono-de-l%C3%ADnea-color-endometriosis-problema-ginecol%C3%B3gico-pictograma-para-promoci%C3%B3n-aplicaciones-m%C3%B3viles-p%C3%A1ginas-web-259590692.jpg",
+    icon: "https://cdn-icons-png.flaticon.com/512/10207/10207695.png",
   },
   {
     title: "Miomas uterinos",
@@ -32,7 +32,7 @@ export const ginecologia = [
     href: "/ginecologia/dolor-pelvico-cronico",
     descripcion:
       "Evaluación integral y terapias especializadas para mejorar la calidad de vida y el confort femenino.",
-    icon: "https://static.vecteezy.com/system/resources/previews/050/127/389/non_2x/vaginal-infections-woman-disease-color-icon-illustration-vector.jpg",
+    icon: "https://static.vecteezy.com/system/resources/previews/017/430/586/non_2x/lower-abdominal-pain-icon-outline-illustration-vector.jpg",
   },
   {
     title: "Trastornos menstruales",
@@ -46,7 +46,7 @@ export const ginecologia = [
     href: "/ginecologia/consulta-ginecologica",
     descripcion:
       "Tratamientos personalizados para regular el ciclo menstrual y optimizar la salud hormonal.",
-    icon: "https://static.vecteezy.com/system/resources/previews/003/855/071/non_2x/menstruation-color-icon-menstrual-bleeding-vaginal-discharge-female-health-disorder-isolated-illustration-vector.jpg",
+    icon: "/logoMujer.svg",
   },
 ];
 
@@ -108,28 +108,28 @@ export const otros = [
     href: "/otros/menopausia",
     descripcion:
       "Manejo integral de la menopausia y opciones de terapia hormonal para mejorar la calidad de vida.",
-    icon: "https://static.vecteezy.com/system/resources/previews/033/062/441/non_2x/postpartum-care-gynecologist-color-icon-illustration-vector.jpg",
+    icon: "https://cdn-icons-png.flaticon.com/512/5089/5089612.png",
   },
   {
     title: "Cáncer ginecológico",
     href: "/otros/cancer-ginecologico",
     descripcion:
       "Prevención, diagnóstico y tratamiento de cánceres ginecológicos con enfoque humano y profesional.",
-    icon: "https://static.vecteezy.com/system/resources/previews/033/062/441/non_2x/postpartum-care-gynecologist-color-icon-illustration-vector.jpg",
+    icon: "https://img.freepik.com/vector-premium/diseno-estilo-icono-cancer-ginecologico-vectorial_822882-60754.jpg",
   },
   {
     title: "Salud sexual femenina",
     href: "/otros/salud-sexual",
     descripcion:
       "Atención confidencial y profesional para el bienestar y la salud sexual de la mujer.",
-    icon: "https://static.vecteezy.com/system/resources/previews/033/062/441/non_2x/postpartum-care-gynecologist-color-icon-illustration-vector.jpg",
+    icon: "https://cdn-icons-png.flaticon.com/512/12024/12024835.png",
   },
   {
     title: "Chequeos ginecológicos anuales",
     href: "/otros/chequeos-ginecologicos",
     descripcion:
       "Exámenes preventivos y asesoría personalizada para mantener la salud ginecológica.",
-    icon: "https://static.vecteezy.com/system/resources/previews/033/062/441/non_2x/postpartum-care-gynecologist-color-icon-illustration-vector.jpg",
+    icon: "https://st3.depositphotos.com/4177785/32042/v/1600/depositphotos_320421478-stock-illustration-gynecology-red-gradient-concept-icon.jpg",
   },
 ];
 

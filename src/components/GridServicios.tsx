@@ -36,7 +36,7 @@ const ServicioCard = ({ item, index }: { item: Item; index: number }) => {
       <p className="text-sm text-center text-gray-600 leading-loose">{item.description}</p>
       <motion.div
         whileTap={{ scale: 0.95 }}
-        className=" mt-4 flex items-center p-1 bg-primary justify-center md:h-6 bg-colorButton hover:bg-colorButton/95 active:bg-colorButton/80 rounded-lg md:px-5 md:py-1 cursor-pointer transition"
+        className=" mt-4 flex items-center p-2 bg-primary justify-center md:h-6 bg-colorButton hover:bg-colorButton/95 active:bg-colorButton/80 rounded-lg md:px-5 md:py-1 cursor-pointer transition"
       >
         <Link
           href={item.link}

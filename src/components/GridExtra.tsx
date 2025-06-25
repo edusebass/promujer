@@ -34,7 +34,7 @@ const ServicioCard = ({ item, index }: { item: Item; index: number }) => {
       />
       <h2 className="text-center text-2xl mt-4 mb-4 font-extrabold">{item.title}</h2>
       <p className="text-sm text-center text-gray-600 leading-loose">{item.description}</p>
-      <div className="flex items-center mt-4 p-1 bg-primary justify-center md:h-6 bg-colorButton hover:bg-colorButton/95 active:bg-colorButton/80 rounded-lg md:px-5 md:py-1 cursor-pointer transition">
+      <div className="flex items-center mt-4 p-2 bg-primary justify-center md:h-6 bg-colorButton hover:bg-colorButton/95 active:bg-colorButton/80 rounded-lg md:px-5 md:py-1 cursor-pointer transition">
         <Link
           href={item.link}
           className="text-white font-extrabold text-sm w-full h-full flex items-center justify-center"
