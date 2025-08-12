@@ -15,73 +15,36 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: "https://drjuanyancha.com/",
       lastModified,
     },
-    {
-      url: "https://drjuanyancha.com/ginecologia/herniasDiscales",
-      lastModified,
-    },
-    {
-      url: "https://drjuanyancha.com/ginecologia/lumbalgias",
-      lastModified,
-    },
-    {
-      url: "https://drjuanyancha.com/ginecologia/cervicalgia",
-      lastModified,
-    },
-    {
-      url: "https://drjuanyancha.com/ginecologia/tendinitis",
-      lastModified,
-    },
-    {
-      url: "https://drjuanyancha.com/ginecologia/hombrocongelado",
-      lastModified,
-    },
-    {
-      url: "https://drjuanyancha.com/ginecologia/pubalgia",
-      lastModified,
-    },
-    {
-      url: "https://drjuanyancha.com/obstetricia/rectificacioncervical",
-      lastModified,
-    },
-    {
-      url: "https://drjuanyancha.com/obstetricia/estrechamientocanallumbar",
-      lastModified,
-    },
-    {
-      url: "https://drjuanyancha.com/obstetricia/hiperlordosiscervical",
-      lastModified,
-    },
-    {
-      url: "https://drjuanyancha.com/obstetricia/hiperlordosislumbar",
-      lastModified,
-    },
-    {
-      url: "https://drjuanyancha.com/obstetricia/desviacioncolumna",
-      lastModified,
-    },
-    {
-      url: "https://drjuanyancha.com/obstetricia/desplazamientocadera",
-      lastModified,
-    },
-    {
-      url: "https://drjuanyancha.com/otros/escoliosis",
-      lastModified,
-    },
-    {
-      url: "https://drjuanyancha.com/otros/ciatalgia",
-      lastModified,
-    },
-    {
-      url: "https://drjuanyancha.com/otros/nervioaciatico",
-      lastModified,
-    },
-    {
-      url: "https://drjuanyancha.com/otros/estres",
-      lastModified,
-    },
-    {
-      url: "https://drjuanyancha.com/otros/crecimiento",
-      lastModified,
-    },
+    // páginas principales por secciones
+    { url: "https://drjuanyancha.com/ginecologia/sindrome-ovario-poliquistico", lastModified },
+    { url: "https://drjuanyancha.com/ginecologia/endometriosis", lastModified },
+    { url: "https://drjuanyancha.com/ginecologia/infecciones-vaginales", lastModified },
+    { url: "https://drjuanyancha.com/ginecologia/dolor-pelvico-cronico", lastModified },
+    { url: "https://drjuanyancha.com/ginecologia/trastornos-menstruales", lastModified },
+
+    { url: "https://drjuanyancha.com/obstetricia/control-prenatal", lastModified },
+    { url: "https://drjuanyancha.com/obstetricia/diabetes-gestacional", lastModified },
+    { url: "https://drjuanyancha.com/obstetricia/preeclampsia", lastModified },
+    { url: "https://drjuanyancha.com/obstetricia/parto-prematuro", lastModified },
+    { url: "https://drjuanyancha.com/obstetricia/cesarea-recuperacion", lastModified },
+    { url: "https://drjuanyancha.com/obstetricia/cuidados-postparto", lastModified },
+
+    { url: "https://drjuanyancha.com/cirugias/miomas-uterinos", lastModified },
+    { url: "https://drjuanyancha.com/cirugias/cirugia-laparoscopica", lastModified },
+    { url: "https://drjuanyancha.com/cirugias/histerectomia", lastModified },
+    { url: "https://drjuanyancha.com/cirugias/cirugia-endometriosis", lastModified },
+
+    { url: "https://drjuanyancha.com/ecografias/cromosomica", lastModified },
+    { url: "https://drjuanyancha.com/ecografias/anatomica", lastModified },
+    { url: "https://drjuanyancha.com/ecografias/doppler-fetal", lastModified },
+    { url: "https://drjuanyancha.com/ecografias/ginecologica", lastModified },
+    { url: "https://drjuanyancha.com/ecografias/obstetrica", lastModified },
+    { url: "https://drjuanyancha.com/ecografias/4d-hd-live", lastModified },
+
+    { url: "https://drjuanyancha.com/informacion/planificacion-familiar", lastModified },
+    { url: "https://drjuanyancha.com/informacion/menopausia", lastModified },
+    { url: "https://drjuanyancha.com/informacion/cancer-ginecologico", lastModified },
+    { url: "https://drjuanyancha.com/informacion/salud-sexual", lastModified },
+    { url: "https://drjuanyancha.com/informacion/chequeos-ginecologicos", lastModified },
   ];
 }

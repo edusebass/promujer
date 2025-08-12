@@ -27,9 +27,11 @@ const CustomLink = ({
       onClick={onClick}
     >
       <p
-        className={`${classNameText} ${pathname === href
-          ? "text-black"
-          : "text-text-primary hover:text-black duration-200"
+        className={`${classNameText && classNameText.trim().length > 0
+            ? classNameText
+            : pathname === href
+              ? "text-black"
+              : "text-text-primary hover:text-black duration-200"
           }`}
       >
         {title}

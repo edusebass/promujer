@@ -3,7 +3,7 @@ import GridServicios from "@/components/GridServicios";
 import RandomImage from "@/components/RandomImage";
 import Head from "next/head";
 import { useEffect, useState, useRef } from "react";
-import { ecografias, ginecologia, obstetricia, otros } from "@/constants/servicios_lista";
+import { ecografias, ginecologia, obstetricia, cirugias, informacion } from "@/constants/servicios_lista";
 import PerfilComponent from "@/components/PerfilComponent";
 import Image from "next/image";
 import GridExtra from "@/components/GridExtra";
@@ -78,7 +78,7 @@ export default function Home() {
 
 
       {/* Carrusel con transición y overlay solo en las demás imágenes */}
-      <section className="relative flex items-start justify-center w-full h-[340px] md:h-72 bg-cover bg-center overflow-hidden min-h-[340px]">
+      <section className="relative flex items-start justify-center w-full h-[340px] md:h-[420px] lg:h-[520px] bg-cover bg-center overflow-hidden min-h-[340px]">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -98,20 +98,17 @@ export default function Home() {
         {currentIndex !== 0 && (
           <div className="absolute inset-0 bg-black opacity-5 transition-opacity duration-500"></div>
         )}
-        <div
-          className={`relative z-10 flex items-center justify-center flex-col w-full h-full ${currentIndex === 0 ? "pt-24" : "pt-10"
-            }`}
-        >
+        <div className={`relative z-10 flex items-center justify-center flex-col w-full h-full ${currentIndex === 0 ? "pt-24" : "pt-10"}`}>
           {/* <h3 className="text-center text-3xl font-semibold text-white p-4 drop-shadow-lg">
             {currentData.? title1}
           </h3> */}
-          <h3 className="text-center text-4xl font-bold text-white drop-shadow-2xl">
+          <h3 className="text-center text-3xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-2xl tracking-tight">
             {currentData.title2}
           </h3>
         </div>
       </section>
       {/* Médico Especialista */}
-      <section className="flex flex-col items-start justify-start my-8 rounded-t-full bg-">
+      <section className="max-w-7xl mx-auto flex flex-col items-start justify-start my-12 px-4">
         <span className="text-lg font-bold text-black">
           MÉDICO ESPECIALISTA
         </span>
@@ -153,9 +150,9 @@ export default function Home() {
 
 
       {/* Servicios Específicos */}
-      <section className="flex flex-col md:flex-row gap-6 my-8 items-center justify-center">
+      <section className="max-w-7xl mx-auto flex flex-col md:flex-row gap-6 my-12 items-stretch justify-center px-4">
         {consultaGinecologica && (
-          <div className="flex flex-col items-center p-4 border rounded-lg shadow-lg bg-white max-w-xs">
+          <div className="flex flex-col items-center justify-center text-center gap-2 p-6 border rounded-2xl shadow-xl bg-white w-full md:max-w-sm md:h-[260px] h-full">
             <Image
               src={consultaGinecologica.icon}
               alt={consultaGinecologica.title}
@@ -165,13 +162,21 @@ export default function Home() {
             <h3 className="font-bold text-lg mt-2">
               {consultaGinecologica.title}
             </h3>
-            <p className="text-sm text-gray-600 mt-1">
+            <p
+              className="text-sm text-gray-600 mt-1"
+              style={{
+                display: "-webkit-box",
+                WebkitLineClamp: 3,
+                WebkitBoxOrient: "vertical" as const,
+                overflow: "hidden",
+              }}
+            >
               {consultaGinecologica.descripcion}
             </p>
           </div>
         )}
         {controlPrenatal && (
-          <div className="flex flex-col items-center p-4 border rounded-lg shadow-lg bg-white max-w-xs">
+          <div className="flex flex-col items-center justify-center text-center gap-2 p-6 border rounded-2xl shadow-xl bg-white w-full md:max-w-sm md:h-[260px] h-full">
             <Image
               src={controlPrenatal.icon}
               alt={controlPrenatal.title}
@@ -181,12 +186,20 @@ export default function Home() {
             <h3 className="font-bold text-lg mt-2">
               {controlPrenatal.title}
             </h3>
-            <p className="text-sm text-gray-600 mt-1">
+            <p
+              className="text-sm text-gray-600 mt-1"
+              style={{
+                display: "-webkit-box",
+                WebkitLineClamp: 3,
+                WebkitBoxOrient: "vertical" as const,
+                overflow: "hidden",
+              }}
+            >
               {controlPrenatal.descripcion}
             </p>
           </div>
         )}
-        <div className="flex flex-col w-full items-center p-4 border rounded-lg shadow-lg bg-primary max-w-xs">
+        <div className="flex flex-col w-full items-center justify-center text-center gap-2 p-6 border rounded-2xl shadow-xl bg-primary text-white md:max-w-sm md:h-[260px] h-full">
           <Image
             src="https://cdn-icons-png.flaticon.com/512/5759/5759940.png"
             alt="hola"
@@ -206,7 +219,7 @@ export default function Home() {
       <div ref={perfilRef}>
         <PerfilComponent />
       </div>
-      <section className="flex flex-col  justify-start">
+      <section className="max-w-7xl mx-auto flex flex-col justify-start px-4">
         {/* <h1 className="text-4xl mt-3 md:text-6xl font-extrabold text-center md:px-16 md:mt-3">
           PRO MUJER
         </h1> */}
@@ -224,7 +237,7 @@ export default function Home() {
       />
 
       {/* Servicios */}
-      <section className="flex flex-col  justify-start">
+      <section className="max-w-7xl mx-auto flex flex-col justify-start px-4">
         {/* <h1 className="text-4xl mt-3 md:text-6xl font-extrabold text-center md:px-16 md:mt-3">
           PRO MUJER
         </h1> */}
@@ -233,7 +246,7 @@ export default function Home() {
         </h2>
       </section>
 
-      <section className="flex flex-col text-center">
+      <section className="max-w-7xl mx-auto flex flex-col text-center px-4">
         <h2 className="text-2xl mt-6">Servicios de ginecologia</h2>
 
         <GridServicios
@@ -258,9 +271,20 @@ export default function Home() {
         />
         <RandomImage count={4} />
 
-        <h2 className="text-2xl mt-6">OTROS SERVICIOS</h2>
+        <h2 className="text-2xl mt-6">Cirugías</h2>
         <GridServicios
-          items={otros.map(({ title, href, icon, descripcion }) => ({
+          items={cirugias.map(({ title, href, icon, descripcion }) => ({
+            title,
+            icon,
+            description: descripcion,
+            link: href,
+          }))}
+        />
+        <RandomImage count={4} />
+
+        <h2 className="text-2xl mt-6">Información</h2>
+        <GridServicios
+          items={informacion.map(({ title, href, icon, descripcion }) => ({
             title,
             icon,
             description: descripcion,

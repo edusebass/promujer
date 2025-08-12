@@ -39,27 +39,27 @@ const MediaCard = ({ item, index }: { item: MediaService; index: number }) => {
           : {}
       }
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="flex-shrink-0 w-64 m-2"
+      className="flex-shrink-0 m-2"
     >
-      {item.type === "image" ? (
-        <Image
-          src={item.src}
-          alt={item.title || "Imagen"}
-          width={256}
-          height={384}
-          className="object-cover h-full"
-        />
-      ) : (
-        <video
-          src={item.src}
-          controls
-          width={256}
-          height={384}
-          className="object-cover h-full"
-        >
-          Your browser does not support the video tag.
-        </video>
-      )}
+      <div className="w-[260px] h-[260px] md:w-[280px] md:h-[280px] lg:w-[300px] lg:h-[300px] rounded-xl overflow-hidden shadow-lg">
+        {item.type === "image" ? (
+          <Image
+            src={item.src}
+            alt={item.title || "Imagen"}
+            width={600}
+            height={600}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <video
+            src={item.src}
+            controls
+            className="w-full h-full object-cover"
+          >
+            Your browser does not support the video tag.
+          </video>
+        )}
+      </div>
     </motion.div>
   );
 };
@@ -91,10 +91,12 @@ const RandomImage: React.FC<RandomImageProps> = ({ count = 1 }) => {
   if (randomMedia.length === 0) return null;
 
   return (
-    <div className="flex flex-wrap justify-center items-center m-auto min-h-[400px]">
-      {randomMedia.map((item, index) => (
-        <MediaCard key={index} item={item} index={index} />
-      ))}
+    <div className="w-full">
+      <div className="max-w-7xl mx-auto flex flex-wrap justify-center items-center gap-6 md:gap-8 py-4 min-h-[320px]">
+        {randomMedia.map((item, index) => (
+          <MediaCard key={index} item={item} index={index} />
+        ))}
+      </div>
     </div>
   );
 };

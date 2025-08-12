@@ -504,3 +504,167 @@ export const SERVICIOS_ECOGRAFIAS: Record<string, ServicioDescripcion> = {
     urlVideo: "mzR7lJQ-V0g",
   },
 };
+
+// Cirugías
+export const SERVICIOS_CIRUGIAS: Record<string, ServicioDescripcion> = {
+  "miomas-uterinos": {
+    servicio: "Miomas uterinos",
+    imgBanner:
+      "https://st.depositphotos.com/16244452/61637/v/450/depositphotos_616375742-stock-illustration-infectious-diseases-uterus-color-line.jpg",
+    questions: [
+      {
+        question: "¿Qué son los miomas uterinos?",
+        answer:
+          "Son tumores benignos del útero que pueden causar sangrado abundante, dolor y problemas de fertilidad. La elección del manejo (médico o quirúrgico) depende del tamaño, número y deseos reproductivos.",
+      },
+      {
+        question: "Opciones de tratamiento",
+        answer:
+          "Desde manejo médico hasta procedimientos mínimamente invasivos y cirugía, según tamaño y síntomas. En casos seleccionados la laparoscopia o histeroscopia acortan la recuperación.",
+      },
+      {
+        question: "¿Cuándo considerar cirugía?",
+        answer:
+          "Cuando los síntomas afectan la calidad de vida o hay crecimiento acelerado del mioma.",
+      },
+    ],
+    urlVideo: "Hh578vkrHVQ",
+  },
+  miomectomia: {
+    servicio: "Miomectomía",
+    imgBanner: "https://cdn-icons-png.flaticon.com/512/3190/3190514.png",
+    questions: [
+      { question: "¿Qué es la miomectomía?", answer: "Cirugía para extirpar miomas uterinos conservando el útero." },
+      { question: "Indicaciones", answer: "Dolor, sangrado excesivo, crecimiento de miomas o infertilidad asociada." },
+      { question: "Vías de abordaje", answer: "Laparoscópica, histeroscópica o abierta según tamaño/ubicación." },
+    ],
+    urlVideo: "Hh578vkrHVQ",
+  },
+  "cirugia-laparoscopica": {
+    servicio: "Cirugía laparoscópica",
+    imgBanner: "https://cdn-icons-png.flaticon.com/512/5759/5759940.png",
+    questions: [
+      {
+        question: "¿Qué es la laparoscopia?",
+        answer:
+          "Técnica quirúrgica mínimamente invasiva con pequeñas incisiones, menor dolor y recuperación rápida, excelente visualización y menor riesgo de adherencias.",
+      },
+      {
+        question: "Indicaciones frecuentes",
+        answer:
+          "Tratamiento de endometriosis, quistes ováricos, miomas y ligadura de trompas, entre otros.",
+      },
+      {
+        question: "Beneficios",
+        answer: "Menos sangrado, menor dolor posoperatorio y retorno temprano a actividades.",
+      },
+    ],
+    urlVideo: "m8Rm7VEIGRY",
+  },
+  histerectomia: {
+    servicio: "Histerectomía",
+    imgBanner: "https://cdn-icons-png.flaticon.com/512/5617/5617665.png",
+    questions: [
+      {
+        question: "¿Qué es la histerectomía?",
+        answer:
+          "Cirugía para extirpar el útero indicada en casos de sangrado severo, miomas grandes o cáncer.",
+      },
+      {
+        question: "Tipos de histerectomía",
+        answer:
+          "Total, subtotal o radical; por vía abdominal, vaginal o laparoscópica según el caso.",
+      },
+      {
+        question: "Recuperación",
+        answer: "Reposo relativo, control del dolor y seguimiento médico. La vía laparoscópica suele permitir reincorporación más temprana.",
+      },
+    ],
+    urlVideo: "jFdfltCfOA8",
+  },
+  "cirugia-endometriosis": {
+    servicio: "Cirugía de endometriosis",
+    imgBanner: "https://cdn-icons-png.flaticon.com/512/10207/10207695.png",
+    questions: [
+      {
+        question: "Objetivo de la cirugía",
+        answer:
+          "Remover implantes endometriósicos para aliviar dolor y mejorar la fertilidad, preservando estructuras y reserva ovárica cuando es posible.",
+      },
+      {
+        question: "Técnicas utilizadas",
+        answer: "Laparoscopia avanzada con preservación de órganos cuando es posible, abordando nódulos profundos y adherencias con precisión.",
+      },
+      {
+        question: "Seguimiento",
+        answer: "Control periódico y manejo integral para reducir recurrencias.",
+      },
+    ],
+    urlVideo: "Zuro6igibUw",
+  },
+  "ooforectomia-anexectomia": {
+    servicio: "Ooforectomía/Anexectomía",
+    imgBanner: "https://cdn-icons-png.flaticon.com/512/1093/1093680.png",
+    questions: [
+      { question: "¿En qué consiste?", answer: "Extirpación de ovario(s) y/o trompas de Falopio." },
+      { question: "¿Cuándo se indica?", answer: "Quistes complejos, torsión, riesgo oncológico o dolor refractario." },
+      { question: "¿Se puede hacer laparoscópica?", answer: "Sí, cuando las condiciones clínicas lo permiten." },
+    ],
+    urlVideo: "m8Rm7VEIGRY",
+  },
+  salpingectomia: {
+    servicio: "Salpingectomía",
+    imgBanner: "https://cdn-icons-png.flaticon.com/512/3100/3100646.png",
+    questions: [
+      { question: "¿Qué es?", answer: "Extirpación de una o ambas trompas de Falopio." },
+      { question: "Indicaciones", answer: "Embarazo ectópico, hidrosálpinx o reducción de riesgo de cáncer ovárico." },
+      { question: "Recuperación", answer: "Generalmente rápida con técnica laparoscópica." },
+    ],
+    urlVideo: "DuLHeUyCHug",
+  },
+  "cistectomia-ovaria": {
+    servicio: "Cistectomía ovárica",
+    imgBanner: "https://cdn-icons-png.flaticon.com/512/3533/3533920.png",
+    questions: [
+      { question: "¿Qué es?", answer: "Resección de quistes ováricos preservando el ovario." },
+      { question: "¿Cuándo se indica?", answer: "Quistes persistentes, sintomáticos o de características complejas." },
+      { question: "Vía de abordaje", answer: "Frecuentemente laparoscópica." },
+    ],
+    urlVideo: "yGlP6mraFsI",
+  },
+  "prolapso-organos-pelvicos": {
+    servicio: "Prolapso de órganos pélvicos",
+    imgBanner: "https://cdn-icons-png.flaticon.com/512/3063/3063825.png",
+    questions: [
+      { question: "¿Qué es el prolapso?", answer: "Descenso de vejiga, útero o recto por debilidad del soporte pélvico." },
+      { question: "Tratamiento quirúrgico", answer: "Corrección anatómica con o sin mallas según cada caso." },
+      { question: "Resultados", answer: "Mejora de síntomas y calidad de vida con rehabilitación del suelo pélvico." },
+    ],
+    urlVideo: "emTzmnEFprY",
+  },
+  histeroscopia: {
+    servicio: "Histeroscopia",
+    imgBanner: "https://cdn-icons-png.flaticon.com/512/2966/2966327.png",
+    questions: [
+      { question: "¿Qué es?", answer: "Visualiza el interior del útero y permite tratar pólipos, miomas submucosos o adherencias." },
+      { question: "Ventajas", answer: "Ambulatoria, rápida y con recuperación corta." },
+      { question: "Cuándo se indica", answer: "Sangrado anormal, infertilidad, abortos recurrentes o hallazgos ecográficos." },
+    ],
+    urlVideo: "mzR7lJQ-V0g",
+  },
+  "cirugia-reconstructiva": {
+    servicio: "Cirugía reconstructiva",
+    imgBanner: "https://cdn-icons-png.flaticon.com/512/1087/1087927.png",
+    questions: [
+      { question: "¿Objetivo?", answer: "Corregir malformaciones congénitas o secuelas de cirugías/traumas en el aparato reproductor." },
+      { question: "Técnicas", answer: "Reconstrucciones del canal vaginal, periné y suelo pélvico según necesidad." },
+      { question: "Resultados", answer: "Mejora anatómica y funcional con enfoque en calidad de vida." },
+    ],
+    urlVideo: "6DesoMNKY1g",
+  },
+};
+
+// Información (alias de OTROS para mantener compatibilidad)
+export const SERVICIOS_INFORMACION: Record<string, ServicioDescripcion> = {
+  ...SERVICIOS_OTROS,
+};

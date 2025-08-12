@@ -46,7 +46,7 @@ const FloatButtons = () => {
 
       {/* Botones sociales, Maps y Phone a la derecha, más arriba */}
       <div
-        className="fixed top-[450px] right-1 flex flex-col gap-1 z-50 transition-transform duration-300"
+        className="fixed top-[380px] right-3 md:right-4 flex flex-col gap-3 z-50 transition-transform duration-300"
         style={{ transform: `translateY(${offset}px)` }}
       >
         {/* Instagram */}
@@ -55,12 +55,12 @@ const FloatButtons = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="bg-white  rounded-full shadow-md p-2 transition-colors">
+          <div className="bg-white rounded-full shadow-lg p-3 md:p-3.5 transition-transform hover:scale-105">
             <Image
               src="/instagram.webp"
               alt="Instagram"
-              width={24}
-              height={24}
+              width={28}
+              height={28}
               draggable={false}
             />
           </div>
@@ -71,12 +71,12 @@ const FloatButtons = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="bg-white  rounded-full shadow-md p-2 transition-colors">
+          <div className="bg-white rounded-full shadow-lg p-3 md:p-3.5 transition-transform hover:scale-105">
             <Image
               src="/facebook.png"
               alt="Facebook"
-              width={24}
-              height={24}
+              width={28}
+              height={28}
               draggable={false}
             />
           </div>
@@ -87,24 +87,24 @@ const FloatButtons = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="bg-white  rounded-full shadow-md p-2 transition-colors">
+          <div className="bg-white rounded-full shadow-lg p-3 md:p-3.5 transition-transform hover:scale-105">
             <Image
               src="/maps.png"
               alt="Google Maps"
-              width={24}
-              height={24}
+              width={28}
+              height={28}
               draggable={false}
             />
           </div>
         </a>
         {/* Teléfono */}
         <a href="tel:+5930969618902">
-          <div className="bg-white  rounded-full shadow-md p-2 transition-colors">
+          <div className="bg-white rounded-full shadow-lg p-3 md:p-3.5 transition-transform hover:scale-105">
             <Image
               src="/phone.png"
               alt="Llamar"
-              width={24}
-              height={24}
+              width={28}
+              height={28}
               draggable={false}
             />
           </div>

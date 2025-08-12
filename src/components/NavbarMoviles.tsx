@@ -5,8 +5,9 @@ import { FaAngleDown } from "react-icons/fa";
 import {
   ginecologia,
   obstetricia,
-  otros,
-  ecografias
+  cirugias,
+  ecografias,
+  informacion,
 } from "@/constants/servicios_lista";
 
 const NavbarMoviles = ({
@@ -20,13 +21,12 @@ const NavbarMoviles = ({
   const [instantClose, setInstantClose] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Cierra el menú móvil al hacer scroll
   useEffect(() => {
     if (!isOpen) return;
     const handleScroll = () => {
       setInstantClose(true);
       toggleMobileMenu();
-      setTimeout(() => setInstantClose(false), 100); // resetea para próximas aperturas
+      setTimeout(() => setInstantClose(false), 100);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
@@ -51,7 +51,7 @@ const NavbarMoviles = ({
   return (
     <div
       className={`
-        md:hidden fixed ${scrolled ? "top-[55px]" : "top-[180px]"} left-0 w-full z-40 bg-background shadow-md
+        md:hidden fixed ${scrolled ? "top-[55px]" : "top-[180px]"} left-0 w-full z-40 bg-white text-black shadow-md
         ${instantClose ? "" : "transition-all duration-500 ease-in-out"}
         ${isOpen ? "max-h-[100vh] opacity-100 translate-y-0 pointer-events-auto" : "max-h-0 opacity-0 -translate-y-8 pointer-events-none"}
         overflow-hidden
@@ -59,17 +59,15 @@ const NavbarMoviles = ({
       style={{ transitionProperty: instantClose ? "none" : "max-height, opacity, transform" }}
     >
       <div className="flex flex-col items-start p-4">
-        <div className="pb-2 border-b border-white w-full">
+        <div className="pb-2 border-b border-black/10 w-full">
           <Link href="/" className="py-2" onClick={handleLinkClick}>
             INICIO
           </Link>
         </div>
 
-
-
         <div className="py-2 w-full">
           <div
-            className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "ginecologia" ? "bg-primary/5 text-SECONDARY p-2" : ""
+            className={`flex flex-row justify-start pb-2 border-b border-black/10 items-center ${openSubMenu === "ginecologia" ? "bg-primary/5 text-SECONDARY p-2" : ""
               }`}
           >
             <button
@@ -93,7 +91,7 @@ const NavbarMoviles = ({
                   <Link
                     key={index}
                     href={item.href}
-                    className="block py-1 pb-2 border-b border-white"
+                    className="block py-1 pb-2 border-b border-black/10"
                     onClick={handleLinkClick}
                   >
                     {item.title}
@@ -106,7 +104,7 @@ const NavbarMoviles = ({
 
         <div className="py-2 w-full">
           <div
-            className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "obstetricia"
+            className={`flex flex-row justify-start pb-2 border-b border-black/10 items-center ${openSubMenu === "obstetricia"
               ? "bg-primary/5 text-SECONDARY p-2"
               : ""
               }`}
@@ -132,7 +130,7 @@ const NavbarMoviles = ({
                   <Link
                     key={index}
                     href={item.href}
-                    className="block py-1 pb-2 border-b border-white"
+                    className="block py-1 pb-2 border-b border-black/10"
                     onClick={handleLinkClick}
                   >
                     {item.title}
@@ -142,9 +140,49 @@ const NavbarMoviles = ({
             )}
           </div>
         </div>
+
         <div className="py-2 w-full">
           <div
-            className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "ecografias"
+            className={`flex flex-row justify-start pb-2 border-b border-black/10 items-center ${openSubMenu === "cirugias"
+              ? "bg-primary/5 text-SECONDARY p-2"
+              : ""
+              }`}
+          >
+            <button
+              className="w-full text-left"
+              onClick={() => handleSubMenu("cirugias")}
+            >
+              CIRUGIAS
+            </button>
+            <FaAngleDown
+              className={`transform transition-transform duration-300 ${openSubMenu === "cirugias" ? "rotate-180" : ""
+                }`}
+            />
+          </div>
+          <div
+            className={`overflow-hidden transition-all duration-1000 ${openSubMenu === "cirugias" ? "max-h-screen" : "max-h-0"
+              }`}
+          >
+            {openSubMenu === "cirugias" && (
+              <div className="pl-4">
+                {cirugias.map((item, index) => (
+                  <Link
+                    key={index}
+                    href={item.href}
+                    className="block py-1 pb-2 border-b border-black/10"
+                    onClick={handleLinkClick}
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div className="py-2 w-full">
+          <div
+            className={`flex flex-row justify-start pb-2 border-b border-black/10 items-center ${openSubMenu === "ecografias"
               ? "bg-primary/5 text-SECONDARY p-2"
               : ""
               }`}
@@ -170,7 +208,7 @@ const NavbarMoviles = ({
                   <Link
                     key={index}
                     href={item.href}
-                    className="block py-1 pb-2 border-b border-white"
+                    className="block py-1 pb-2 border-b border-black/10"
                     onClick={handleLinkClick}
                   >
                     {item.title}
@@ -183,33 +221,33 @@ const NavbarMoviles = ({
 
         <div className="py-2 w-full">
           <div
-            className={`flex flex-row justify-start pb-2 border-b border-white items-center ${openSubMenu === "otros"
+            className={`flex flex-row justify-start pb-2 border-b border-black/10 items-center ${openSubMenu === "informacion"
               ? "bg-primary/5 text-SECONDARY p-2"
               : ""
               }`}
           >
             <button
               className="w-full text-left"
-              onClick={() => handleSubMenu("otros")}
+              onClick={() => handleSubMenu("informacion")}
             >
-              OTRAS ESPECIALIDADES MEDICAS
+              INFORMACION
             </button>
             <FaAngleDown
-              className={`transform transition-transform duration-300 ${openSubMenu === "otros" ? "rotate-180" : ""
+              className={`transform transition-transform duration-300 ${openSubMenu === "informacion" ? "rotate-180" : ""
                 }`}
             />
           </div>
           <div
-            className={`overflow-hidden transition-all duration-1000 ${openSubMenu === "otros" ? "max-h-screen" : "max-h-0"
+            className={`overflow-hidden transition-all duration-1000 ${openSubMenu === "informacion" ? "max-h-screen" : "max-h-0"
               }`}
           >
-            {openSubMenu === "otros" && (
+            {openSubMenu === "informacion" && (
               <div className="pl-4">
-                {otros.map((item, index) => (
+                {informacion.map((item, index) => (
                   <Link
                     key={index}
                     href={item.href}
-                    className="block py-1 pb-2 border-b border-white"
+                    className="block py-1 pb-2 border-b border-black/10"
                     onClick={handleLinkClick}
                   >
                     {item.title}
@@ -219,9 +257,6 @@ const NavbarMoviles = ({
             )}
           </div>
         </div>
-
-
-
       </div>
       <div className="bg-primary flex justify-center items-center animate-zoom">
         <a
