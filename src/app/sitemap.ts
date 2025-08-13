@@ -33,6 +33,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: "https://drjuanyancha.com/cirugias/cirugia-laparoscopica", lastModified },
     { url: "https://drjuanyancha.com/cirugias/histerectomia", lastModified },
     { url: "https://drjuanyancha.com/cirugias/cirugia-endometriosis", lastModified },
+    { url: "https://drjuanyancha.com/cirugias/miomectomia", lastModified },
+    { url: "https://drjuanyancha.com/cirugias/ooforectomia-anexectomia", lastModified },
+    { url: "https://drjuanyancha.com/cirugias/salpingectomia", lastModified },
+    { url: "https://drjuanyancha.com/cirugias/cistectomia-ovaria", lastModified },
+    { url: "https://drjuanyancha.com/cirugias/prolapso-organos-pelvicos", lastModified },
+    { url: "https://drjuanyancha.com/cirugias/histeroscopia", lastModified },
+    { url: "https://drjuanyancha.com/cirugias/cirugia-reconstructiva", lastModified },
 
     { url: "https://drjuanyancha.com/ecografias/cromosomica", lastModified },
     { url: "https://drjuanyancha.com/ecografias/anatomica", lastModified },
