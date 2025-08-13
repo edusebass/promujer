@@ -43,8 +43,7 @@ const UpperNavbar = () => {
           <div className="h-16 w-[2px] bg-black mx-3" />
           <div className="whitespace-nowrap text-center">
             <h3 className={`${scriptFont.className} text-2xl md:text-3xl text-black leading-tight`}>Dr. Juan Yancha</h3>
-            <p className="text-sm md:text-base font-medium text-black/90">Ginecólogo Obstetra</p>
-            <p className="text-sm md:text-base font-medium text-black/90">Medicina Materna</p>
+            <p className="text-sm md:text-2xl font-semibold text-primary">Ginecólogo Obstetra</p>
           </div>
         </div>
         {/* Columna derecha: email + botón */}

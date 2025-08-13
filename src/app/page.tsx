@@ -210,7 +210,7 @@ export default function Home() {
             Contacto Médico al cliente
           </h3>
           <p className="text-sm text-white mt-1">
-            0986572316
+            0969618902
           </p>
         </div>
       </section>
