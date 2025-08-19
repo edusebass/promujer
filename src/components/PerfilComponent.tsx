@@ -5,13 +5,10 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 const puntos = [
-    "Más de 20 años de experiencia en salud femenina.",
-    "Especialista en control prenatal, partos y cirugías ginecológicas.",
-    "Miembro de la Sociedad Ecuatoriana de Ginecología y Obstetricia.",
-    "Formación internacional en medicina materno-fetal.",
-    "Comprometido con la atención integral y el bienestar de la mujer.",
-    "Participante activo en congresos y capacitaciones médicas.",
-    "Atención cálida, ética y personalizada.",
+    "Ligadura de arterias hipogástricas – Técnica GALA (OSLS – Support Obstetric Surgical Life, México).",
+    "Técnicas Quirúrgicas Avanzadas (TEQUIAV) para la prevención y control de la hemorragia obstétrica – OSLS México.",
+    "Diplomado en Ultrasonido Obstétrico – MFM Educations, aval Universidad Autónoma de Querétaro, México.",
+    "Diplomado Internacional en Colposcopía & HPV.",
 ];
 
 const PerfilComponent = () => {
@@ -47,7 +44,7 @@ const PerfilComponent = () => {
                     <Image
                         className="h-full w-full rounded-t-lg object-cover md:h-auto md:w-72 md:!rounded-none md:!rounded-s-lg"
                         src="https://res.cloudinary.com/dwowtb0ya/image/upload/v1750174040/dr/Captura_de_pantalla_2025-06-17_101754_1_hvapyy.jpg"
-                        alt="Fisioterapeuta Oswaldo Aviles"
+                        alt="Dr. Juan Yancha"
                         width={700}
                         height={500}
                     />
